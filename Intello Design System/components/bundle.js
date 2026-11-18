@@ -186,13 +186,16 @@
     var o = typeof im === 'string' ? { src: im } : im;
     return h('img', { src: o.src, srcSet: o.srcSet, sizes: o.sizes, width: o.imageWidth, height: o.imageHeight, alt: o.alt || '', loading: 'lazy', decoding: 'async' });
   }
+  /* ServiceCard. variant="overlay" (needs an image): the photo fills the card and the text sits on a dark glass panel. */
   function ServiceCard(p) {
-    return h('a', { className: 'itl-service', href: p.href || '#' },
+    var overlay = p.variant === 'overlay' && p.image;
+    return h('a', { className: cx('itl-service', overlay && 'itl-service-overlay'), href: p.href || '#' },
       h('div', { className: 'itl-service-media' }, p.image ? serviceImage(p.image) : h(Icon, { name: p.icon || 'package', size: 56, strokeWidth: 1.1 })),
-      h('h3', { className: 'itl-service-title' }, p.title),
-      h('div', { className: 'itl-service-foot' },
-        h('ul', { className: 'itl-bullets' }, (p.bullets || []).map(function (b, i) { return h('li', { key: i }, b); })),
-        h('span', { className: 'itl-iconbtn itl-iconbtn-outline', 'aria-hidden': 'true' }, h(Icon, { name: 'arrow-right', size: 18, strokeWidth: 2 }))));
+      h('div', { className: 'itl-service-body' },
+        h('h3', { className: 'itl-service-title' }, p.title),
+        h('div', { className: 'itl-service-foot' },
+          h('ul', { className: 'itl-bullets' }, (p.bullets || []).map(function (b, i) { return h('li', { key: i }, b); })),
+          h('span', { className: 'itl-iconbtn itl-iconbtn-outline', 'aria-hidden': 'true' }, h(Icon, { name: 'arrow-right', size: 18, strokeWidth: 2 })))));
   }
 
   /* Hero: copy column + media column. media defaults to the navy route panel. */
@@ -207,16 +210,24 @@
         h('circle', { className: 'pin', cx: 520, cy: 420, r: 6 })));
   }
   function Hero(p) {
-    return h('section', { className: cx('itl-root', 'itl-hero', p.media && 'itl-hero-wide') },
+    var immersive = p.variant === 'immersive' && p.media;
+    var panel = immersive && p.features ? h('ul', { className: 'itl-featurepanel' }, p.features.map(function (f, i) {
+      return h('li', { key: i, className: 'itl-featurepanel-item' },
+        h('span', { className: 'itl-featurepanel-icon' }, h(Icon, { name: f.icon, size: 22, strokeWidth: 1.5 })),
+        f.title ? h('h3', { className: 'itl-featurepanel-title' }, f.title) : null,
+        h('p', { className: 'itl-featurepanel-text' }, f.text));
+    })) : null;
+    return h('section', { className: cx('itl-root', 'itl-hero', p.media && 'itl-hero-wide', immersive && 'itl-hero-immersive') },
       h('div', { className: 'itl-hero-copy' },
         p.eyebrow ? h(Eyebrow, null, p.eyebrow) : null,
         h(Headline, { level: 'display', muted: p.titleMuted, accent: p.titleAccent, accentMuted: true }, p.title),
         p.lede ? h('p', { className: 'itl-lede' }, p.lede) : null,
         h('div', { className: 'itl-hero-ctas' },
-          p.cta ? h(Button, { variant: 'primary', size: 'lg', href: p.cta.href || '#' }, p.cta.label) : null,
+          p.cta ? h(Button, { variant: immersive ? 'accent' : 'primary', size: 'lg', href: p.cta.href || '#' }, p.cta.label) : null,
           p.video ? h(VideoLink, { href: p.video.href }, p.video.label) : null),
-        p.features ? h('ul', { className: 'itl-features' }, p.features.map(function (f, i) { return h(FeatureItem, { key: i, icon: f.icon }, f.text); })) : null),
-      h('div', { className: 'itl-hero-media' }, p.media ? h('div', { className: 'itl-hero-image' }, p.media) : h(HeroPanel), p.tracking ? h(TrackingCard, p.tracking) : null, p.stat ? h(StatChip, p.stat) : null));
+        p.features && !immersive ? h('ul', { className: 'itl-features' }, p.features.map(function (f, i) { return h(FeatureItem, { key: i, icon: f.icon }, f.text); })) : null),
+      h('div', { className: 'itl-hero-media' }, p.media ? h('div', { className: 'itl-hero-image' }, p.media) : h(HeroPanel), p.tracking ? h(TrackingCard, p.tracking) : null, p.stat ? h(StatChip, p.stat) : null),
+      panel);
   }
 
   /* AboutBlock: copy, note and call to action grouped on the left; two equal photos, staggered, on the right. */

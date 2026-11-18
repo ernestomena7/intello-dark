@@ -1,6 +1,6 @@
 // Services: one section per service, each with deliverables and a call to action that pre-selects the topic.
 import { html, React } from '../render/html.js';
-import { Frame } from '../render/frame.js';
+import { DarkBand, Frame } from '../render/frame.js';
 import { imageProps } from '../render/image.js';
 
 export const key = 'services';
@@ -24,7 +24,7 @@ export function render(ctx) {
   });
 
   const body = html`<${React.Fragment}>
-    <${ds.PageHero} eyebrow=${c.header.eyebrow} title=${c.header.title} titleAccent=${c.header.titleAccent} lede=${c.header.lede} />
+    ${DarkBand(html`<${ds.PageHero} eyebrow=${c.header.eyebrow} title=${c.header.title} titleAccent=${c.header.titleAccent} lede=${c.header.lede} />`)}
     <${ds.Section} tone="card">${sections}<//>
     <${ds.CtaBand}
       eyebrow=${common.ctaBand.eyebrow}

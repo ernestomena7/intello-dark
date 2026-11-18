@@ -13,16 +13,20 @@
     },
     "features": [
       {
-        "text": "Datos protegidos en cada etapa"
+        "title": "Datos protegidos",
+        "text": "Usamos tus datos solo para prestar el servicio."
       },
       {
-        "text": "Monitoreo de carga en tiempo real"
+        "title": "Monitoreo en tiempo real",
+        "text": "El estado de cada envío, siempre a la vista."
       },
       {
-        "text": "Indicadores y pronósticos de negocio"
+        "title": "Indicadores y pronósticos",
+        "text": "Tableros de KPIs y pronósticos de demanda con IA."
       },
       {
-        "text": "Se integra con tus sistemas"
+        "title": "Integración con tus sistemas",
+        "text": "Nos conectamos mediante APIs a lo que ya usas."
       }
     ]
   },

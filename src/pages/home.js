@@ -12,8 +12,9 @@ export function render(ctx) {
   const slot = (name) => structure.imageSlots[name];
 
   const heroImage = imageProps(lang, slot('home.hero'), { priority: true, sizes: '100vw', ratio: 'auto', height: '100%', icon: 'route' });
-  const features = c.hero.features.map((f, i) => ({ icon: structure.homeFeatureIcons[i], text: f.text }));
+  const features = c.hero.features.map((f, i) => ({ icon: structure.homeFeatureIcons[i], title: f.title, text: f.text }));
   const hero = html`<${ds.Hero}
+    variant="immersive"
     eyebrow=${c.hero.eyebrow}
     title=${c.hero.title}
     titleAccent=${c.hero.titleAccent}
@@ -28,6 +29,7 @@ export function render(ctx) {
     const text = services.find((x) => x.id === s.id);
     return html`<${ds.ServiceCard}
       key=${s.id}
+      variant="overlay"
       title=${text.title}
       bullets=${text.bullets}
       icon=${s.icon}
@@ -61,5 +63,5 @@ export function render(ctx) {
     body=${common.ctaBand.body}
     cta=${{ label: common.ctaBand.cta.label, href: ctx.url('contact') }} />`;
 
-  return { meta: c.meta, body: Frame(ctx, html`<${React.Fragment}>${hero}${panel}${band}<//>`) };
+  return { meta: c.meta, body: Frame(ctx, html`<${React.Fragment}>${hero}${panel}${band}<//>`, { overlayNav: true }) };
 }

@@ -1,5 +1,5 @@
 import { html, React } from '../render/html.js';
-import { Frame } from '../render/frame.js';
+import { DarkBand, Frame } from '../render/frame.js';
 import { formatDate } from '../i18n/format.js';
 
 export const key = 'privacy';
@@ -13,7 +13,7 @@ export function render(ctx) {
   <//>`);
 
   const body = html`<${React.Fragment}>
-    <${ds.PageHero} eyebrow=${c.header.eyebrow} title=${c.header.title} titleAccent=${c.header.titleAccent} lede=${c.header.lede} />
+    ${DarkBand(html`<${ds.PageHero} eyebrow=${c.header.eyebrow} title=${c.header.title} titleAccent=${c.header.titleAccent} lede=${c.header.lede} />`)}
     <${ds.Section} tone="card">
       <${ds.Prose}>
         <p><strong>${c.updatedLabel}:</strong> <time dateTime=${c.updated}>${formatDate(lang, c.updated)}</time></p>

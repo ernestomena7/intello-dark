@@ -437,3 +437,65 @@ a.itl-lang-opt { display: inline-flex; align-items: center; justify-content: cen
   .itl-cta-inner { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
   .itl-cta-art { height: 140px; order: -1; }
 }
+
+/* ---------- Dark-style elements (2026-11-18) ---------- */
+/* Dark top band that holds the navigation (data-theme="dark" on the wrapper switches the tokens) */
+.itl-topbar { background: var(--surface-page); color: var(--ink); }
+.itl-topbar-overlay { position: absolute; top: 0; left: 0; right: 0; z-index: 10; background: transparent; }
+.itl-topbar .itl-nav-links a { color: var(--ink-muted); }
+.itl-topbar .itl-nav-links a:hover, .itl-topbar .itl-nav-links a[aria-current="page"] { color: var(--ink); }
+.itl-topbar .itl-nav-links a[aria-current="page"]::after { background: var(--yellow); }
+/* A dark band under the navigation on inner pages (holds the page hero) */
+.itl-darkband { background: var(--surface-page); color: var(--ink); }
+.itl-darkband .itl-title-accent { color: var(--yellow); }
+.itl-main > .itl-darkband { width: 100%; padding-bottom: var(--space-7); }
+
+/* Immersive hero: full-bleed photograph under the navigation, copy on its dark side, a glass feature panel at the bottom */
+.itl-hero-immersive { position: relative; z-index: 0; overflow: hidden; max-width: none; width: 100%; margin: 0; border-radius: 0; background: var(--navy);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; min-height: 780px;
+  padding: calc(var(--nav-height) + var(--space-8)) max(var(--space-6), calc((100% - var(--container-max)) / 2 + var(--space-6))) calc(var(--space-9) + var(--space-8)); }
+.itl-main > .itl-hero-immersive { width: 100%; margin-top: 0; }
+.itl-hero-immersive .itl-hero-image::after { content: ""; position: absolute; inset: 0; background: color-mix(in srgb, var(--navy) 30%, transparent); }
+.itl-hero-immersive .itl-hero-copy { max-width: min(600px, 46vw); }
+.itl-hero-immersive .itl-title, .itl-hero-immersive .itl-eyebrow { color: var(--on-navy); }
+.itl-hero-immersive .itl-title-accent, .itl-hero-immersive .itl-title-muted { color: var(--yellow); }
+.itl-hero-immersive .itl-lede { color: var(--on-navy); opacity: .85; }
+.itl-hero-immersive .itl-hero-media .itl-track { right: max(var(--space-6), calc((100% - var(--container-max)) / 2 + var(--space-6))); bottom: calc(var(--space-9) + var(--space-8) + 240px); }
+.itl-hero-immersive .itl-hero-media .itl-statchip { right: max(var(--space-6), calc((100% - var(--container-max)) / 2 + var(--space-6))); top: calc(var(--nav-height) + var(--space-6)); }
+.itl-featurepanel { grid-column: 1 / -1; position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: var(--space-7) 0 0; padding: var(--space-5) 0; list-style: none;
+  background: color-mix(in srgb, var(--navy) 78%, transparent); border: 1px solid color-mix(in srgb, var(--on-navy) 14%, transparent); border-radius: var(--radius-lg); backdrop-filter: blur(10px); color: var(--on-navy); }
+.itl-featurepanel-item { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3) var(--space-5); }
+.itl-featurepanel-item + .itl-featurepanel-item { border-left: 1px solid color-mix(in srgb, var(--on-navy) 14%, transparent); }
+.itl-featurepanel-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: var(--radius-md); border: 1px solid color-mix(in srgb, var(--on-navy) 24%, transparent); color: var(--yellow); }
+.itl-featurepanel-title { margin: 0; font-size: 16px; line-height: 22px; font-weight: 700; color: var(--on-navy); }
+.itl-featurepanel-text { margin: 0; font-size: 14px; line-height: 20px; color: var(--on-navy); opacity: .75; }
+
+/* Overlay service card: photo fills the card, text on a dark glass panel */
+.itl-service-body { display: contents; }
+.itl-service-overlay { padding: 0; min-height: 400px; overflow: hidden; justify-content: flex-end; border: 0; background: var(--navy); }
+.itl-service-overlay .itl-service-media { position: absolute; inset: 0; height: auto; border-radius: 0; }
+.itl-service-overlay .itl-service-media img { transition: transform .4s ease; }
+.itl-service-overlay:hover .itl-service-media img { transform: scale(1.04); }
+.itl-service-overlay .itl-service-body { display: flex; flex-direction: column; gap: var(--space-3); position: relative; z-index: 1; margin: var(--space-3); padding: var(--space-5);
+  border-radius: var(--radius-md); background: color-mix(in srgb, var(--navy) 84%, transparent); backdrop-filter: blur(8px); color: var(--on-navy); }
+.itl-service-overlay .itl-service-title { color: var(--on-navy); }
+.itl-service-overlay .itl-bullets { color: var(--on-navy); opacity: .85; }
+.itl-service-overlay .itl-bullets li::before { background: var(--yellow); }
+
+@media (max-width: 900px) {
+  .itl-hero-immersive { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: calc(var(--nav-height) + var(--space-6)) var(--space-4) calc(var(--space-9) + var(--space-6)); }
+  .itl-hero-immersive .itl-hero-copy { max-width: none; }
+  .itl-hero-immersive .itl-hero-media { position: static; min-height: 0; display: block; }
+  .itl-hero-immersive .itl-hero-image { position: absolute; inset: 0; height: auto; }
+  .itl-hero-immersive .itl-hero-image .itl-tile { border-radius: 0; }
+  .itl-hero-immersive .itl-hero-image::after { background: color-mix(in srgb, var(--navy) 55%, transparent); }
+  .itl-hero-immersive .itl-hero-media .itl-track, .itl-hero-immersive .itl-hero-media .itl-statchip { display: none; }
+  .itl-featurepanel { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: var(--space-3) 0; }
+  .itl-featurepanel-item + .itl-featurepanel-item { border-left: 0; }
+  .itl-featurepanel-item { padding: var(--space-3) var(--space-4); }
+}
+@media (max-width: 600px) { .itl-featurepanel { grid-template-columns: minmax(0, 1fr); } }
+/* Inner pages: the first card after the dark band rises over it, like the home panel over the hero */
+.itl-main > .itl-darkband { padding-bottom: calc(var(--space-9) + var(--space-5)); }
+.itl-main > .itl-darkband + .itl-section { position: relative; margin-top: calc(-1 * (var(--space-9) + var(--space-7))); }
+@media (max-width: 900px) { .itl-main > .itl-darkband + .itl-section { margin-top: calc(-1 * (var(--space-9) + var(--space-6))); } }

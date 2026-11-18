@@ -22,12 +22,12 @@
     "approved": true,
     "model": "gpt_image_2_6",
     "generatedOn": "2026-11-18",
-    "usage": "Home hero, spanning the full hero width behind the copy, tracking card and chip; also the share image",
+    "usage": "Home immersive hero (dark style), full bleed under the navigation; also the share image",
     "alt": {
-      "es": "Buque portacontenedores azul cargado de contenedores sin marcas, navegando en un mar en calma",
-      "en": "Blue container ship loaded with unmarked containers sailing on a calm sea"
+      "es": "Puerto de contenedores al anochecer: buque cargado y grúas iluminadas, sin marcas",
+      "en": "Container port at dusk: a loaded ship and lit cranes, with no markings"
     },
-    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft hazy daylight, photographic realism, 16:9. Very large container ship loaded with hundreds of stacked, plain, unmarked containers, low three-quarter bow angle, calm pale sea; the ship sits in the right 55 percent of the frame and the left 45 percent is empty pale sky and sea (room for the headline). Ship and containers carry no name, lettering, logo or flag. No text, no people."
+    "brief": "Blue-hour colour photograph, deep navy sky and steel blue with warm soft yellow port lights as the accent, slightly desaturated. Container ship moored at the quay with plain unmarked containers, gantry cranes and a few plain trucks on the wet quay in the right 55 percent; the left 45 percent is dark calm sky and water for the headline. No names, lettering, logos or flags; no people in the foreground."
   },
   "home-about-a": {
     "files": {

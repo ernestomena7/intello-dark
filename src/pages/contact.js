@@ -1,7 +1,7 @@
 // Contact page: the one form. Server-rendered and fully usable without JavaScript.
 // ctx.form (set by the POST route) carries { values, errors, notice } for re-rendering after a failure.
 import { html, React } from '../render/html.js';
-import { Frame, telHref } from '../render/frame.js';
+import { DarkBand, Frame, telHref } from '../render/frame.js';
 import { imageProps } from '../render/image.js';
 import { TOPICS } from '../contact/validate.js';
 
@@ -84,12 +84,12 @@ export function render(ctx) {
   }
 
   const body = html`<${React.Fragment}>
-    <${ds.PageHero}
+    ${DarkBand(html`<${ds.PageHero}
       eyebrow=${c.header.eyebrow}
       title=${c.header.title}
       titleAccent=${c.header.titleAccent}
       lede=${c.header.lede}
-      media=${imageProps(lang, structure.imageSlots['contact.hero'], { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'headset' })} />
+      media=${imageProps(lang, structure.imageSlots['contact.hero'], { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'headset' })} />`)}
     <${ds.Section} tone="card">
       <div className="itl-stack">${details}${panel}</div>
     <//>

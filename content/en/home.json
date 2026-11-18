@@ -13,16 +13,20 @@
     },
     "features": [
       {
-        "text": "Data protected at every stage"
+        "title": "Protected data",
+        "text": "We use your data only to deliver the service."
       },
       {
-        "text": "Real-time cargo monitoring"
+        "title": "Real-time monitoring",
+        "text": "The status of every shipment, always in view."
       },
       {
-        "text": "Business indicators and forecasts"
+        "title": "Indicators and forecasts",
+        "text": "KPI dashboards and AI demand forecasts."
       },
       {
-        "text": "Integrates with your systems"
+        "title": "Works with your systems",
+        "text": "We connect through APIs to what you already use."
       }
     ]
   },

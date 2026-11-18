@@ -32,7 +32,7 @@ export interface StatusBadgeProps { status?: 'transit' | 'delivered' | 'delayed'
 export declare function StatusBadge(props: StatusBadgeProps): React.ReactElement;
 export interface TrackingCardProps { id: string; label?: string; status?: StatusBadgeProps['status']; statusLabel?: string; from: string; fromMeta?: string; to: string; toMeta?: string; progress?: number; steps?: { label: string; time?: string; state?: 'done' | 'current' }[] }
 export declare function TrackingCard(props: TrackingCardProps): React.ReactElement;
-export interface HeroProps { eyebrow?: string; title: string; titleAccent?: string; titleMuted?: string; lede?: string; cta?: CtaLink; video?: CtaLink; features?: { icon: IconName; text: string }[]; media?: React.ReactNode; tracking?: TrackingCardProps; stat?: StatChipProps }
+export interface HeroProps { variant?: 'default' | 'immersive'; eyebrow?: string; title: string; titleAccent?: string; titleMuted?: string; lede?: string; cta?: CtaLink; video?: CtaLink; features?: { icon: IconName; title?: string; text: string }[]; media?: React.ReactNode; tracking?: TrackingCardProps; stat?: StatChipProps }
 export declare function Hero(props: HeroProps): React.ReactElement;
 export interface SectionProps { tone?: 'card' | 'plain' | 'navy'; overlap?: boolean; id?: string; children: React.ReactNode }
 export declare function Section(props: SectionProps): React.ReactElement;
@@ -41,7 +41,7 @@ export declare function SectionHeader(props: SectionHeaderProps): React.ReactEle
 export interface ImageTileProps { src?: string; srcSet?: string; sizes?: string; imageWidth?: number; imageHeight?: number; priority?: boolean; alt?: string; ratio?: string; height?: string; color?: boolean; icon?: IconName; className?: string }
 export declare function ImageTile(props: ImageTileProps): React.ReactElement;
 export interface ServiceCardImage { src: string; srcSet?: string; sizes?: string; imageWidth?: number; imageHeight?: number; alt?: string }
-export interface ServiceCardProps { title: string; bullets: string[]; icon?: IconName; image?: string | ServiceCardImage; href?: string }
+export interface ServiceCardProps { variant?: 'default' | 'overlay'; title: string; bullets: string[]; icon?: IconName; image?: string | ServiceCardImage; href?: string }
 export declare function ServiceCard(props: ServiceCardProps): React.ReactElement;
 export interface AboutBlockProps { eyebrow?: string; title: string; titleAccent?: string; body?: string; note?: string; noteIcon?: IconName; imageA?: ImageTileProps; imageB?: ImageTileProps; cta?: CtaLink }
 export declare function AboutBlock(props: AboutBlockProps): React.ReactElement;

@@ -50,3 +50,11 @@
 - **Hero image**: replaced the warehouse photo with a container ship carrying many containers (Higgsfield `gpt_image_2_6`, 16:9, high quality, 2.75 credits per generation; two generations, the second used because the ship sits in the right half and leaves a pale area for the headline; about 5.5 credits). Ship, hull and containers are plain and unmarked (no name, lettering, logo or flag). The picture now spans the full width of the hero (`Hero` with `media`, design system change recorded in `Hero/README.md`), with a 2000 px file for large screens. The unused first ship variant and the old warehouse original are kept in `tools/raw-images/` (not in the repository).
 - **Wider layout**: `container-max` raised from 1240px to 1400px in `tokens.json` and `tokens.css`, README updated, constitution PATCH 1.3.2 (Principle IV range and Quality Gate 4 widths now include 1440px).
 - **Results**: 145 tests pass; axe clean at 360, 1240 and 1440 px on every page; no horizontal overflow at 360, 768, 1240 and 1440 px; Lighthouse mobile /es/ and /en/: performance 100, accessibility 100, best-practices 100, SEO 100, LCP 1.6 s, CLS 0.
+
+## Dark-style variant (branch `dark`, 2026-11-18)
+
+- Owner request: a darker version (not fully dark) following a reference with a dramatic dark hero, white headline with a coloured accent, a dark glass feature panel and photo cards with text on top. Adapted to the brand: navy instead of black, yellow instead of red, sentence case kept.
+- Design system additions: `Hero variant="immersive"` (full-bleed photo under a transparent dark navigation, feature panel), `ServiceCard variant="overlay"`, `.itl-topbar` and `.itl-darkband` (dark theme tokens via `data-theme="dark"` on those wrappers). Light page body kept.
+- New hero photo: container port at dusk (Higgsfield, high quality, 2.75 credits), no markings.
+- Checks: 146 tests pass; axe clean on every page; no overflow at 360-1440 px; keyboard checks pass; Lighthouse mobile home: performance 100, accessibility 98, best-practices 100, SEO 100, LCP 1.9 s, CLS 0.
+- Not pushed: the owner will provide a separate repository for this version.

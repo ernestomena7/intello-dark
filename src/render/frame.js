@@ -25,7 +25,8 @@ export function languageProps(ctx) {
   };
 }
 
-export function Frame(ctx, children) {
+// opts.overlayNav: the navigation floats transparent over a full-bleed dark hero (home page).
+export function Frame(ctx, children, opts = {}) {
   const { ds, lang, pageKey, common, site } = ctx;
   const link = (key) => common.nav.links.find((l) => l.key === key);
   const navLinks = common.nav.links.map((l) => ({ label: l.label, href: pathFor(l.key, lang), active: l.key === pageKey }));
@@ -35,6 +36,7 @@ export function Frame(ctx, children) {
 
   return html`<${F}>
     <${ds.SkipLink} href="#main">${common.skipLink}<//>
+    <div className=${opts.overlayNav ? 'itl-topbar itl-topbar-overlay' : 'itl-topbar'} data-theme="dark">
     <${ds.NavBar}
       links=${navLinks}
       homeHref=${pathFor('home', lang)}
@@ -44,6 +46,7 @@ export function Frame(ctx, children) {
       hours=${site.hours[lang]}
       cta=${{ label: common.nav.cta.label, href: pathFor('contact', lang) }}
       language=${language} />
+    </div>
     <main id="main" className="itl-main" tabIndex=${-1}>${children}</main>
     <${ds.Footer}
       homeHref=${pathFor('home', lang)}
@@ -56,4 +59,9 @@ export function Frame(ctx, children) {
       contact=${{ heading: footer.contactHeading, phone: site.phone, phoneHref: telHref(site.phone), hours: site.hours[lang], address: site.address?.[lang] }}
       legal=${{ text: footer.legal, links: [{ label: footer.privacyLabel, href: pathFor('privacy', lang) }] }} />
   <//>`;
+}
+
+// Dark band under the navigation that holds an inner page's hero (dark-style variant).
+export function DarkBand(children) {
+  return html`<div className="itl-darkband" data-theme="dark">${children}</div>`;
 }

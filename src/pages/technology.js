@@ -1,6 +1,6 @@
 // Technology: plain-language capabilities of the AI and data analysis (no mascots, no decoration).
 import { html, React } from '../render/html.js';
-import { Frame } from '../render/frame.js';
+import { DarkBand, Frame } from '../render/frame.js';
 import { imageProps } from '../render/image.js';
 
 export const key = 'technology';
@@ -13,12 +13,12 @@ export function render(ctx) {
   const capabilities = c.capabilities.map((cap, i) => ({ ...cap, icon: structure.technologyIcons[i] }));
 
   const body = html`<${React.Fragment}>
-    <${ds.PageHero}
+    ${DarkBand(html`<${ds.PageHero}
       eyebrow=${c.header.eyebrow}
       title=${c.header.title}
       titleAccent=${c.header.titleAccent}
       lede=${c.header.lede}
-      media=${imageProps(lang, slot('technology.1'), { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'radar' })} />
+      media=${imageProps(lang, slot('technology.1'), { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'radar' })} />`)}
     <${ds.Section} tone="card">
       <div className="itl-stack">
         <${ds.SectionHeader} title=${c.capabilitiesTitle} />

@@ -1,6 +1,6 @@
 // About: only facts the client has confirmed (what Intello does, how an engagement works, who it serves).
 import { html, React } from '../render/html.js';
-import { Frame } from '../render/frame.js';
+import { DarkBand, Frame } from '../render/frame.js';
 import { imageProps } from '../render/image.js';
 
 export const key = 'about';
@@ -11,12 +11,12 @@ export function render(ctx) {
   const slot = (name) => structure.imageSlots[name];
 
   const body = html`<${React.Fragment}>
-    <${ds.PageHero}
+    ${DarkBand(html`<${ds.PageHero}
       eyebrow=${c.header.eyebrow}
       title=${c.header.title}
       titleAccent=${c.header.titleAccent}
       lede=${c.header.lede}
-      media=${imageProps(lang, slot('about.1'), { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'warehouse' })} />
+      media=${imageProps(lang, slot('about.1'), { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'warehouse' })} />`)}
     <${ds.Section} tone="card">
       <div className="itl-duo">
         <div className="itl-stack">

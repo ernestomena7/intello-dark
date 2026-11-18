@@ -32,8 +32,8 @@ for (const lang of ['es', 'en']) {
     assert.match(html, /itl-title-accent/, 'two-tone headline accent');
     assert.ok(html.includes(esc(home.hero.eyebrow)), 'eyebrow');
     assert.ok(html.includes(esc(home.hero.lede)), 'lede');
-    assert.equal(count(html, /class="itl-feature"/g), 4, 'four capability highlights');
-    assert.match(html, /href="\/(es|en)\/(contacto|contact)" class="itl-btn itl-btn-primary itl-btn-lg"/, 'primary CTA to contact');
+    assert.equal(count(html, /class="itl-featurepanel-item"/g), 4, 'four capability highlights in the feature panel');
+    assert.match(html, /href="\/(es|en)\/(contacto|contact)" class="itl-btn itl-btn-(primary|accent) itl-btn-lg"/, 'primary CTA to contact');
     assert.ok(html.includes(esc(home.tracking.heading)), 'shipment card is labelled as an illustrative example (FR-008)');
     assert.ok(html.includes('itl-statchip'), 'capability chip');
     assert.match(html, /itl-hero-media/);
@@ -42,7 +42,7 @@ for (const lang of ['es', 'en']) {
     assert.match(html, /class="[^"]*itl-section-card[^"]*itl-overlap/);
     assert.match(html, /class="itl-about"/);
     assert.match(html, /class="itl-section-divider"/);
-    assert.equal(count(html, /class="itl-service"/g), 4, 'four service cards');
+    assert.equal(count(html, /class="itl-service[" ]/g), 4, 'four service cards');
     for (const s of structure.services) {
       assert.ok(html.includes(`href="${SERVICES[lang]}#${s.anchor}"`), `card links to ${SERVICES[lang]}#${s.anchor}`);
     }
