@@ -1,0 +1,21 @@
+<!-- @dsCard group="Sections" height=520 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Accordion — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var COPY = { es: [{ id: 'q1', question: '¿Con qué empresas trabajan?', answer: ['Con couriers, operadores 3PL y empresas de carga.'] }, { id: 'q2', question: '¿Cómo empezamos?', answer: ['Solicita una demo.', 'Te contactamos para entender tu operación.'] }, { id: 'q3', question: '¿Cómo cuidan los datos?', answer: 'Solo usamos los datos para prestar el servicio.' }],
+    en: [{ id: 'q1', question: 'Which companies do you work with?', answer: ['Couriers, 3PL operators and freight companies.'] }, { id: 'q2', question: 'How do we start?', answer: ['Request a demo.', 'We get in touch to understand your operation.'] }, { id: 'q3', question: 'How do you protect data?', answer: 'We only use data to deliver the service.' }] };
+  var el = both(function (l) { return h(I.Accordion, { items: COPY[l] }); });
+  setTimeout(function () { var d = document.querySelector('details'); if (d) d.open = true; }, 0);
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

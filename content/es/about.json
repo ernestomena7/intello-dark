@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Nosotros | Intello",
+    "description": "Quiénes somos, qué hacemos y con qué empresas de logística trabajamos."
+  },
+  "header": {
+    "eyebrow": "Nosotros",
+    "title": "Tecnología y datos",
+    "titleAccent": "para empresas de logística",
+    "lede": "No somos una empresa de logística: somos el socio de tecnología que le da visibilidad y datos a la tuya."
+  },
+  "story": {
+    "title": "Qué hacemos",
+    "body": [
+      "Intello ofrece monitoreo de carga e inteligencia de negocio a empresas de logística, junto con servicios tecnológicos y de back office.",
+      "No transportamos ni almacenamos carga: monitoreamos la que mueve tu empresa y convertimos sus datos en información para decidir mejor."
+    ]
+  },
+  "approach": {
+    "title": "Cómo trabajamos contigo",
+    "steps": [
+      {
+        "title": "Conversamos",
+        "body": "Entendemos tu operación y tus datos."
+      },
+      {
+        "title": "Conectamos",
+        "body": "Integramos tus sistemas y fuentes de datos."
+      },
+      {
+        "title": "Monitoreamos",
+        "body": "Seguimos tus envíos y recogemos sus datos."
+      },
+      {
+        "title": "Mejoramos",
+        "body": "Medimos y ajustamos con tus indicadores."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Con quién trabajamos",
+    "items": [
+      "Couriers",
+      "Operadores 3PL",
+      "Empresas de carga y transporte"
+    ]
+  }
+}

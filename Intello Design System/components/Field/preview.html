@@ -1,0 +1,21 @@
+<!-- @dsCard group="Forms" height=640 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Field — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var T2 = { es: { name: 'Nombre', hint: 'Como quieres que te llamemos', err: 'Escribe tu nombre (mínimo 2 caracteres).', email: 'Correo electrónico' }, en: { name: 'Name', hint: 'How you would like us to call you', err: 'Enter your name (at least 2 characters).', email: 'Email' } };
+  var el = both(function (l) { var t = T2[l]; return h('div', { className: 'itl-form', style: { maxWidth: 520 } },
+    h(I.Field, { id: 'f-name-' + l, label: t.name, hint: t.hint, required: true }, h(I.TextInput, { name: 'name', autoComplete: 'name' })),
+    h(I.Field, { id: 'f-mail-' + l, label: t.email, error: t.err, required: true }, h(I.TextInput, { name: 'email', type: 'email', value: 'a@b' }))); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

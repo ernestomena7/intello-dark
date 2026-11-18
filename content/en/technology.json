@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Technology and AI data analytics | Intello",
+    "description": "End-customer alerts, demand forecasts, KPI dashboards and integrations. What AI does for your logistics company."
+  },
+  "header": {
+    "eyebrow": "Technology",
+    "title": "AI that works",
+    "titleAccent": "with your data",
+    "lede": "AI is not decoration: it is alerts, forecasts and dashboards that help you decide better and warn in time."
+  },
+  "capabilitiesTitle": "What AI does for you",
+  "capabilities": [
+    {
+      "title": "End-customer alerts",
+      "body": "Detects changes in a shipment and tells your customer before they ask."
+    },
+    {
+      "title": "Demand forecasts",
+      "body": "Anticipates volume peaks so you can plan routes, staff and capacity."
+    },
+    {
+      "title": "KPI dashboards",
+      "body": "Brings your operation's indicators together in one place, always up to date."
+    },
+    {
+      "title": "Integrations",
+      "body": "Connects to your systems and data sources through APIs."
+    }
+  ],
+  "how": {
+    "title": "How we do it",
+    "steps": [
+      {
+        "title": "We connect your data",
+        "body": "We integrate the systems you already use."
+      },
+      {
+        "title": "We analyze",
+        "body": "We apply AI data analysis to your operation."
+      },
+      {
+        "title": "We alert you",
+        "body": "We deliver alerts, forecasts and dashboards."
+      }
+    ]
+  }
+}

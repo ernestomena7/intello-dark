@@ -1,0 +1,20 @@
+<!-- @dsCard group="Sections" height=420 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Steps — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var COPY = { es: [{ title: 'Conversamos', body: 'Entendemos tu operación y tus guías.' }, { title: 'Conectamos', body: 'Integramos tus sistemas y datos.' }, { title: 'Operamos', body: 'Nos encargamos del back office.' }, { title: 'Mejoramos', body: 'Medimos y ajustamos con datos.' }],
+    en: [{ title: 'We talk', body: 'We learn your operation and waybills.' }, { title: 'We connect', body: 'We integrate your systems and data.' }, { title: 'We operate', body: 'We run the back office.' }, { title: 'We improve', body: 'We measure and adjust with data.' }] };
+  var el = both(function (l) { return h(I.Steps, { items: COPY[l] }); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

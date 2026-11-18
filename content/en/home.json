@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Intello | Cargo monitoring and business intelligence",
+    "description": "Cargo monitoring and AI business intelligence for logistics companies. Visibility of every shipment and data to decide better."
+  },
+  "hero": {
+    "eyebrow": "Cargo monitoring and business intelligence",
+    "title": "Visibility of your cargo",
+    "titleAccent": "and data to decide",
+    "lede": "We monitor every shipment and turn your operation's data into indicators and forecasts with AI. Built for logistics companies.",
+    "cta": {
+      "label": "Request a demo"
+    },
+    "features": [
+      {
+        "text": "Data protected at every stage"
+      },
+      {
+        "text": "Real-time cargo monitoring"
+      },
+      {
+        "text": "Business indicators and forecasts"
+      },
+      {
+        "text": "Integrates with your systems"
+      }
+    ]
+  },
+  "tracking": {
+    "heading": "Shipment · illustrative example",
+    "id": "ITL-48213",
+    "statusLabel": "In transit",
+    "from": "San Salvador",
+    "fromMeta": "Origin · 08:40",
+    "to": "Guatemala City",
+    "toMeta": "ETA · 16:30",
+    "progress": 62,
+    "steps": [
+      {
+        "text": "Picked up at warehouse",
+        "time": "08:40",
+        "state": "done"
+      },
+      {
+        "text": "Customs clearance",
+        "time": "11:15",
+        "state": "done"
+      },
+      {
+        "text": "On the road",
+        "time": "Now",
+        "state": "current"
+      },
+      {
+        "text": "Delivery",
+        "time": "16:30",
+        "state": "pending"
+      }
+    ]
+  },
+  "stat": {
+    "value": "24/7",
+    "label": "shipment monitoring with AI alerts"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Technology and data",
+    "titleAccent": "for logistics companies",
+    "body": "We are a technology provider: we monitor the cargo your company moves and turn its data into information to decide better. We do not move your cargo; we give you the visibility and the data to move it better.",
+    "note": "Our clients are couriers, 3PL operators and freight companies",
+    "cta": {
+      "label": "Learn about us"
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Solutions for logistics companies",
+    "action": {
+      "label": "View all"
+    }
+  }
+}

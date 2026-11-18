@@ -1,0 +1,60 @@
+{
+  "siteName": "Intello",
+  "skipLink": "Saltar al contenido",
+  "nav": {
+    "ariaLabel": "Principal",
+    "menuLabel": "Menú",
+    "links": [
+      {
+        "key": "home",
+        "label": "Inicio"
+      },
+      {
+        "key": "services",
+        "label": "Servicios"
+      },
+      {
+        "key": "about",
+        "label": "Nosotros"
+      },
+      {
+        "key": "technology",
+        "label": "Tecnología"
+      },
+      {
+        "key": "faq",
+        "label": "Preguntas"
+      },
+      {
+        "key": "contact",
+        "label": "Contacto"
+      }
+    ],
+    "cta": {
+      "label": "Solicitar demo"
+    }
+  },
+  "language": {
+    "ariaLabel": "Idioma"
+  },
+  "footer": {
+    "tagline": "Monitoreo de carga e inteligencia de negocio para empresas de logística.",
+    "columnHeadings": {
+      "site": "Sitio",
+      "more": "Más"
+    },
+    "contactHeading": "Contacto",
+    "legal": "© Intello. Todos los derechos reservados.",
+    "privacyLabel": "Privacidad"
+  },
+  "ctaBand": {
+    "eyebrow": "Siguiente paso",
+    "title": "Hablemos de los datos",
+    "titleAccent": "de tu operación",
+    "body": "Cuéntanos qué necesitas y te mostramos cómo lo resolvemos.",
+    "cta": {
+      "label": "Solicitar demo"
+    }
+  },
+  "exampleLabel": "Ejemplo ilustrativo"
+}

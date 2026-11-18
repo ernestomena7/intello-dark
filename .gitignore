@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+tools/node_modules/
+tools/out/
+tools/raw-images/
+spike/node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,21 @@
+{
+  "name": "intello-website-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dev-only checks (accessibility, CSS lint, visual, images, Lighthouse). Never installed by Hostinger.",
+  "type": "module",
+  "scripts": {
+    "lint:css": "stylelint \"../Intello Design System/components/bundle.css\" \"../public/css/*.css\"",
+    "check:ds": "node check-ds-values.mjs",
+    "a11y:previews": "node a11y-previews.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@fontsource/montserrat": "^5.1.0",
+    "lighthouse": "^12.0.0",
+    "playwright": "^1.49.0",
+    "sharp": "^0.33.5",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

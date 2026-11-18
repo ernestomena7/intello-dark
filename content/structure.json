@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "home",
+    "services",
+    "about",
+    "technology",
+    "faq",
+    "contact",
+    "privacy"
+  ],
+  "services": [
+    {
+      "id": "tracking",
+      "icon": "route",
+      "anchor": "tracking",
+      "cardImage": "service-tracking-card",
+      "sectionImage": "service-tracking"
+    },
+    {
+      "id": "ai-analytics",
+      "icon": "chart-line",
+      "anchor": "ai-analytics",
+      "cardImage": "service-ai-analytics-card",
+      "sectionImage": "service-ai-analytics"
+    },
+    {
+      "id": "technology",
+      "icon": "layers",
+      "anchor": "technology-services",
+      "cardImage": "service-technology-card",
+      "sectionImage": "service-technology"
+    },
+    {
+      "id": "back-office",
+      "icon": "clipboard-check",
+      "anchor": "back-office",
+      "cardImage": "service-back-office-card",
+      "sectionImage": "service-back-office"
+    }
+  ],
+  "topics": [
+    "tracking",
+    "ai-analytics",
+    "technology",
+    "back-office",
+    "other"
+  ],
+  "imageSlots": {
+    "home.hero": "hero-main",
+    "home.aboutA": "home-about-a",
+    "home.aboutB": "home-about-b",
+    "technology.1": "technology-1",
+    "technology.2": "technology-2",
+    "about.1": "about-1",
+    "about.2": "about-2",
+    "contact.hero": "contact-hero",
+    "share": "hero-main"
+  },
+  "homeFeatureIcons": [
+    "shield-check",
+    "radar",
+    "chart-line",
+    "database"
+  ],
+  "technologyIcons": [
+    "radar",
+    "clock",
+    "chart-line",
+    "database"
+  ]
+}

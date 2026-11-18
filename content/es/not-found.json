@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Página no encontrada | Intello",
+    "description": "La página que buscas no existe o cambió de lugar. Vuelve al inicio o escríbenos."
+  },
+  "title": "No encontramos esta página",
+  "titleAccent": "pero podemos ayudarte",
+  "body": "La dirección puede haber cambiado o tener un error. Vuelve al inicio o cuéntanos qué buscabas.",
+  "home": { "label": "Volver al inicio" },
+  "contact": { "label": "Hablar con nosotros" }
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Contact and demo request | Intello",
+    "description": "Tell us what your logistics company needs and we will reply by email. Request an Intello demo."
+  },
+  "header": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your",
+    "titleAccent": "operation",
+    "lede": "Tell us what you need. We reply by email and, if you like, we schedule a demo."
+  },
+  "details": {
+    "phoneLabel": "Phone",
+    "hoursLabel": "Hours"
+  },
+  "form": {
+    "requiredNote": "Fields marked with an asterisk are required.",
+    "labels": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "topic": "Topic",
+      "message": "Message"
+    },
+    "hints": {
+      "phone": "Optional. Numbers, spaces and + - ( ) only.",
+      "message": "Between 10 and 4000 characters."
+    },
+    "topics": {
+      "tracking": "Cargo monitoring",
+      "ai-analytics": "AI business intelligence",
+      "technology": "Technology services",
+      "back-office": "Back office for logistics",
+      "other": "Other"
+    },
+    "privacy": {
+      "before": "We use your name, company, email, phone and message only to answer your enquiry. More in our ",
+      "linkText": "privacy notice",
+      "after": "."
+    },
+    "submit": {
+      "label": "Send message"
+    },
+    "summaryTitle": "Check these fields",
+    "errors": {
+      "name": {
+        "required": "Enter your name.",
+        "tooShort": "Your name must be at least 2 characters.",
+        "tooLong": "Your name is too long."
+      },
+      "company": {
+        "tooLong": "The company name is too long."
+      },
+      "email": {
+        "required": "Enter your email.",
+        "invalid": "Enter a valid email, for example name@company.com.",
+        "tooLong": "The email is too long."
+      },
+      "phone": {
+        "invalid": "Use only numbers, spaces and + - ( ).",
+        "tooLong": "The phone number is too long."
+      },
+      "message": {
+        "required": "Enter your message.",
+        "tooShort": "Tell us a little more (at least 10 characters).",
+        "tooLong": "The message is too long (4000 characters at most)."
+      }
+    },
+    "notices": {
+      "token": {
+        "title": "We refreshed the form",
+        "body": "Check your details and send it again. No message was sent."
+      },
+      "expired": {
+        "title": "The form expired",
+        "body": "Check your details and send it again. No message was sent."
+      },
+      "used": {
+        "title": "This message was already sent",
+        "body": "We already received your enquiry. There is no need to send it again."
+      }
+    }
+  },
+  "sent": {
+    "title": "Message sent",
+    "body": "Thank you. We received your enquiry and will reply by email.",
+    "home": {
+      "label": "Back to home"
+    }
+  },
+  "failed": {
+    "title": "We could not send your message",
+    "body": "Your details are still in the form. Try again in a few minutes or call us on"
+  },
+  "rateLimited": {
+    "title": "Too many attempts",
+    "body": "Wait a few minutes before sending the form again, or call us on"
+  }
+}

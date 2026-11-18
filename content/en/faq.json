@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Frequently asked questions | Intello",
+    "description": "Answers about Intello's services, who we work with, how to get started and how we look after your data."
+  },
+  "header": {
+    "eyebrow": "FAQ",
+    "title": "Frequently",
+    "titleAccent": "asked questions",
+    "lede": "What people usually ask before getting started. If you do not see your answer, write to us."
+  },
+  "items": [
+    {
+      "id": "servicios",
+      "question": "What does Intello offer?",
+      "answer": [
+        "Cargo monitoring, AI business intelligence, technology services and back office for logistics companies. You can choose one or combine them."
+      ]
+    },
+    {
+      "id": "logistica",
+      "question": "Is Intello a logistics company?",
+      "answer": [
+        "No. We do not transport or store cargo. We are a technology and data provider for logistics companies."
+      ]
+    },
+    {
+      "id": "clientes",
+      "question": "Which companies do you work with?",
+      "answer": [
+        "Couriers, 3PL operators and freight and transport companies."
+      ]
+    },
+    {
+      "id": "empezar",
+      "question": "How do we get started?",
+      "answer": [
+        "Request a demo from the contact page.",
+        "We get in touch to understand your operation and suggest the services that fit."
+      ]
+    },
+    {
+      "id": "integraciones",
+      "question": "Do you connect to my systems?",
+      "answer": [
+        "Yes. We build integrations through APIs and agree the details with you at the start."
+      ]
+    },
+    {
+      "id": "ia",
+      "question": "What exactly does the AI do?",
+      "answer": [
+        "It sends end-customer alerts, forecasts demand and feeds KPI dashboards. It works alongside your team and saves it repetitive tasks."
+      ]
+    },
+    {
+      "id": "datos",
+      "question": "How do you protect my data?",
+      "answer": [
+        "We use data only to deliver the service. On this site we only collect what you send in the contact form and we use no third-party analytics."
+      ]
+    }
+  ]
+}

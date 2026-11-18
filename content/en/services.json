@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Cargo monitoring and business intelligence | Intello",
+    "description": "Cargo monitoring, AI business intelligence, technology services and back office. What we do and what you get with each service."
+  },
+  "header": {
+    "eyebrow": "Services",
+    "title": "Monitoring and data",
+    "titleAccent": "for your operation",
+    "lede": "Four services that fit together. Choose one or combine them."
+  },
+  "items": [
+    {
+      "id": "tracking",
+      "title": "Cargo monitoring",
+      "bullets": [
+        "Real-time visibility",
+        "End-customer alerts"
+      ],
+      "summary": "We monitor the status of every shipment in your operation and alert your customers when something changes, so your team has visibility without chasing information.",
+      "deliverables": [
+        "Real-time status of every shipment",
+        "End-customer alerts",
+        "Incident reporting"
+      ],
+      "cta": {
+        "label": "Request information"
+      }
+    },
+    {
+      "id": "ai-analytics",
+      "title": "AI business intelligence",
+      "bullets": [
+        "KPI dashboards",
+        "Demand forecasting"
+      ],
+      "summary": "We turn your operation's data into indicators and forecasts that help your company decide better.",
+      "deliverables": [
+        "KPI dashboards",
+        "Demand forecasts",
+        "AI alerts about your operation"
+      ],
+      "cta": {
+        "label": "Request information"
+      }
+    },
+    {
+      "id": "technology",
+      "title": "Technology services",
+      "bullets": [
+        "Integrations and APIs",
+        "Custom development"
+      ],
+      "summary": "We connect your systems and build the tools your company needs to make use of its data.",
+      "deliverables": [
+        "Integrations and APIs with your systems",
+        "Custom development",
+        "Technical support for what we build"
+      ],
+      "cta": {
+        "label": "Request information"
+      }
+    },
+    {
+      "id": "back-office",
+      "title": "Back office for logistics",
+      "bullets": [
+        "Invoicing and documents",
+        "Waybill reconciliation"
+      ],
+      "summary": "We support your administrative team with documentation and reconciliation, so it can focus on its own operation.",
+      "deliverables": [
+        "Invoicing and shipping documents",
+        "Waybill reconciliation",
+        "Follow-up of administrative incidents"
+      ],
+      "cta": {
+        "label": "Request information"
+      }
+    }
+  ]
+}

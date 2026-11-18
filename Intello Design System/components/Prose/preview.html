@@ -1,0 +1,22 @@
+<!-- @dsCard group="Content" height=520 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Prose — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var el = both(function (l) { return h(I.Prose, null,
+    h('h2', null, l === 'es' ? 'Qué datos recogemos' : 'What data we collect'),
+    h('p', null, l === 'es' ? 'Solo los que envías en el formulario de contacto: nombre, empresa, correo, teléfono y mensaje.' : 'Only what you send in the contact form: name, company, email, phone and message.'),
+    h('ul', null, h('li', null, l === 'es' ? 'Los usamos para responderte.' : 'We use them to reply to you.'), h('li', null, l === 'es' ? 'No los guardamos en el sitio.' : 'We do not store them on the site.')),
+    h('p', null, h('a', { href: '#' }, l === 'es' ? 'Escríbenos' : 'Write to us'))); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

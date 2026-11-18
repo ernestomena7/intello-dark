@@ -1,0 +1,20 @@
+<!-- @dsCard group="Forms" height=460 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FormNotice — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var COPY = { es: [['success', 'Mensaje enviado', 'Gracias. Te responderemos pronto.'], ['error', 'No pudimos enviar tu mensaje', 'Inténtalo de nuevo o llámanos al +503 0000-0000.'], ['info', 'Este formulario ya se envió', 'No hace falta enviarlo otra vez.']],
+    en: [['success', 'Message sent', 'Thank you. We will reply soon.'], ['error', 'We could not send your message', 'Try again or call us on +503 0000-0000.'], ['info', 'This form was already sent', 'There is no need to send it again.']] };
+  var el = both(function (l) { return h('div', { style: { display: 'grid', gap: 12, maxWidth: 560 } }, COPY[l].map(function (n, i) { return h(I.FormNotice, { key: i, variant: n[0], title: n[1] }, h('p', null, n[2])); })); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

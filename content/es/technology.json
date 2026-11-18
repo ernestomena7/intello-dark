@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Tecnología y análisis de datos con IA | Intello",
+    "description": "Alertas al cliente final, pronósticos de demanda, tableros de KPIs e integraciones. Qué hace la IA por tu empresa de logística."
+  },
+  "header": {
+    "eyebrow": "Tecnología",
+    "title": "IA que trabaja",
+    "titleAccent": "con tus datos",
+    "lede": "La IA no es un adorno: son alertas, pronósticos y tableros que ayudan a decidir mejor y a avisar a tiempo."
+  },
+  "capabilitiesTitle": "Lo que la IA hace por ti",
+  "capabilities": [
+    {
+      "title": "Alertas al cliente final",
+      "body": "Detecta cambios en un envío y avisa a tu cliente antes de que pregunte."
+    },
+    {
+      "title": "Pronósticos de demanda",
+      "body": "Anticipa los picos de volumen para planear rutas, personal y capacidad."
+    },
+    {
+      "title": "Tableros de KPIs",
+      "body": "Reúne los indicadores de tu operación en un solo lugar, siempre al día."
+    },
+    {
+      "title": "Integraciones",
+      "body": "Se conecta con tus sistemas y fuentes de datos mediante APIs."
+    }
+  ],
+  "how": {
+    "title": "Cómo lo hacemos",
+    "steps": [
+      {
+        "title": "Conectamos tus datos",
+        "body": "Integramos los sistemas que ya usas."
+      },
+      {
+        "title": "Analizamos",
+        "body": "Aplicamos análisis de datos con IA a tu operación."
+      },
+      {
+        "title": "Te avisamos",
+        "body": "Entregamos alertas, pronósticos y tableros."
+      }
+    ]
+  }
+}

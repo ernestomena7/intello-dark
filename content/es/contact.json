@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Contacto y solicitud de demo | Intello",
+    "description": "Cuéntanos qué necesita tu empresa de logística y te respondemos por correo. Solicita una demo de Intello."
+  },
+  "header": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos de tu",
+    "titleAccent": "operación",
+    "lede": "Cuéntanos qué necesitas. Te respondemos por correo y, si quieres, agendamos una demo."
+  },
+  "details": {
+    "phoneLabel": "Teléfono",
+    "hoursLabel": "Horario"
+  },
+  "form": {
+    "requiredNote": "Los campos con asterisco son obligatorios.",
+    "labels": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "topic": "Tema",
+      "message": "Mensaje"
+    },
+    "hints": {
+      "phone": "Opcional. Solo números, espacios y + - ( ).",
+      "message": "Entre 10 y 4000 caracteres."
+    },
+    "topics": {
+      "tracking": "Monitoreo de carga",
+      "ai-analytics": "Inteligencia de negocio con IA",
+      "technology": "Servicios tecnológicos",
+      "back-office": "Back office para logística",
+      "other": "Otro"
+    },
+    "privacy": {
+      "before": "Usamos tu nombre, empresa, correo, teléfono y mensaje solo para responder tu consulta. Más información en nuestro ",
+      "linkText": "aviso de privacidad",
+      "after": "."
+    },
+    "submit": {
+      "label": "Enviar mensaje"
+    },
+    "summaryTitle": "Revisa estos campos",
+    "errors": {
+      "name": {
+        "required": "Escribe tu nombre.",
+        "tooShort": "Tu nombre debe tener al menos 2 caracteres.",
+        "tooLong": "Tu nombre es demasiado largo."
+      },
+      "company": {
+        "tooLong": "El nombre de la empresa es demasiado largo."
+      },
+      "email": {
+        "required": "Escribe tu correo electrónico.",
+        "invalid": "Escribe un correo válido, por ejemplo nombre@empresa.com.",
+        "tooLong": "El correo es demasiado largo."
+      },
+      "phone": {
+        "invalid": "Usa solo números, espacios y + - ( ).",
+        "tooLong": "El teléfono es demasiado largo."
+      },
+      "message": {
+        "required": "Escribe tu mensaje.",
+        "tooShort": "Cuéntanos un poco más (mínimo 10 caracteres).",
+        "tooLong": "El mensaje es demasiado largo (máximo 4000 caracteres)."
+      }
+    },
+    "notices": {
+      "token": {
+        "title": "Actualizamos el formulario",
+        "body": "Revisa tus datos y vuelve a enviarlo. No se envió ningún mensaje."
+      },
+      "expired": {
+        "title": "El formulario caducó",
+        "body": "Revisa tus datos y vuelve a enviarlo. No se envió ningún mensaje."
+      },
+      "used": {
+        "title": "Este mensaje ya se envió",
+        "body": "Ya recibimos tu consulta. No hace falta enviarla otra vez."
+      }
+    }
+  },
+  "sent": {
+    "title": "Mensaje enviado",
+    "body": "Gracias. Recibimos tu consulta y te responderemos por correo.",
+    "home": {
+      "label": "Volver al inicio"
+    }
+  },
+  "failed": {
+    "title": "No pudimos enviar tu mensaje",
+    "body": "Tus datos siguen en el formulario. Inténtalo de nuevo en unos minutos o llámanos al"
+  },
+  "rateLimited": {
+    "title": "Demasiados intentos",
+    "body": "Espera unos minutos antes de volver a enviar el formulario, o llámanos al"
+  }
+}

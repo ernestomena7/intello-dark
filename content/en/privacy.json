@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Privacy notice | Intello",
+    "description": "What data this site collects, what we use it for and how we look after it."
+  },
+  "header": {
+    "eyebrow": "Privacy",
+    "title": "Privacy",
+    "titleAccent": "notice",
+    "lede": "What data we collect, what we use it for and how we look after it."
+  },
+  "updatedLabel": "Last updated",
+  "updated": "2026-11-17",
+  "sections": [
+    {
+      "heading": "What data we collect",
+      "body": [
+        "Only what you send us in the contact form: name, company, email address, phone (optional), topic and message.",
+        "The site uses no analytics, advertising or third-party tracking tools."
+      ]
+    },
+    {
+      "heading": "What we use it for",
+      "body": ["To answer your enquiry and, if you ask, to arrange a demo. We do not use it for anything else."]
+    },
+    {
+      "heading": "Who we share it with",
+      "body": ["We do not sell or hand over your data. Your message reaches our team by email through our email provider."]
+    },
+    {
+      "heading": "How long we keep it",
+      "body": ["The site does not store your message: it only sends it by email. We keep it in our team's mailbox for as long as needed to deal with your enquiry."]
+    },
+    {
+      "heading": "Cookies",
+      "body": ["We use a single first-party cookie, itl_lang, which remembers the language you chose for one year. It holds no personal data."]
+    },
+    {
+      "heading": "Your rights",
+      "body": ["You can ask us to access, correct or delete your data. Write to us from the contact page and we will reply."]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "comment": "Figures that may appear in content. 24/7 is a capability (pending client confirmation); ITL-48213 is the sample shipment id on the illustrative tracking card; 4000 is the contact message length limit; anything else must be real and sourced before it is added here.",
+  "allowed": ["24/7", "ITL-48213", "4000"]
+}

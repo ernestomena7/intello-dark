@@ -1,0 +1,8 @@
+{
+  "comment": "The 14 page routes plus one unknown URL per language (to capture the 404 page).",
+  "routes": [
+    "/es/", "/es/servicios", "/es/nosotros", "/es/tecnologia", "/es/preguntas", "/es/contacto", "/es/privacidad",
+    "/en/", "/en/services", "/en/about", "/en/technology", "/en/faq", "/en/contact", "/en/privacy",
+    "/es/no-existe", "/en/not-found-sample"
+  ]
+}

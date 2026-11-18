@@ -1,0 +1,60 @@
+{
+  "siteName": "Intello",
+  "skipLink": "Skip to content",
+  "nav": {
+    "ariaLabel": "Main",
+    "menuLabel": "Menu",
+    "links": [
+      {
+        "key": "home",
+        "label": "Home"
+      },
+      {
+        "key": "services",
+        "label": "Services"
+      },
+      {
+        "key": "about",
+        "label": "About"
+      },
+      {
+        "key": "technology",
+        "label": "Technology"
+      },
+      {
+        "key": "faq",
+        "label": "FAQ"
+      },
+      {
+        "key": "contact",
+        "label": "Contact"
+      }
+    ],
+    "cta": {
+      "label": "Request a demo"
+    }
+  },
+  "language": {
+    "ariaLabel": "Language"
+  },
+  "footer": {
+    "tagline": "Cargo monitoring and business intelligence for logistics companies.",
+    "columnHeadings": {
+      "site": "Site",
+      "more": "More"
+    },
+    "contactHeading": "Contact",
+    "legal": "© Intello. All rights reserved.",
+    "privacyLabel": "Privacy"
+  },
+  "ctaBand": {
+    "eyebrow": "Next step",
+    "title": "Let's talk about the data",
+    "titleAccent": "behind your operation",
+    "body": "Tell us what you need and we will show you how we solve it.",
+    "cta": {
+      "label": "Request a demo"
+    }
+  },
+  "exampleLabel": "Illustrative example"
+}

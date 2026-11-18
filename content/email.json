@@ -1,0 +1,27 @@
+{
+  "subjectPrefix": "[Intello web]",
+  "intro": "Nuevo mensaje desde el formulario de contacto del sitio web.",
+  "notProvided": "(no indicado)",
+  "labels": {
+    "language": "Idioma del visitante",
+    "topic": "Tema",
+    "name": "Nombre",
+    "company": "Empresa",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "received": "Recibido",
+    "requestId": "ID de solicitud",
+    "message": "Mensaje"
+  },
+  "languages": {
+    "es": "Español (es)",
+    "en": "Inglés (en)"
+  },
+  "topics": {
+    "tracking": "Monitoreo de carga",
+    "ai-analytics": "Inteligencia de negocio con IA",
+    "technology": "Servicios tecnológicos",
+    "back-office": "Back office para logística",
+    "other": "Otro"
+  }
+}

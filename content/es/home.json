@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Intello | Monitoreo de carga e inteligencia de negocio",
+    "description": "Monitoreo de carga e inteligencia de negocio con IA para empresas de logística. Visibilidad de cada envío y datos para decidir mejor."
+  },
+  "hero": {
+    "eyebrow": "Monitoreo de carga e inteligencia de negocio",
+    "title": "Visibilidad de tu carga",
+    "titleAccent": "y datos para decidir",
+    "lede": "Monitoreamos cada envío y convertimos los datos de tu operación en indicadores y pronósticos con IA. Hecho para empresas de logística.",
+    "cta": {
+      "label": "Solicitar demo"
+    },
+    "features": [
+      {
+        "text": "Datos protegidos en cada etapa"
+      },
+      {
+        "text": "Monitoreo de carga en tiempo real"
+      },
+      {
+        "text": "Indicadores y pronósticos de negocio"
+      },
+      {
+        "text": "Se integra con tus sistemas"
+      }
+    ]
+  },
+  "tracking": {
+    "heading": "Envío · ejemplo ilustrativo",
+    "id": "ITL-48213",
+    "statusLabel": "En tránsito",
+    "from": "San Salvador",
+    "fromMeta": "Origen · 08:40",
+    "to": "Ciudad de Guatemala",
+    "toMeta": "ETA · 16:30",
+    "progress": 62,
+    "steps": [
+      {
+        "text": "Recolectado en bodega",
+        "time": "08:40",
+        "state": "done"
+      },
+      {
+        "text": "Despacho aduanal",
+        "time": "11:15",
+        "state": "done"
+      },
+      {
+        "text": "En ruta",
+        "time": "Ahora",
+        "state": "current"
+      },
+      {
+        "text": "Entrega",
+        "time": "16:30",
+        "state": "pending"
+      }
+    ]
+  },
+  "stat": {
+    "value": "24/7",
+    "label": "monitoreo de envíos con alertas por IA"
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "title": "Tecnología y datos",
+    "titleAccent": "para empresas de logística",
+    "body": "Somos un proveedor de tecnología: monitoreamos la carga que mueve tu empresa y convertimos sus datos en información para decidir mejor. No movemos tu carga; te damos la visibilidad y los datos para que la muevas mejor.",
+    "note": "Nuestros clientes son couriers, operadores 3PL y empresas de carga",
+    "cta": {
+      "label": "Conoce Intello"
+    }
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Soluciones para empresas de logística",
+    "action": {
+      "label": "Ver todos"
+    }
+  }
+}

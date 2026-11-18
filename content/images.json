@@ -1,0 +1,422 @@
+{
+  "hero-main": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 271
+      },
+      "960": {
+        "width": 960,
+        "height": 543
+      },
+      "1600": {
+        "width": 1600,
+        "height": 905
+      },
+      "2000": {
+        "width": 2000,
+        "height": 1131
+      }
+    },
+    "ratio": "960 / 543",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home hero, spanning the full hero width behind the copy, tracking card and chip; also the share image",
+    "alt": {
+      "es": "Buque portacontenedores azul cargado de contenedores sin marcas, navegando en un mar en calma",
+      "en": "Blue container ship loaded with unmarked containers sailing on a calm sea"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft hazy daylight, photographic realism, 16:9. Very large container ship loaded with hundreds of stacked, plain, unmarked containers, low three-quarter bow angle, calm pale sea; the ship sits in the right 55 percent of the frame and the left 45 percent is empty pale sky and sea (room for the headline). Ship and containers carry no name, lettering, logo or flag. No text, no people."
+  },
+  "home-about-a": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 600
+      },
+      "960": {
+        "width": 960,
+        "height": 1200
+      },
+      "1600": {
+        "width": 1600,
+        "height": 2000
+      }
+    },
+    "ratio": "960 / 1200",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home about block, large image",
+    "alt": {
+      "es": "Operarios y paquetes en una zona de clasificación",
+      "en": "Workers and parcels in a sorting area"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Parcel sorting line in a logistics hub with conveyor belts and rolling cages, people shown from behind or as silhouettes. No text, no logos, no faces."
+  },
+  "home-about-b": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 480
+      },
+      "960": {
+        "width": 960,
+        "height": 960
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1600
+      }
+    },
+    "ratio": "960 / 960",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home about block, small image",
+    "alt": {
+      "es": "Manos sobre un teclado frente a tableros de datos abstractos",
+      "en": "Hands on a keyboard in front of abstract data dashboards"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Close view of hands at a keyboard and a monitor showing abstract unreadable charts, shallow depth of field. No readable text, no logos, no faces."
+  },
+  "service-back-office-card": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home service card: logistics back office",
+    "alt": {
+      "es": "Escritorio con documentos y guías de envío ordenados",
+      "en": "Desk with neatly arranged documents and shipping waybills"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Tidy desk with stacks of paperwork and a laptop, top-down view. Documents show no readable text. No logos, no faces."
+  },
+  "service-tracking-card": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home service card: shipment tracking",
+    "alt": {
+      "es": "Camión de carga en una carretera abierta",
+      "en": "Freight truck on an open road"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Cargo truck on a highway seen from a three-quarter angle, wide open sky. No text on the truck, no logos, no visible driver."
+  },
+  "service-technology-card": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home service card: technology services",
+    "alt": {
+      "es": "Sala de servidores con pasillos de racks ordenados",
+      "en": "Server room with tidy rows of racks"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight feel, photographic realism. Clean data-centre aisle with rack cabinets and cable trays. No text, no logos, no people."
+  },
+  "service-ai-analytics-card": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Home service card: AI data analytics",
+    "alt": {
+      "es": "Pantallas con gráficos abstractos en una sala de operaciones",
+      "en": "Screens with abstract charts in an operations room"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, photographic realism. Operations room with several monitors showing abstract unreadable line and bar charts, people only as distant silhouettes. No readable text, no logos, no faces."
+  },
+  "service-back-office": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Services page: back office section",
+    "alt": {
+      "es": "Equipo de back office revisando documentos de envío en una oficina luminosa",
+      "en": "Back-office team reviewing shipping documents in a bright office"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Bright open office with desks, monitors and document trays, people seen from behind. No readable text, no logos, no faces."
+  },
+  "service-tracking": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Services page: tracking section",
+    "alt": {
+      "es": "Contenedores en un puerto al amanecer",
+      "en": "Shipping containers in a port at dawn"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Container yard at a port with stacked containers and a gantry crane, calm hazy light. No text on containers, no logos, no faces."
+  },
+  "service-technology": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Services page: technology services section",
+    "alt": {
+      "es": "Desarrolladores trabajando frente a monitores con código desenfocado",
+      "en": "Developers working in front of monitors with blurred code"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Two people seen from behind at a shared desk with monitors showing blurred, unreadable code. No readable text, no logos, no faces."
+  },
+  "service-ai-analytics": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Services page: AI data analytics section",
+    "alt": {
+      "es": "Tablero de indicadores con gráficos abstractos sobre una mesa de reuniones",
+      "en": "Dashboard with abstract charts on a meeting-room table"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Tablet and large screen on a meeting table showing abstract unreadable charts, hands pointing. No readable text, no logos, no faces."
+  },
+  "technology-1": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Technology page, first image",
+    "alt": {
+      "es": "Centro de control de operaciones con pantallas de seguimiento",
+      "en": "Operations control center with tracking screens"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, photographic realism. Control room with a wall of screens showing abstract route lines and graphs, silhouettes of operators. No readable text, no logos, no faces."
+  },
+  "technology-2": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Technology page, second image",
+    "alt": {
+      "es": "Escáner leyendo la etiqueta de un paquete sobre una banda transportadora",
+      "en": "Scanner reading a parcel label on a conveyor belt"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Handheld scanner pointed at a parcel on a conveyor, label shows only abstract bars, no readable text. No logos, no faces."
+  },
+  "about-1": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "About page, first image",
+    "alt": {
+      "es": "Almacén ordenado con pasillos amplios y mercancía en estantes",
+      "en": "Orderly warehouse with wide aisles and goods on shelves"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Orderly warehouse aisle with palletised goods and a forklift in the distance. No text, no logos, no recognisable faces."
+  },
+  "about-2": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "About page, second image",
+    "alt": {
+      "es": "Avión de carga siendo cargado en una pista",
+      "en": "Cargo aircraft being loaded on an apron"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Cargo aircraft on the apron with a loader truck, calm sky. No text or livery, no logos, no visible faces."
+  },
+  "contact-hero": {
+    "files": {
+      "480": {
+        "width": 480,
+        "height": 358
+      },
+      "960": {
+        "width": 960,
+        "height": 717
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1195
+      }
+    },
+    "ratio": "960 / 717",
+    "approved": true,
+    "model": "gpt_image_2_6",
+    "generatedOn": "2026-11-18",
+    "usage": "Contact page hero",
+    "alt": {
+      "es": "Equipo de atención al cliente con auriculares en una oficina",
+      "en": "Customer support team with headsets in an office"
+    },
+    "brief": "Muted colour palette close to the brand (navy, steel blue, warm light greys, at most a small soft yellow accent), no bright or saturated colours, high-key, soft daylight, photographic realism. Support desk with headsets and monitors, people seen from behind. No readable text, no logos, no faces."
+  }
+}

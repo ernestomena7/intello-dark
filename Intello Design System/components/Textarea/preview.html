@@ -1,0 +1,19 @@
+<!-- @dsCard group="Forms" height=300 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Textarea — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var el = both(function (l) { return h('div', { style: { maxWidth: 520 } },
+    h(I.Field, { id: 'ta-' + l, label: l === 'es' ? 'Mensaje' : 'Message', hint: l === 'es' ? 'Entre 10 y 4000 caracteres' : 'Between 10 and 4000 characters', required: true }, h(I.Textarea, { name: 'message', rows: 4 }))); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-17T18:40:00Z"
+ },
+ "title": "Intello",
+ "namespace": "Intello",
+ "libraries": [
+  {
+   "name": "react",
+   "version": "18"
+  },
+  {
+   "name": "react-dom",
+   "version": "18"
+  }
+ ],
+ "sections": {},
+ "groups": [
+  "Logos",
+  "Icons"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "intello-logo-on-navy.svg",
+    "intello-logo-on-blue.svg",
+    "intello-logo-navy.svg",
+    "intello-logo-blue.svg",
+    "intello-logo-white.svg",
+    "intello-logo-black.svg",
+    "intello-mark-yellow.svg",
+    "intello-mark-navy.svg",
+    "intello-mark-white.svg",
+    "intello-wordmark-navy.svg",
+    "intello-wordmark-white.svg"
+   ],
+   "files": {
+    "intello-logo-on-navy.svg": {
+     "name": "intello-logo-on-navy.svg",
+     "blob": "eda468a0df7930bfccaa9b8e5ccbce9f",
+     "size": 7340,
+     "type": "image/svg+xml"
+    },
+    "intello-logo-on-blue.svg": {
+     "name": "intello-logo-on-blue.svg",
+     "blob": "834d3bf90fbb0a0664bb52240c6761e3",
+     "size": 7340,
+     "type": "image/svg+xml"
+    },
+    "intello-logo-navy.svg": {
+     "name": "intello-logo-navy.svg",
+     "blob": "acd6312b7338e6691ee576c9a7806f1b",
+     "size": 7340,
+     "type": "image/svg+xml"
+    },
+    "intello-logo-blue.svg": {
+     "name": "intello-logo-blue.svg",
+     "blob": "905eb85e66e290cdf3a226cd02682c53",
+     "size": 7340,
+     "type": "image/svg+xml"
+    },
+    "intello-logo-white.svg": {
+     "name": "intello-logo-white.svg",
+     "blob": "6e6459f1818841b22f47692684e73b3c",
+     "size": 7340,
+     "type": "image/svg+xml"
+    },
+    "intello-logo-black.svg": {
+     "name": "intello-logo-black.svg",
+     "blob": "6bd4b9b49b10ee8057f0baf0d1ed7b39",
+     "size": 7340,
+     "type": "image/svg+xml"
+    },
+    "intello-mark-yellow.svg": {
+     "name": "intello-mark-yellow.svg",
+     "blob": "10dabe0f993a347ce4f32749970e4dbf",
+     "size": 4418,
+     "type": "image/svg+xml"
+    },
+    "intello-mark-navy.svg": {
+     "name": "intello-mark-navy.svg",
+     "blob": "b1f22d4379fb4bbdeb4f7796993e1d3f",
+     "size": 4418,
+     "type": "image/svg+xml"
+    },
+    "intello-mark-white.svg": {
+     "name": "intello-mark-white.svg",
+     "blob": "8cbcbc72e58ff2a27df8f63542c7ad04",
+     "size": 4418,
+     "type": "image/svg+xml"
+    },
+    "intello-wordmark-navy.svg": {
+     "name": "intello-wordmark-navy.svg",
+     "blob": "802403cd087f28f3df3bdc53312dfffd",
+     "size": 3083,
+     "type": "image/svg+xml"
+    },
+    "intello-wordmark-white.svg": {
+     "name": "intello-wordmark-white.svg",
+     "blob": "2144924e032dffed98a8a87128c3cfdc",
+     "size": 3083,
+     "type": "image/svg+xml"
+    }
+   }
+  },
+  "Icons": {
+   "name": "Icons",
+   "tile": "xs",
+   "order": [
+    "arrow-right.svg",
+    "arrow-up-right.svg",
+    "bot.svg",
+    "brain-circuit.svg",
+    "building-2.svg",
+    "chart-line.svg",
+    "check.svg",
+    "chevron-down.svg",
+    "clipboard-check.svg",
+    "clock.svg",
+    "database.svg",
+    "file-text.svg",
+    "globe.svg",
+    "headset.svg",
+    "layers.svg",
+    "mail.svg",
+    "map-pin.svg",
+    "package-search.svg",
+    "package.svg",
+    "phone.svg",
+    "plane.svg",
+    "play.svg",
+    "radar.svg",
+    "route.svg",
+    "shield-check.svg",
+    "ship.svg",
+    "triangle-alert.svg",
+    "truck.svg",
+    "users.svg",
+    "warehouse.svg"
+   ],
+   "files": {
+    "arrow-right.svg": {
+     "name": "arrow-right.svg",
+     "blob": "e74c937e52cf39a64083cb768d2a5b9d",
+     "size": 285,
+     "type": "image/svg+xml"
+    },
+    "arrow-up-right.svg": {
+     "name": "arrow-up-right.svg",
+     "blob": "23d41efbc196d7191c7aebc826f46d30",
+     "size": 287,
+     "type": "image/svg+xml"
+    },
+    "bot.svg": {
+     "name": "bot.svg",
+     "blob": "1aa6880598bb19f1b46a6869d5bae62a",
+     "size": 416,
+     "type": "image/svg+xml"
+    },
+    "brain-circuit.svg": {
+     "name": "brain-circuit.svg",
+     "blob": "aa66eddd805d1cf7ad2f7db30dffe634",
+     "size": 841,
+     "type": "image/svg+xml"
+    },
+    "building-2.svg": {
+     "name": "building-2.svg",
+     "blob": "af419aaa89e3746747b3aec68c82ff63",
+     "size": 519,
+     "type": "image/svg+xml"
+    },
+    "chart-line.svg": {
+     "name": "chart-line.svg",
+     "blob": "e4492732bfb31f59bb9dfab9153dfe4a",
+     "size": 304,
+     "type": "image/svg+xml"
+    },
+    "check.svg": {
+     "name": "check.svg",
+     "blob": "19aeffd526822ef3b1904e03aa4fb81d",
+     "size": 252,
+     "type": "image/svg+xml"
+    },
+    "clipboard-check.svg": {
+     "name": "clipboard-check.svg",
+     "blob": "e10dfe40dd0c5d9dc73ccbffb9b35252",
+     "size": 416,
+     "type": "image/svg+xml"
+    },
+    "clock.svg": {
+     "name": "clock.svg",
+     "blob": "f53673ddc0c97b8d56ed029488422dae",
+     "size": 309,
+     "type": "image/svg+xml"
+    },
+    "database.svg": {
+     "name": "database.svg",
+     "blob": "40e8c031910919944e3f13c4f271107d",
+     "size": 358,
+     "type": "image/svg+xml"
+    },
+    "file-text.svg": {
+     "name": "file-text.svg",
+     "blob": "bd4329a1f7b56137c58490437311a949",
+     "size": 429,
+     "type": "image/svg+xml"
+    },
+    "globe.svg": {
+     "name": "globe.svg",
+     "blob": "7dc0839716d668d1b8980eeb41717134",
+     "size": 356,
+     "type": "image/svg+xml"
+    },
+    "headset.svg": {
+     "name": "headset.svg",
+     "blob": "14ccc32cd81c79e362df793d7120d488",
+     "size": 418,
+     "type": "image/svg+xml"
+    },
+    "layers.svg": {
+     "name": "layers.svg",
+     "blob": "0009cd2909c6f3d23de0c959ef264a93",
+     "size": 476,
+     "type": "image/svg+xml"
+    },
+    "map-pin.svg": {
+     "name": "map-pin.svg",
+     "blob": "8109316eb72c2846b40c99a3b29a576e",
+     "size": 381,
+     "type": "image/svg+xml"
+    },
+    "package-search.svg": {
+     "name": "package-search.svg",
+     "blob": "5066160f80fce217270d87aa573f599d",
+     "size": 579,
+     "type": "image/svg+xml"
+    },
+    "package.svg": {
+     "name": "package.svg",
+     "blob": "a8e8741705ad96d210bc4c5b683bb235",
+     "size": 490,
+     "type": "image/svg+xml"
+    },
+    "phone.svg": {
+     "name": "phone.svg",
+     "blob": "f93be0037ac36149e63f6069dc7d6446",
+     "size": 522,
+     "type": "image/svg+xml"
+    },
+    "plane.svg": {
+     "name": "plane.svg",
+     "blob": "bb3e9420cbf560f123f81ea89c0cea97",
+     "size": 434,
+     "type": "image/svg+xml"
+    },
+    "play.svg": {
+     "name": "play.svg",
+     "blob": "6733b17861a04d525541244e90714811",
+     "size": 265,
+     "type": "image/svg+xml"
+    },
+    "radar.svg": {
+     "name": "radar.svg",
+     "blob": "79357b98820f0b99242673774da07dea",
+     "size": 577,
+     "type": "image/svg+xml"
+    },
+    "route.svg": {
+     "name": "route.svg",
+     "blob": "841c762628373d7e59974a74f0a64cb6",
+     "size": 371,
+     "type": "image/svg+xml"
+    },
+    "shield-check.svg": {
+     "name": "shield-check.svg",
+     "blob": "6457ec55ca606607bed99b0fb5c3df1b",
+     "size": 440,
+     "type": "image/svg+xml"
+    },
+    "ship.svg": {
+     "name": "ship.svg",
+     "blob": "35b62459f3a86567cdedc523ef189587",
+     "size": 546,
+     "type": "image/svg+xml"
+    },
+    "triangle-alert.svg": {
+     "name": "triangle-alert.svg",
+     "blob": "e4896574980972f2e49c428ae5d33224",
+     "size": 377,
+     "type": "image/svg+xml"
+    },
+    "truck.svg": {
+     "name": "truck.svg",
+     "blob": "4cd919cad99147312efdcc1e1ca7af5a",
+     "size": 506,
+     "type": "image/svg+xml"
+    },
+    "users.svg": {
+     "name": "users.svg",
+     "blob": "2120836cc513ea7cce7bca35e7c366d8",
+     "size": 411,
+     "type": "image/svg+xml"
+    },
+    "warehouse.svg": {
+     "name": "warehouse.svg",
+     "blob": "ddf59f62b9ff66907519db3849a7df4c",
+     "size": 464,
+     "type": "image/svg+xml"
+    },
+    "chevron-down.svg": {
+     "name": "chevron-down.svg",
+     "blob": "cf34dbd9655a35940242824fab097bb3",
+     "size": 320,
+     "type": "image/svg+xml"
+    },
+    "mail.svg": {
+     "name": "mail.svg",
+     "blob": "169086c6a46ab4cbfb64cdfa2a0d0322",
+     "size": 392,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Claude Code",
+  "at": "2026-11-17T23:08:32Z",
+  "via": "Claude Code (website implementation)",
+  "note": "Added chevron-down and mail icons; NavBar mobile menu, ImageTile/ServiceCard responsive images, Hero photo layering, LanguageToggle rel; new SkipLink, Footer, CtaBand, PageHero, ServiceSection, Steps, Accordion, Prose, Field, TextInput, Textarea, Select, FormNotice, FormErrorSummary, Honeypot"
+ }
+}

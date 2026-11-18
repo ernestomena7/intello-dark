@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Error del servidor | Intello",
+    "description": "Algo salió mal de nuestro lado. Inténtalo de nuevo en unos minutos o llámanos."
+  },
+  "title": "Algo salió mal",
+  "titleAccent": "de nuestro lado",
+  "body": "Inténtalo de nuevo en unos minutos. Si el problema continúa, llámanos o escríbenos.",
+  "tooLarge": {
+    "title": "El mensaje es demasiado largo",
+    "body": "Acorta el texto e inténtalo de nuevo, o llámanos."
+  },
+  "phoneNote": "Llámanos al",
+  "home": { "label": "Volver al inicio" },
+  "contact": { "label": "Hablar con nosotros" }
+}

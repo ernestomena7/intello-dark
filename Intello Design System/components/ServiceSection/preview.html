@@ -1,0 +1,20 @@
+<!-- @dsCard group="Sections" height=900 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ServiceSection — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var COPY = { es: { id: 'rastreo', eyebrow: 'Rastreo de envíos', title: 'Visibilidad de cada envío', summary: 'Seguimos cada guía y avisamos a tu cliente final cuando algo cambia.', deliverables: ['Estado en tiempo real', 'Alertas al cliente final', 'Reporte de incidencias'], cta: { label: 'Hablar del rastreo', href: '#' }, image: { icon: 'route', alt: 'Foto: camión en ruta' } },
+    en: { id: 'tracking', eyebrow: 'Shipment tracking', title: 'Visibility of every shipment', summary: 'We follow every waybill and tell your end customer when something changes.', deliverables: ['Real-time status', 'End-customer alerts', 'Incident reporting'], cta: { label: 'Talk about tracking', href: '#' }, image: { icon: 'route', alt: 'Photo: truck on the road' } } };
+  var el = both(function (l) { return h(F, null, h(I.ServiceSection, COPY[l]), h(I.ServiceSection, Object.assign({}, COPY[l], { id: COPY[l].id + '-2', reverse: true }))); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>

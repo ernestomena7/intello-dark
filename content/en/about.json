@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "About us | Intello",
+    "description": "Who we are, what we do and which logistics companies we work with."
+  },
+  "header": {
+    "eyebrow": "About us",
+    "title": "Technology and data",
+    "titleAccent": "for logistics companies",
+    "lede": "We are not a logistics company: we are the technology partner that gives yours visibility and data."
+  },
+  "story": {
+    "title": "What we do",
+    "body": [
+      "Intello offers cargo monitoring and business intelligence to logistics companies, together with technology and back office services.",
+      "We do not transport or store cargo: we monitor the cargo your company moves and turn its data into information to decide better."
+    ]
+  },
+  "approach": {
+    "title": "How we work with you",
+    "steps": [
+      {
+        "title": "We talk",
+        "body": "We learn your operation and your data."
+      },
+      {
+        "title": "We connect",
+        "body": "We integrate your systems and data sources."
+      },
+      {
+        "title": "We monitor",
+        "body": "We follow your shipments and collect their data."
+      },
+      {
+        "title": "We improve",
+        "body": "We measure and adjust with your indicators."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Who we work with",
+    "items": [
+      "Couriers",
+      "3PL operators",
+      "Freight and transport companies"
+    ]
+  }
+}

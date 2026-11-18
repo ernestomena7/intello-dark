@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Preguntas frecuentes | Intello",
+    "description": "Respuestas sobre los servicios de Intello, con quién trabajamos, cómo empezar y cómo cuidamos tus datos."
+  },
+  "header": {
+    "eyebrow": "Preguntas",
+    "title": "Preguntas",
+    "titleAccent": "frecuentes",
+    "lede": "Lo que suelen preguntarnos antes de empezar. Si no ves tu respuesta, escríbenos."
+  },
+  "items": [
+    {
+      "id": "servicios",
+      "question": "¿Qué ofrece Intello?",
+      "answer": [
+        "Monitoreo de carga, inteligencia de negocio con IA, servicios tecnológicos y back office para empresas de logística. Puedes contratar uno o combinarlos."
+      ]
+    },
+    {
+      "id": "logistica",
+      "question": "¿Intello es una empresa de logística?",
+      "answer": [
+        "No. No transportamos ni almacenamos carga. Somos un proveedor de tecnología y datos para empresas de logística."
+      ]
+    },
+    {
+      "id": "clientes",
+      "question": "¿Con qué empresas trabajan?",
+      "answer": [
+        "Con couriers, operadores 3PL y empresas de carga y transporte."
+      ]
+    },
+    {
+      "id": "empezar",
+      "question": "¿Cómo empezamos?",
+      "answer": [
+        "Solicita una demo desde la página de contacto.",
+        "Te escribimos para entender tu operación y proponerte los servicios que encajan."
+      ]
+    },
+    {
+      "id": "integraciones",
+      "question": "¿Se conectan con mis sistemas?",
+      "answer": [
+        "Sí. Hacemos integraciones mediante APIs y lo definimos contigo al inicio."
+      ]
+    },
+    {
+      "id": "ia",
+      "question": "¿Qué hace la IA exactamente?",
+      "answer": [
+        "Envía alertas al cliente final, pronostica la demanda y alimenta tableros de KPIs. Trabaja junto a tu equipo y le ahorra tareas repetitivas."
+      ]
+    },
+    {
+      "id": "datos",
+      "question": "¿Cómo cuidan mis datos?",
+      "answer": [
+        "Usamos los datos solo para prestar el servicio. En este sitio solo recogemos lo que envías en el formulario de contacto y no usamos analítica de terceros."
+      ]
+    }
+  ]
+}

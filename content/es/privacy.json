@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Aviso de privacidad | Intello",
+    "description": "Qué datos recoge este sitio, para qué los usamos y cómo los cuidamos."
+  },
+  "header": {
+    "eyebrow": "Privacidad",
+    "title": "Aviso de",
+    "titleAccent": "privacidad",
+    "lede": "Qué datos recogemos, para qué los usamos y cómo los cuidamos."
+  },
+  "updatedLabel": "Última actualización",
+  "updated": "2026-11-17",
+  "sections": [
+    {
+      "heading": "Qué datos recogemos",
+      "body": [
+        "Solo los que nos envías en el formulario de contacto: nombre, empresa, correo electrónico, teléfono (opcional), tema y mensaje.",
+        "El sitio no usa analítica, publicidad ni herramientas de seguimiento de terceros."
+      ]
+    },
+    {
+      "heading": "Para qué los usamos",
+      "body": ["Para responder tu consulta y, si lo pides, coordinar una demo. No los usamos para otros fines."]
+    },
+    {
+      "heading": "Con quién los compartimos",
+      "body": ["No vendemos ni cedemos tus datos. El mensaje llega a nuestro equipo por correo electrónico a través de nuestro proveedor de correo."]
+    },
+    {
+      "heading": "Cuánto tiempo los conservamos",
+      "body": ["El sitio no guarda tu mensaje: solo lo envía por correo. Lo conservamos en el buzón de nuestro equipo el tiempo necesario para atender tu consulta."]
+    },
+    {
+      "heading": "Cookies",
+      "body": ["Usamos una sola cookie propia, itl_lang, que recuerda el idioma que elegiste durante un año. No contiene datos personales."]
+    },
+    {
+      "heading": "Tus derechos",
+      "body": ["Puedes pedirnos acceder a tus datos, corregirlos o eliminarlos. Escríbenos desde la página de contacto y te respondemos."]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+/* Intello — generated from tokens.json */
+:root, [data-theme="light"] {
+  --yellow: #f6e71a;
+  --navy: #2d2d45;
+  --blue: #4d72a6;
+  --surface-page: #f2f1ef;
+  --surface-paper: #e5e1de;
+  --surface-card: #ffffff;
+  --ink: #2d2d45;
+  --ink-muted: #5c5c70;
+  --ink-subtle: #85859a;
+  --line: #dedad6;
+  --line-strong: #928c86;
+  --action: var(--navy);
+  --on-action: #ffffff;
+  --on-navy: #ffffff;
+  --on-yellow: #2d2d45;
+  --on-blue: #ffffff;
+  --link: #3f5f8c;
+  --focus-ring: #3f5f8c;
+  --success: #216b4a;
+  --warning-fill: var(--yellow);
+  --danger: #b23a26;
+  --shadow-card: 0 1px 2px rgba(45, 45, 69, 0.06);
+  --shadow-float: 0 18px 40px rgba(45, 45, 69, 0.14);
+}
+[data-theme="dark"] {
+  --yellow: #f6e71a;
+  --navy: #2d2d45;
+  --blue: #4d72a6;
+  --surface-page: #1b1b2c;
+  --surface-paper: #24243a;
+  --surface-card: #2d2d45;
+  --ink: #f2f1ef;
+  --ink-muted: #b9b9c9;
+  --ink-subtle: #8c8ca6;
+  --line: #3b3b58;
+  --line-strong: #77779a;
+  --action: #f6e71a;
+  --on-action: #2d2d45;
+  --on-navy: #ffffff;
+  --on-yellow: #2d2d45;
+  --on-blue: #ffffff;
+  --link: #9db8e0;
+  --focus-ring: #f6e71a;
+  --success: #5fc79a;
+  --warning-fill: var(--yellow);
+  --danger: #ff8a73;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-float: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+  --container-max: 1400px;
+  --nav-height: 80px;
+  --font-sans: "Gotham", "Montserrat", system-ui, sans-serif;
+}
+.display-xl { font-family: var(--font-sans); font-size: 76px; line-height: 76px; font-weight: 700; letter-spacing: -0.03em; }
+.display-accent { font-family: var(--font-sans); font-size: 76px; line-height: 76px; font-weight: 300; letter-spacing: -0.02em; font-style: italic; }
+.h1 { font-family: var(--font-sans); font-size: 40px; line-height: 46px; font-weight: 700; letter-spacing: -0.02em; }
+.h2 { font-family: var(--font-sans); font-size: 30px; line-height: 36px; font-weight: 700; letter-spacing: -0.015em; }
+.h3 { font-family: var(--font-sans); font-size: 20px; line-height: 26px; font-weight: 700; letter-spacing: -0.01em; }
+.stat { font-family: var(--font-sans); font-size: 30px; line-height: 34px; font-weight: 700; letter-spacing: -0.02em; }
+.lede { font-family: var(--font-sans); font-size: 18px; line-height: 28px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.body-sm { font-family: var(--font-sans); font-size: 14px; line-height: 22px; font-weight: 400; }
+.caption { font-family: var(--font-sans); font-size: 12px; line-height: 17px; font-weight: 400; }
+.eyebrow { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.08em; }
+.button { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 700; }

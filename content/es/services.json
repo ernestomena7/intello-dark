@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Monitoreo de carga e inteligencia de negocio | Intello",
+    "description": "Monitoreo de carga, inteligencia de negocio con IA, servicios tecnológicos y back office. Qué hacemos y qué recibes con cada servicio."
+  },
+  "header": {
+    "eyebrow": "Servicios",
+    "title": "Monitoreo y datos",
+    "titleAccent": "para tu operación",
+    "lede": "Cuatro servicios que se complementan. Contrata uno o combínalos."
+  },
+  "items": [
+    {
+      "id": "tracking",
+      "title": "Monitoreo de carga",
+      "bullets": [
+        "Visibilidad en tiempo real",
+        "Alertas al cliente final"
+      ],
+      "summary": "Monitoreamos el estado de cada envío de tu operación y avisamos a tus clientes cuando algo cambia, para que tu equipo tenga visibilidad sin perseguir información.",
+      "deliverables": [
+        "Estado de cada envío en tiempo real",
+        "Alertas al cliente final",
+        "Reporte de incidencias"
+      ],
+      "cta": {
+        "label": "Solicitar información"
+      }
+    },
+    {
+      "id": "ai-analytics",
+      "title": "Inteligencia de negocio con IA",
+      "bullets": [
+        "Tableros de KPIs",
+        "Pronósticos de demanda"
+      ],
+      "summary": "Convertimos los datos de tu operación en indicadores y pronósticos que ayudan a tu empresa a decidir mejor.",
+      "deliverables": [
+        "Tableros de KPIs",
+        "Pronósticos de demanda",
+        "Alertas por IA sobre tu operación"
+      ],
+      "cta": {
+        "label": "Solicitar información"
+      }
+    },
+    {
+      "id": "technology",
+      "title": "Servicios tecnológicos",
+      "bullets": [
+        "Integraciones y APIs",
+        "Desarrollo a la medida"
+      ],
+      "summary": "Conectamos tus sistemas y desarrollamos las herramientas que tu empresa necesita para aprovechar sus datos.",
+      "deliverables": [
+        "Integraciones y APIs con tus sistemas",
+        "Desarrollo a la medida",
+        "Soporte técnico de lo que construimos"
+      ],
+      "cta": {
+        "label": "Solicitar información"
+      }
+    },
+    {
+      "id": "back-office",
+      "title": "Back office para logística",
+      "bullets": [
+        "Facturación y documentos",
+        "Conciliación de guías"
+      ],
+      "summary": "Apoyamos a tu equipo administrativo con la documentación y la conciliación, para que se concentre en su propia operación.",
+      "deliverables": [
+        "Facturación y documentos de envío",
+        "Conciliación de guías",
+        "Seguimiento de incidencias administrativas"
+      ],
+      "cta": {
+        "label": "Solicitar información"
+      }
+    }
+  ]
+}

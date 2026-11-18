@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Server error | Intello",
+    "description": "Something went wrong on our side. Try again in a few minutes or give us a call."
+  },
+  "title": "Something went wrong",
+  "titleAccent": "on our side",
+  "body": "Try again in a few minutes. If the problem continues, call or write to us.",
+  "tooLarge": {
+    "title": "The message is too long",
+    "body": "Shorten the text and try again, or give us a call."
+  },
+  "phoneNote": "Call us on",
+  "home": { "label": "Back to home" },
+  "contact": { "label": "Contact us" }
+}

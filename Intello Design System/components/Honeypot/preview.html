@@ -1,0 +1,20 @@
+<!-- @dsCard group="Forms" height=220 width=1280 -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Honeypot — preview</title>
+<style>body{background:var(--surface-page);margin:0;padding:16px} .lang-row{margin-bottom:24px}</style></head>
+<body>
+<div id="root" class="itl-root"></div>
+<script>
+  var I = window.Intello, h = React.createElement, F = React.Fragment;
+  function both(fn) { return h(F, null, h('div', { lang: 'es', className: 'lang-row' }, fn('es')), h('div', { lang: 'en', className: 'lang-row' }, fn('en'))); }
+  var T = function (es, en) { return function (l) { return l === 'es' ? es : en; }; };
+
+  var el = both(function (l) { return h('div', { style: { maxWidth: 520 } },
+    h('p', null, l === 'es' ? 'El campo trampa no tiene salida visible: está fuera de pantalla, oculto a tecnologías de asistencia y sin foco de teclado.' : 'The trap field has no visible output: it is off-screen, hidden from assistive technology and skipped by the keyboard.'),
+    h(I.Honeypot, { name: 'website' })); });
+
+  ReactDOM.createRoot(document.getElementById('root')).render(el);
+</script>
+</body>
+</html>
