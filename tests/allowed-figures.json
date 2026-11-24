@@ -1,4 +1,25 @@
 {
-  "comment": "Figures that may appear in content. 24/7 is a capability (pending client confirmation); ITL-48213 is the sample shipment id on the illustrative tracking card; 4000 is the contact message length limit; anything else must be real and sourced before it is added here.",
-  "allowed": ["24/7", "ITL-48213", "4000"]
+  "comment": "Figures that may appear in content. 24/7 is a capability (pending client confirmation); ITL-48213 is the sample shipment id on the illustrative tracking card; 4000 is the contact message length limit; anything else must be real and sourced before it is added here. BPO redesign (2026-11-24): operating figures from the client institutional document Intello, Cultura y capacidades (Nov 2026), pages 02, 07 and 08; promises 95%/<72h/48h are the client stated brand promises, pending their final validation. ITL-48219, ITL-48226 and ITL-48231 are sample shipment ids on the illustrative hero simulation cards.",
+  "allowed": [
+    "24/7",
+    "ITL-48213",
+    "4000",
+    "14,000",
+    "196",
+    "2024",
+    "2025",
+    "2026",
+    "36.3%",
+    "19.7%",
+    "17.4%",
+    "7.2%",
+    "5.7%",
+    "4.4%",
+    "2.6%",
+    "2.1%",
+    "95",
+    "ITL-48219",
+    "ITL-48226",
+    "ITL-48231"
+  ]
 }

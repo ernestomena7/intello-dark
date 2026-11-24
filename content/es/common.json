@@ -31,14 +31,14 @@
       }
     ],
     "cta": {
-      "label": "Solicitar demo"
+      "label": "Agendar revisión"
     }
   },
   "language": {
     "ariaLabel": "Idioma"
   },
   "footer": {
-    "tagline": "Monitoreo de carga e inteligencia de negocio para empresas de logística.",
+    "tagline": "Gestión de procesos operativos y de back office para empresas de logística.",
     "columnHeadings": {
       "site": "Sitio",
       "more": "Más"
@@ -49,11 +49,11 @@
   },
   "ctaBand": {
     "eyebrow": "Siguiente paso",
-    "title": "Hablemos de los datos",
-    "titleAccent": "de tu operación",
-    "body": "Cuéntanos qué necesitas y te mostramos cómo lo resolvemos.",
+    "title": "Empieza con",
+    "titleAccent": "un proceso",
+    "body": "Una conversación de 30 minutos para revisar el flujo, ver dónde encaja nuestro apoyo y decidir si Intello es el socio indicado.",
     "cta": {
-      "label": "Solicitar demo"
+      "label": "Agendar una revisión"
     }
   },
   "exampleLabel": "Ejemplo ilustrativo"

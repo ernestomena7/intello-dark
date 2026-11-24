@@ -34,7 +34,13 @@ for (const route of list) {
       const r = el.getBoundingClientRect();
       const s = getComputedStyle(el);
       const closed = el.closest('details:not([open])') && !el.matches('summary, summary *');
-      return r.width > 0 && s.position !== 'fixed' && !closed && !el.closest('.itl-hp') && r.right > window.innerWidth + 1;
+      // Content cut off by an ancestor that clips horizontally and itself fits the viewport is not overflow.
+      let clipped = false;
+      for (let a = el.parentElement; a && a !== document.body; a = a.parentElement) {
+        const o = getComputedStyle(a).overflowX;
+        if ((o === 'hidden' || o === 'clip') && a.getBoundingClientRect().right <= window.innerWidth + 1) { clipped = true; break; }
+      }
+      return r.width > 0 && !clipped && !el.ownerSVGElement && s.position !== 'fixed' && !closed && !el.closest('.itl-hp') && r.right > window.innerWidth + 1;
     }).slice(0, 5).map((el) => el.className?.baseVal ?? el.className ?? el.tagName));
     const bad = overflow.scroll > overflow.inner || sticking.length;
     await page.screenshot({ path: path.join(OUT, `${slug(route)}-${width}.png`), fullPage: true });

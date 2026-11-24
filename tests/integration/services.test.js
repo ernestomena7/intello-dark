@@ -54,12 +54,11 @@ for (const [lang, url] of [['es', '/es/tecnologia'], ['en', '/en/technology']]) 
   });
 }
 
-test('the home page cards land on the sections of the Services page', async () => {
+// The numbers-first home (BPO redesign) lists processes instead of service cards; the Services page is rebuilt next.
+test('the Services page keeps one section per service anchor', async () => {
   for (const [lang, url] of [['es', '/es/servicios'], ['en', '/en/services']]) {
-    const home = await (await srv.get(`/${lang}/`)).text();
     const page = await (await srv.get(url)).text();
     for (const s of structure.services) {
-      assert.ok(home.includes(`href="${url}#${s.anchor}"`));
       assert.ok(page.includes(`id="${s.anchor}"`));
     }
   }

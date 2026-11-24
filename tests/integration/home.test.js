@@ -32,20 +32,21 @@ for (const lang of ['es', 'en']) {
     assert.match(html, /itl-title-accent/, 'two-tone headline accent');
     assert.ok(html.includes(esc(home.hero.eyebrow)), 'eyebrow');
     assert.ok(html.includes(esc(home.hero.lede)), 'lede');
-    assert.equal(count(html, /class="itl-featurepanel-item"/g), 4, 'four capability highlights in the feature panel');
-    assert.match(html, /href="\/(es|en)\/(contacto|contact)" class="itl-btn itl-btn-(primary|accent) itl-btn-lg"/, 'primary CTA to contact');
-    assert.ok(html.includes(esc(home.tracking.heading)), 'shipment card is labelled as an illustrative example (FR-008)');
-    assert.ok(html.includes('itl-statchip'), 'capability chip');
-    assert.match(html, /itl-hero-media/);
-
-    // overlapping white panel: about block, divider, four service cards
-    assert.match(html, /class="[^"]*itl-section-card[^"]*itl-overlap/);
-    assert.match(html, /class="itl-about"/);
-    assert.match(html, /class="itl-section-divider"/);
-    assert.equal(count(html, /class="itl-service[" ]/g), 4, 'four service cards');
-    for (const s of structure.services) {
-      assert.ok(html.includes(`href="${SERVICES[lang]}#${s.anchor}"`), `card links to ${SERVICES[lang]}#${s.anchor}`);
-    }
+    assert.match(html, /href="\/(es|en)\/(contacto|contact)" class="itl-btn itl-btn-accent itl-btn-lg"/, 'primary CTA to contact');
+    // numbers-first hero: headline figures and the illustrated route map (no photograph)
+    assert.match(html, /class="itl-root itl-maphero"/);
+    assert.equal(count(html, /class="itl-stat"/g) >= 3, true, 'headline figures');
+    assert.ok(html.includes('+17'), 'monthly data cells figure');
+    assert.match(html, /src="\/img\/route-map\.svg\?v=[0-9a-f]{10}"/, 'illustrated route map with a versioned URL');
+    const trails = count(html, /class="itl-map-trail"/g);
+    assert.ok(trails > 0 && trails <= 10, 'a few light trails on the busiest routes');
+    assert.equal(count(html, /class="itl-hud /g), home.map.cards.length, 'one HUD card per port');
+    assert.ok(html.includes(esc(home.hero.badge)), 'the simulation is labelled as illustrative');
+    // sections: processes, control tower, reach, intelligence, promises, culture
+    for (const id of ['procesos', 'torre-de-control', 'alcance', 'inteligencia', 'promesas', 'cultura']) assert.ok(html.includes(`id="${id}"`), `section #${id}`);
+    assert.equal(count(html, /class="itl-prow"/g), home.processes.items.length);
+    assert.equal(count(html, /class="itl-phase"/g), 7, 'seven Control Tower phases');
+    assert.equal(count(html, /class="itl-bar"/g), home.reach.origins.length);
     assert.ok(html.includes(`href="/${lang}/${lang === 'es' ? 'nosotros' : 'about'}"`), 'about link');
 
     // closing call to action, footer, language toggle
@@ -62,12 +63,12 @@ for (const lang of ['es', 'en']) {
     assert.doesNotMatch(html, /<script/i);
     assert.doesNotMatch(html, /<style/i);
     for (const m of html.matchAll(/<img\b[^>]*>/g)) {
-      assert.match(m[0], /alt="[^"]+"/, 'img needs non-empty alt');
+      if (!/itl-map-land/.test(m[0])) assert.match(m[0], /alt="[^"]+"/, 'img needs non-empty alt');
       assert.match(m[0], /width="\d+"/);
       assert.match(m[0], /height="\d+"/);
     }
     // slots expose their art-direction text as the figure label
-    assert.ok(count(html, /itl-tile-empty|<img/g) >= 3);
+    assert.match(html, /<svg class="itl-map-svg"[^>]*role="img"/, 'the map has a text alternative');
   });
 }
 

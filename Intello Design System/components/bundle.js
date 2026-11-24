@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"Intello","components":[{"name":"Button"},{"name":"IconButton"},{"name":"TextLink"},{"name":"VideoLink"},{"name":"Icon"},{"name":"Logo"},{"name":"Eyebrow"},{"name":"Headline"},{"name":"NavBar"},{"name":"LanguageToggle"},{"name":"Hero"},{"name":"FeatureItem"},{"name":"StatChip"},{"name":"Section"},{"name":"SectionHeader"},{"name":"ImageTile"},{"name":"ServiceCard"},{"name":"StatusBadge"},{"name":"TrackingCard"},{"name":"AboutBlock"}]} */
+/* @ds-bundle: {"format":4,"namespace":"Intello","components":[{"name":"Button"},{"name":"IconButton"},{"name":"TextLink"},{"name":"VideoLink"},{"name":"Icon"},{"name":"Logo"},{"name":"Eyebrow"},{"name":"Headline"},{"name":"NavBar"},{"name":"LanguageToggle"},{"name":"Hero"},{"name":"FeatureItem"},{"name":"StatChip"},{"name":"Section"},{"name":"SectionHeader"},{"name":"ImageTile"},{"name":"ServiceCard"},{"name":"StatusBadge"},{"name":"TrackingCard"},{"name":"AboutBlock"},{"name":"StatGrid"},{"name":"TagList"},{"name":"BarList"},{"name":"ProcessList"},{"name":"PhaseTrack"},{"name":"LetterGrid"},{"name":"RouteMap"},{"name":"MapHero"}]} */
 (function () {
   var React = window.React, h = React.createElement, F = React.Fragment;
   var ICONS = {"shield-check": "<path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\" /><path d=\"m9 12 2 2 4-4\" />", "package": "<path d=\"M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z\" /><path d=\"M12 22V12\" /><path d=\"m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7\" /><path d=\"m7.5 4.27 9 5.15\" />", "file-text": "<path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\" /><path d=\"M14 2v4a2 2 0 0 0 2 2h4\" /><path d=\"M10 9H8\" /><path d=\"M16 13H8\" /><path d=\"M16 17H8\" />", "headset": "<path d=\"M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z\" /><path d=\"M21 16v2a4 4 0 0 1-4 4h-5\" />", "arrow-right": "<path d=\"M5 12h14\" /><path d=\"m12 5 7 7-7 7\" />", "arrow-up-right": "<path d=\"M7 7h10v10\" /><path d=\"M7 17 17 7\" />", "play": "<polygon points=\"6 3 20 12 6 21 6 3\" />", "phone": "<path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\" />", "globe": "<circle cx=\"12\" cy=\"12\" r=\"10\" /><path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20\" /><path d=\"M2 12h20\" />", "truck": "<path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\" /><path d=\"M15 18H9\" /><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\" /><circle cx=\"17\" cy=\"18\" r=\"2\" /><circle cx=\"7\" cy=\"18\" r=\"2\" />", "ship": "<path d=\"M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\" /><path d=\"M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76\" /><path d=\"M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6\" /><path d=\"M12 10v4\" /><path d=\"M12 2v3\" />", "plane": "<path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z\" />", "clipboard-check": "<rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\" /><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\" /><path d=\"m9 14 2 2 4-4\" />", "map-pin": "<path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\" /><circle cx=\"12\" cy=\"10\" r=\"3\" />", "chart-line": "<path d=\"M3 3v16a2 2 0 0 0 2 2h16\" /><path d=\"m19 9-5 5-4-4-3 3\" />", "bot": "<path d=\"M12 8V4H8\" /><rect width=\"16\" height=\"12\" x=\"4\" y=\"8\" rx=\"2\" /><path d=\"M2 14h2\" /><path d=\"M20 14h2\" /><path d=\"M15 13v2\" /><path d=\"M9 13v2\" />", "database": "<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\" /><path d=\"M3 5V19A9 3 0 0 0 21 19V5\" /><path d=\"M3 12A9 3 0 0 0 21 12\" />", "layers": "<path d=\"m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z\" /><path d=\"m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65\" /><path d=\"m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65\" />", "radar": "<path d=\"M19.07 4.93A10 10 0 0 0 6.99 3.34\" /><path d=\"M4 6h.01\" /><path d=\"M2.29 9.62A10 10 0 1 0 21.31 8.35\" /><path d=\"M16.24 7.76A6 6 0 1 0 8.23 16.67\" /><path d=\"M12 18h.01\" /><path d=\"M17.99 11.66A6 6 0 0 1 15.77 16.67\" /><circle cx=\"12\" cy=\"12\" r=\"2\" /><path d=\"m13.41 10.59 5.66-5.66\" />", "route": "<circle cx=\"6\" cy=\"19\" r=\"3\" /><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\" /><circle cx=\"18\" cy=\"5\" r=\"3\" />", "package-search": "<path d=\"M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14\" /><path d=\"m7.5 4.27 9 5.15\" /><polyline points=\"3.29 7 12 12 20.71 7\" /><line x1=\"12\" x2=\"12\" y1=\"22\" y2=\"12\" /><circle cx=\"18.5\" cy=\"15.5\" r=\"2.5\" /><path d=\"M20.27 17.27 22 19\" />", "check": "<path d=\"M20 6 9 17l-5-5\" />", "clock": "<circle cx=\"12\" cy=\"12\" r=\"10\" /><polyline points=\"12 6 12 12 16 14\" />", "building-2": "<path d=\"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z\" /><path d=\"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2\" /><path d=\"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2\" /><path d=\"M10 6h4\" /><path d=\"M10 10h4\" /><path d=\"M10 14h4\" /><path d=\"M10 18h4\" />", "users": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\" /><circle cx=\"9\" cy=\"7\" r=\"4\" /><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\" /><path d=\"M16 3.13a4 4 0 0 1 0 7.75\" />", "brain-circuit": "<path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\" /><path d=\"M9 13a4.5 4.5 0 0 0 3-4\" /><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\" /><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\" /><path d=\"M6 18a4 4 0 0 1-1.967-.516\" /><path d=\"M12 13h4\" /><path d=\"M12 18h6a2 2 0 0 1 2 2v1\" /><path d=\"M12 8h8\" /><path d=\"M16 8V5a2 2 0 0 1 2-2\" /><circle cx=\"16\" cy=\"13\" r=\".5\" /><circle cx=\"18\" cy=\"3\" r=\".5\" /><circle cx=\"20\" cy=\"21\" r=\".5\" /><circle cx=\"20\" cy=\"8\" r=\".5\" />", "warehouse": "<path d=\"M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z\" /><path d=\"M6 18h12\" /><path d=\"M6 14h12\" /><rect width=\"12\" height=\"12\" x=\"6\" y=\"10\" />", "triangle-alert": "<path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\" /><path d=\"M12 9v4\" /><path d=\"M12 17h.01\" />", "chevron-down": "<path d=\"m6 9 6 6 6-6\" />", "mail": "<path d=\"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7\" /><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\" />"};
@@ -166,7 +166,8 @@
   function SectionHeader(p) {
     return h('div', { className: 'itl-sechead' },
       h('div', { className: 'itl-sechead-text' }, p.eyebrow ? h(Eyebrow, null, p.eyebrow) : null,
-        h(Headline, { level: p.level || 'h1', as: p.as || 'h2', muted: p.muted, accent: p.accent, accentMuted: p.accentMuted }, p.title)),
+        h(Headline, { level: p.level || 'h1', as: p.as || 'h2', muted: p.muted, accent: p.accent, accentMuted: p.accentMuted }, p.title),
+        p.lede ? h('p', { className: 'itl-lede' }, p.lede) : null),
       p.action ? h(TextLink, { href: p.action.href || '#' }, p.action.label) : null);
   }
 
@@ -203,7 +204,7 @@
     var dots = [];
     for (var y = 24; y < 520; y += 32) for (var x = 24; x < 620; x += 32) dots.push(h('circle', { key: x + '-' + y, className: 'dot', cx: x, cy: y, r: 1.5 }));
     return h('div', { className: 'itl-hero-panel', 'aria-hidden': 'true' },
-      h('svg', { viewBox: '0 0 600 520', preserveAspectRatio: 'xMidYMid slice' }, dots,
+      h('svg', { viewBox: '0 0 600 520', preserveAspectRatio: 'xMaxYMid slice' }, dots,
         h('path', { className: 'route', d: 'M88 120 C 200 140, 240 240, 330 230 S 470 300, 520 420' }),
         h('circle', { className: 'pin-ring', cx: 88, cy: 120, r: 14 }), h('circle', { className: 'pin', cx: 88, cy: 120, r: 6 }),
         h('circle', { className: 'pin-ring', cx: 330, cy: 230, r: 14 }), h('circle', { className: 'pin', cx: 330, cy: 230, r: 6 }),
@@ -280,7 +281,7 @@
   function CtaRoute() {
     var dots = [];
     for (var y = 20; y < 300; y += 28) for (var x = 20; x < 520; x += 28) dots.push(h('circle', { key: x + '-' + y, className: 'dot', cx: x, cy: y, r: 1.5 }));
-    return h('svg', { className: 'itl-cta-art', viewBox: '0 0 520 300', preserveAspectRatio: 'xMidYMid slice', 'aria-hidden': 'true', focusable: 'false' }, dots,
+    return h('svg', { className: 'itl-cta-art', viewBox: '0 0 520 300', preserveAspectRatio: 'xMaxYMid slice', 'aria-hidden': 'true', focusable: 'false' }, dots,
       h('path', { className: 'route', d: 'M60 230 C 150 220, 170 120, 260 140 S 400 60, 470 80' }),
       h('circle', { className: 'pin-ring', cx: 60, cy: 230, r: 14 }), h('circle', { className: 'pin', cx: 60, cy: 230, r: 6 }),
       h('circle', { className: 'pin-ring', cx: 260, cy: 140, r: 14 }), h('circle', { className: 'pin', cx: 260, cy: 140, r: 6 }),
@@ -410,7 +411,161 @@
     return h('div', { className: 'itl-hp', 'aria-hidden': 'true' }, h('label', null, p.label || 'Website', h('input', { type: 'text', name: p.name || 'website', tabIndex: -1, autoComplete: 'off' })));
   }
 
+  /* ---------- Numbers-first components (BPO redesign) ---------- */
+
+  /* StatGrid: headline figures in a <dl>. item: { value, unit?, label, text? }. variant: 'rule' (editorial, top rule) | 'card'.
+     The label is the <dt>; CSS shows the value first. */
+  function StatGrid(p) {
+    var items = p.items || [];
+    return h('dl', { className: cx('itl-stats', 'itl-stats-' + (p.variant || 'rule'), p.className), style: { '--itl-cols': p.columns || items.length } },
+      items.map(function (s, i) {
+        return h('div', { key: i, className: 'itl-stat' },
+          h('dt', { className: 'itl-stat-label' }, s.label),
+          h('dd', { className: 'itl-stat-value' }, s.value, s.unit ? h('span', { className: 'itl-stat-unit' }, s.unit) : null),
+          s.text ? h('dd', { className: 'itl-stat-text' }, s.text) : null);
+      }));
+  }
+
+  /* TagList: short labels (capabilities, destinations). */
+  function TagList(p) {
+    return h('ul', { className: cx('itl-tags', p.tone && 'itl-tags-' + p.tone, p.className), role: 'list' },
+      (p.items || []).map(function (t, i) { return h('li', { key: i, className: 'itl-tag' }, t); }));
+  }
+
+  /* BarList: share of a total. item: { label, value (number), display? }. The figure is always printed as text. */
+  function BarList(p) {
+    var items = p.items || [], max = Math.max.apply(null, items.map(function (i) { return i.value; }).concat([1]));
+    return h('ul', { className: cx('itl-bars', p.className), role: 'list' }, items.map(function (it, i) {
+      return h('li', { key: i, className: 'itl-bar' },
+        h('span', { className: 'itl-bar-label' }, it.label),
+        h('span', { className: 'itl-bar-track', 'aria-hidden': 'true' }, h('span', { className: 'itl-bar-fill', style: { width: (it.value / max * 100).toFixed(1) + '%' } })),
+        h('span', { className: 'itl-bar-value' }, it.display || String(it.value)));
+    }));
+  }
+
+  /* ProcessList: editorial rows (number, title, text, tags, one supporting figure). */
+  function ProcessList(p) {
+    return h('ol', { className: cx('itl-plist', p.className), role: 'list' }, (p.items || []).map(function (it, i) {
+      return h('li', { key: i, className: 'itl-prow', id: it.id },
+        h('span', { className: 'itl-prow-num', 'aria-hidden': 'true' }, (i < 9 ? '0' : '') + (i + 1)),
+        h('div', { className: 'itl-prow-main' },
+          h('h3', { className: 'itl-prow-title' }, it.title),
+          h('p', { className: 'itl-body' }, it.text),
+          it.tags ? h(TagList, { items: it.tags }) : null),
+        it.figure ? h('p', { className: 'itl-prow-figure' },
+          h('span', { className: 'itl-prow-value' }, it.figure.value),
+          h('span', { className: 'itl-prow-flabel' }, it.figure.label)) : null);
+    }));
+  }
+
+  /* PhaseTrack: an ordered sequence of phases on a rail. item: { code, title, points[] }. */
+  function PhaseTrack(p) {
+    return h('ol', { className: cx('itl-phases', p.className), role: 'list' }, (p.items || []).map(function (it, i) {
+      return h('li', { key: i, className: 'itl-phase' },
+        h('span', { className: 'itl-phase-code', 'aria-hidden': 'true' }, it.code),
+        h('h3', { className: 'itl-phase-title' }, it.title),
+        it.points ? h('ul', { className: 'itl-phase-points', role: 'list' }, it.points.map(function (pt, j) { return h('li', { key: j }, pt); })) : null);
+    }));
+  }
+
+  /* LetterGrid: values spelled as an acronym (S.H.O.W.). item: { letter, title, text }. */
+  function LetterGrid(p) {
+    return h('ul', { className: cx('itl-letters', p.className), role: 'list' }, (p.items || []).map(function (it, i) {
+      return h('li', { key: i, className: 'itl-letter-item' },
+        h('span', { className: 'itl-letter', 'aria-hidden': 'true' }, it.letter),
+        h('h3', { className: 'itl-letter-title' }, it.title),
+        h('p', { className: 'itl-body' }, it.text));
+    }));
+  }
+
+  /* RouteMap: illustrated route map. The continents are a static dot-grid image (land); routes, hubs and a few moving
+     shipment dots are inline SVG in the same viewBox. Motion uses SVG animation (no script) and is hidden for reduced motion.
+     hubs: [{ id, x, y, kind: 'o'|'d'|'b' }], routes: [{ d, weight, moving?, duration?, delay? }], labels: { hubId: text }. */
+  function RouteMap(p) {
+    var id = p.id || 'itl-map', labels = p.labels || {}, hubs = p.hubs || [], routes = p.routes || [], cards = p.cards || [];
+    var vb = String(p.viewBox).split(/\s+/).map(Number), byId = {};
+    hubs.forEach(function (hb) { byId[hb.id] = hb; });
+    var pct = function (hb) { return { left: ((hb.x - vb[0]) / vb[2] * 100).toFixed(2) + '%', top: ((hb.y - vb[1]) / vb[3] * 100).toFixed(2) + '%' }; };
+    var slot = p.cardSeconds || 4, cycle = (slot * cards.length) + 's';
+    return h('figure', { className: cx('itl-map', p.className) },
+      h('div', { className: 'itl-map-canvas', style: { '--itl-map-ratio': p.width + ' / ' + p.height } },
+        h('img', { className: 'itl-map-land', src: p.land, alt: '', width: p.width, height: p.height, decoding: 'async', loading: p.priority ? 'eager' : 'lazy' }),
+        h('svg', { className: 'itl-map-svg', viewBox: p.viewBox, role: 'img', 'aria-labelledby': id + '-title', focusable: 'false' },
+          h('title', { id: id + '-title' }, p.title),
+          h('defs', null, h('filter', { id: id + '-glow', x: '-50%', y: '-50%', width: '200%', height: '200%' },
+            h('feGaussianBlur', { stdDeviation: 3, result: 'b' }),
+            h('feMerge', null, h('feMergeNode', { in: 'b' }), h('feMergeNode', { in: 'SourceGraphic' })))),
+          h('g', { className: 'itl-map-arcs' }, routes.map(function (r, i) {
+            return h('path', { key: i, d: r.d, className: 'itl-map-arc', strokeWidth: (r.weight * 0.55).toFixed(2) });
+          })),
+          /* Light trails: a short dash travelling along each busy route (CSS animation, hidden for reduced motion). */
+          h('g', { className: 'itl-map-trails', 'aria-hidden': 'true', filter: 'url(#' + id + '-glow)' }, routes.filter(function (r) { return r.moving; }).map(function (r, i) {
+            return h('path', { key: i, d: r.d, pathLength: 100, className: 'itl-map-trail', style: { animationDuration: r.duration + 's', animationDelay: (-r.delay) + 's' } });
+          })),
+          h('g', { className: 'itl-map-pulses', 'aria-hidden': 'true' }, (p.pulse || []).filter(function (k) { return byId[k]; }).map(function (k, i) {
+            var hb = byId[k], begin = (i * 0.8) + 's';
+            return h('circle', { key: k, cx: hb.x, cy: hb.y, r: 4, className: 'itl-map-pulse', opacity: 0 },
+              h('animate', { attributeName: 'r', values: '4;20', dur: '2.4s', begin: begin, repeatCount: 'indefinite' }),
+              h('animate', { attributeName: 'opacity', values: '0.7;0', dur: '2.4s', begin: begin, repeatCount: 'indefinite' }));
+          })),
+          h('g', { className: 'itl-map-hubs' }, hubs.map(function (hb) {
+            return h('circle', { key: hb.id, cx: hb.x, cy: hb.y, r: hb.kind === 'd' ? 3.6 : 4.6, className: 'itl-map-hub itl-map-hub-' + hb.kind });
+          })),
+          h('g', { className: 'itl-map-labels', 'aria-hidden': 'true' }, Object.keys(labels).filter(function (k) { return byId[k]; }).map(function (k) {
+            var hb = byId[k];
+            return h('text', { key: k, x: hb.x + 10, y: hb.y + 4, className: 'itl-map-label' }, labels[k]);
+          }))),
+        /* Port cards: one at a time, in a loop. Decorative (an illustrative simulation), so hidden from assistive technology. */
+        cards.length ? h('div', { className: 'itl-map-cards', 'aria-hidden': 'true' }, cards.filter(function (c) { return byId[c.hub]; }).map(function (c, i) {
+          var at = pct(byId[c.hub]), timing = { animationDuration: cycle, animationDelay: (i * slot) + 's' };
+          return h('div', { key: i, className: 'itl-map-port', style: at },
+            h('span', { className: 'itl-map-ping', style: timing }),
+            h('div', { className: 'itl-hud itl-hud-' + (c.place || 'ne'), style: timing },
+              h('div', { className: 'itl-hud-head' },
+                h(Icon, { name: c.icon || 'ship', size: 18, strokeWidth: 1.75 }),
+                h('span', { className: 'itl-hud-id' }, c.title),
+                c.port ? h('span', { className: 'itl-hud-port' }, c.port) : null),
+              h('div', { className: 'itl-hud-status' }, h('span', { className: 'itl-hud-dot' }), c.status),
+              c.rows ? h('dl', { className: 'itl-hud-rows' }, c.rows.map(function (r, j) {
+                return h('div', { key: j }, h('dt', null, r.label), h('dd', null, r.value));
+              })) : null,
+              c.progress != null ? h('div', { className: 'itl-hud-bar' }, h('span', { style: { width: c.progress + '%' } })) : null));
+        })) : null),
+      (p.legend || p.caption) ? h('figcaption', { className: 'itl-map-caption' },
+        p.legend ? h(MapLegend, { items: p.legend }) : null,
+        p.caption ? h('p', { className: 'itl-map-note' }, p.caption) : null) : null);
+  }
+
+  function MapLegend(p) {
+    return h('ul', { className: 'itl-map-legend', role: 'list' }, (p.items || []).map(function (l) {
+      return h('li', { key: l.kind }, h('span', { className: 'itl-map-key itl-map-hub-' + l.kind, 'aria-hidden': 'true' }), l.label);
+    }));
+  }
+
+  /* MapHero: numbers-first home hero on navy. Copy and headline figures on top, the route map as the illustration. */
+  function MapHero(p) {
+    var band = p.stats || p.legend || p.note;
+    return h('section', { className: 'itl-root itl-maphero', 'data-theme': 'dark' },
+      h('div', { className: 'itl-maphero-inner' },
+        h('div', { className: 'itl-maphero-copy' },
+          p.eyebrow ? h(Eyebrow, { dot: true }, p.eyebrow) : null,
+          h(Headline, { level: 'display', accent: p.titleAccent }, p.title),
+          p.lede ? h('p', { className: 'itl-lede' }, p.lede) : null,
+          h('div', { className: 'itl-maphero-actions' },
+            p.cta ? h(Button, { variant: 'accent', size: 'lg', href: p.cta.href || '#' }, p.cta.label) : null,
+            p.secondary ? h(Button, { variant: 'outline', size: 'lg', href: p.secondary.href || '#' }, p.secondary.label) : null))),
+      p.map ? h('div', { className: 'itl-maphero-map' }, p.map) : null,
+      p.badge ? h('p', { className: 'itl-maphero-badge' }, h('span', { className: 'itl-hud-dot', 'aria-hidden': 'true' }), p.badge) : null,
+      band ? h('div', { className: 'itl-maphero-band' }, h('div', { className: 'itl-maphero-band-inner' },
+        p.stats ? h(StatGrid, { items: p.stats, variant: 'rule', className: 'itl-maphero-stats' }) : null,
+        (p.legend || p.note) ? h('div', { className: 'itl-maphero-key' },
+          p.legend ? h(MapLegend, { items: p.legend }) : null,
+          p.note ? h('p', { className: 'itl-map-note' }, p.note) : null) : null)) : null);
+  }
+
   window.Intello = Object.assign(window.Intello || {}, {
+    StatGrid: StatGrid, TagList: TagList, BarList: BarList, ProcessList: ProcessList, PhaseTrack: PhaseTrack, LetterGrid: LetterGrid,
+    RouteMap: RouteMap, MapHero: MapHero,
     Button: Button, IconButton: IconButton, TextLink: TextLink, VideoLink: VideoLink, Icon: Icon, Logo: Logo,
     Eyebrow: Eyebrow, Headline: Headline, NavBar: NavBar, LanguageToggle: LanguageToggle, Hero: Hero, FeatureItem: FeatureItem, StatChip: StatChip,
     Section: Section, SectionHeader: SectionHeader, ImageTile: ImageTile, ServiceCard: ServiceCard,

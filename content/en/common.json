@@ -31,14 +31,14 @@
       }
     ],
     "cta": {
-      "label": "Request a demo"
+      "label": "Book a review"
     }
   },
   "language": {
     "ariaLabel": "Language"
   },
   "footer": {
-    "tagline": "Cargo monitoring and business intelligence for logistics companies.",
+    "tagline": "Operational and back-office process management for logistics companies.",
     "columnHeadings": {
       "site": "Site",
       "more": "More"
@@ -49,11 +49,11 @@
   },
   "ctaBand": {
     "eyebrow": "Next step",
-    "title": "Let's talk about the data",
-    "titleAccent": "behind your operation",
-    "body": "Tell us what you need and we will show you how we solve it.",
+    "title": "Start with",
+    "titleAccent": "one process",
+    "body": "A 30-minute conversation to review the workflow, see where our support fits and decide whether Intello is the right partner.",
     "cta": {
-      "label": "Request a demo"
+      "label": "Book a review"
     }
   },
   "exampleLabel": "Illustrative example"

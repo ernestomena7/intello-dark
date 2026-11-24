@@ -1,86 +1,429 @@
 {
   "meta": {
-    "title": "Intello | Monitoreo de carga e inteligencia de negocio",
-    "description": "Monitoreo de carga e inteligencia de negocio con IA para empresas de logística. Visibilidad de cada envío y datos para decidir mejor."
+    "title": "Intello | Gestión de procesos para empresas de logística",
+    "description": "Operamos procesos operativos y de back office para empresas de logística: Torre de Control, facturación, BI y ETL, con método documentado y cifras a la vista."
   },
   "hero": {
-    "eyebrow": "Monitoreo de carga e inteligencia de negocio",
-    "title": "Visibilidad de tu carga",
-    "titleAccent": "y datos para decidir",
-    "lede": "Monitoreamos cada envío y convertimos los datos de tu operación en indicadores y pronósticos con IA. Hecho para empresas de logística.",
+    "eyebrow": "BPO de procesos logísticos · Nearshore en Latinoamérica",
+    "title": "Procesos logísticos gestionados.",
+    "titleAccent": "Más capacidad, control claro.",
+    "lede": "Somos la extensión operativa de empresas de logística: ejecutamos sus procesos operativos y de back office con método documentado, responsables definidos y visibilidad de cada resultado.",
     "cta": {
-      "label": "Solicitar demo"
+      "label": "Agendar una revisión"
     },
-    "features": [
+    "secondary": {
+      "label": "Ver los procesos"
+    },
+    "stats": [
       {
-        "title": "Datos protegidos",
-        "text": "Usamos tus datos solo para prestar el servicio."
+        "value": "+17",
+        "unit": "M",
+        "label": "celdas de datos procesadas cada mes"
       },
       {
-        "title": "Monitoreo en tiempo real",
-        "text": "El estado de cada envío, siempre a la vista."
+        "value": "14,000",
+        "unit": "+",
+        "label": "embarques gestionados desde 2024"
       },
       {
-        "title": "Indicadores y pronósticos",
-        "text": "Tableros de KPIs y pronósticos de demanda con IA."
-      },
-      {
-        "title": "Integración con tus sistemas",
-        "text": "Nos conectamos mediante APIs a lo que ya usas."
+        "value": "35",
+        "label": "países conectados, de origen a destino"
       }
-    ]
+    ],
+    "badge": "Simulación ilustrativa · sin datos de clientes"
   },
-  "tracking": {
-    "heading": "Envío · ejemplo ilustrativo",
-    "id": "ITL-48213",
-    "statusLabel": "En tránsito",
-    "from": "San Salvador",
-    "fromMeta": "Origen · 08:40",
-    "to": "Ciudad de Guatemala",
-    "toMeta": "ETA · 16:30",
-    "progress": 62,
-    "steps": [
+  "map": {
+    "title": "Rutas de mayor volumen en 2025, de Asia, Norteamérica, Sudamérica y Europa hacia Centroamérica y el Caribe",
+    "caption": "Ilustración con datos de la operación 2025. Las rutas más gruesas mueven más embarques.",
+    "legend": {
+      "o": "Origen",
+      "d": "Destino",
+      "b": "Origen y destino"
+    },
+    "cards": [
       {
-        "text": "Recolectado en bodega",
-        "time": "08:40",
-        "state": "done"
+        "hub": "guatemala",
+        "place": "nw",
+        "icon": "radar",
+        "title": "ITL-48213",
+        "port": "Puerto Quetzal",
+        "status": "Geofence: alerta a 20 km",
+        "rows": [
+          {
+            "label": "Etapa",
+            "value": "04 · Tránsito"
+          },
+          {
+            "label": "ETA",
+            "value": "Hoy · 16:30"
+          }
+        ],
+        "progress": 82
       },
       {
-        "text": "Despacho aduanal",
-        "time": "11:15",
-        "state": "done"
+        "hub": "jamaica",
+        "place": "sw",
+        "icon": "file-text",
+        "title": "ITL-48219",
+        "port": "Kingston",
+        "status": "Documentos validados",
+        "rows": [
+          {
+            "label": "Etapa",
+            "value": "03 · Documentos"
+          },
+          {
+            "label": "Revisión",
+            "value": "BL y factura vs. PO"
+          }
+        ],
+        "progress": 46
       },
       {
-        "text": "En ruta",
-        "time": "Ahora",
-        "state": "current"
+        "hub": "costarica",
+        "place": "sw",
+        "icon": "ship",
+        "title": "ITL-48226",
+        "port": "Puerto Limón",
+        "status": "Pre-alerta enviada",
+        "rows": [
+          {
+            "label": "Etapa",
+            "value": "05 · Liberación"
+          },
+          {
+            "label": "Trigger",
+            "value": "5 días antes del ETA"
+          }
+        ],
+        "progress": 90
       },
       {
-        "text": "Entrega",
-        "time": "16:30",
-        "state": "pending"
+        "hub": "trinidad",
+        "place": "nw",
+        "icon": "clipboard-check",
+        "title": "ITL-48231",
+        "port": "Port of Spain",
+        "status": "Entregado · POD registrado",
+        "rows": [
+          {
+            "label": "Etapa",
+            "value": "06 · Cierre"
+          },
+          {
+            "label": "Siguiente",
+            "value": "Facturación"
+          }
+        ],
+        "progress": 100
       }
-    ]
-  },
-  "stat": {
-    "value": "24/7",
-    "label": "monitoreo de envíos con alertas por IA"
-  },
-  "about": {
-    "eyebrow": "Nosotros",
-    "title": "Tecnología y datos",
-    "titleAccent": "para empresas de logística",
-    "body": "Somos un proveedor de tecnología: monitoreamos la carga que mueve tu empresa y convertimos sus datos en información para decidir mejor. No movemos tu carga; te damos la visibilidad y los datos para que la muevas mejor.",
-    "note": "Nuestros clientes son couriers, operadores 3PL y empresas de carga",
-    "cta": {
-      "label": "Conoce Intello"
+    ],
+    "labels": {
+      "china": "China · 36.3%"
     }
   },
-  "services": {
-    "eyebrow": "Servicios",
-    "title": "Soluciones para empresas de logística",
+  "processes": {
+    "eyebrow": "Qué gestionamos",
+    "title": "Procesos que ya diseñamos",
+    "titleAccent": "y operamos",
+    "lede": "Cada operación corre con su propio SOP, documentado y versionado. Empieza por el proceso que más pesa hoy.",
+    "items": [
+      {
+        "id": "torre-de-control",
+        "title": "Torre de Control end-to-end",
+        "text": "Coordinamos, seguimos y controlamos embarques aéreos, marítimos y terrestres, desde la producción en origen hasta el cierre de la orden.",
+        "tags": [
+          "Pre-tráfico",
+          "Booking",
+          "Documentos",
+          "Tránsito",
+          "Aduana",
+          "Cierre"
+        ],
+        "figure": {
+          "value": "14,000+",
+          "label": "embarques gestionados desde 2024"
+        }
+      },
+      {
+        "id": "back-office",
+        "title": "Back office logístico",
+        "text": "Facturación tercerizada con validación de cargos contra la estructura de costos acordada, y auditorías de inventario wall to wall con su conciliación.",
+        "tags": [
+          "Facturación",
+          "Validación de cargos",
+          "Auditorías de inventario"
+        ],
+        "figure": {
+          "value": "EE.UU. · Panamá",
+          "label": "bodegas con auditorías wall to wall"
+        }
+      },
+      {
+        "id": "datos",
+        "title": "Datos y reportería",
+        "text": "Extraemos, limpiamos, validamos e integramos los reportes de clientes, proveedores y plataformas de tracking en suites de business intelligence granulares.",
+        "tags": [
+          "ETL automatizado",
+          "Business intelligence",
+          "Reportería por país"
+        ],
+        "figure": {
+          "value": "+17M",
+          "label": "celdas de datos procesadas cada mes"
+        }
+      }
+    ]
+  },
+  "tower": {
+    "eyebrow": "Torre de Control",
+    "title": "Siete fases,",
+    "titleAccent": "un mismo estándar",
+    "lede": "Anticipamos riesgos antes de que se vuelvan costos. Cada fase tiene responsables, checkpoints y algo que el cliente puede ver.",
+    "phases": [
+      {
+        "code": "00",
+        "title": "Pre-tráfico",
+        "points": [
+          "Órdenes abiertas y producción en origen",
+          "Fecha de carga lista contra fecha requerida"
+        ]
+      },
+      {
+        "code": "01",
+        "title": "Activación",
+        "points": [
+          "Orden de compra registrada y confirmada",
+          "Ready Date escalada si se retrasa"
+        ]
+      },
+      {
+        "code": "02",
+        "title": "Origen y booking",
+        "points": [
+          "Booking seguido hasta tener espacio",
+          "ETD y ETA desde el primer momento"
+        ]
+      },
+      {
+        "code": "03",
+        "title": "Documentos",
+        "points": [
+          "Factura, packing list y BL contra la PO",
+          "El cliente aprueba; garantizamos consistencia"
+        ]
+      },
+      {
+        "code": "04",
+        "title": "Tránsito",
+        "points": [
+          "Barridos de estatus programados",
+          "Alerta a 20 km del puerto de destino"
+        ]
+      },
+      {
+        "code": "05",
+        "title": "Liberación",
+        "points": [
+          "Pre-alerta cinco días antes del ETA",
+          "Impuestos y liberación a la vista"
+        ]
+      },
+      {
+        "code": "06",
+        "title": "Entrega y cierre",
+        "points": [
+          "Control preventivo de demurrage",
+          "POD, devolución de equipos y facturación"
+        ]
+      }
+    ],
+    "method": [
+      {
+        "title": "SOP por cuenta",
+        "text": "Alcance, roles, flujo y checklists documentados y versionados."
+      },
+      {
+        "title": "Matriz RACI",
+        "text": "Quién ejecuta, aprueba, consulta e informa en cada actividad."
+      },
+      {
+        "title": "Triggers proactivos",
+        "text": "Barridos programados y alertas antes de que alguien pregunte."
+      }
+    ]
+  },
+  "reach": {
+    "eyebrow": "Alcance",
+    "title": "35 países conectados",
+    "titleAccent": "por nuestra Torre de Control",
+    "lede": "Controlamos tráfico desde Asia, Norteamérica, Sudamérica y Europa hacia Centroamérica, el Caribe y la región andina.",
+    "stats": [
+      {
+        "value": "21",
+        "label": "países de origen"
+      },
+      {
+        "value": "19",
+        "label": "países de destino"
+      },
+      {
+        "value": "196",
+        "label": "rutas país a país en 2025"
+      },
+      {
+        "value": "14,000",
+        "unit": "+",
+        "label": "embarques desde 2024"
+      }
+    ],
+    "originsTitle": "Principales orígenes",
+    "origins": [
+      {
+        "label": "China",
+        "value": 36.3
+      },
+      {
+        "label": "México",
+        "value": 19.7
+      },
+      {
+        "label": "Estados Unidos",
+        "value": 17.4
+      },
+      {
+        "label": "Brasil",
+        "value": 7.2
+      },
+      {
+        "label": "Panamá",
+        "value": 5.7
+      },
+      {
+        "label": "Colombia",
+        "value": 4.4
+      },
+      {
+        "label": "Tailandia",
+        "value": 2.6
+      },
+      {
+        "label": "Vietnam",
+        "value": 2.1
+      }
+    ],
+    "destinationsTitle": "Destinos",
+    "destinations": [
+      "Costa Rica",
+      "Jamaica",
+      "Guatemala",
+      "El Salvador",
+      "Trinidad y Tobago",
+      "Honduras",
+      "Nicaragua",
+      "Guyana",
+      "Belice",
+      "Santa Lucía",
+      "Barbados",
+      "Granada",
+      "Curazao",
+      "Aruba",
+      "Ecuador",
+      "San Vicente y las Granadinas",
+      "Antigua y Barbuda",
+      "Dominica",
+      "San Cristóbal y Nieves"
+    ],
+    "note": "Base: embarques finalizados en 2025 de la operación regional y facturación de Expediting de enero de 2024 a abril de 2026."
+  },
+  "intelligence": {
+    "eyebrow": "Inteligencia de procesos",
+    "title": "Cada proceso ejecutado",
+    "titleAccent": "deja datos para decidir",
+    "lede": "Ejecutar con procesos documentados deja un rastro de datos estructurados. Lo convertimos en indicadores que mejoran el desempeño.",
+    "steps": [
+      {
+        "title": "Proceso documentado",
+        "body": "SOP, RACI y checkpoints definidos para cada operación."
+      },
+      {
+        "title": "Ejecución trazada",
+        "body": "Cada acción queda registrada con su embarque, su fecha y su responsable."
+      },
+      {
+        "title": "ETL automatizado",
+        "body": "Extracción, limpieza y validación contra registros maestros."
+      },
+      {
+        "title": "Indicadores",
+        "body": "Métricas granulares por país, cuenta, embarque e ítem."
+      },
+      {
+        "title": "Mejora continua",
+        "body": "Decisiones y ajustes que vuelven al proceso."
+      }
+    ],
+    "figure": {
+      "value": "+17",
+      "unit": "M",
+      "label": "celdas de datos procesadas cada mes",
+      "text": "Reportes de clientes, proveedores y plataformas de tracking, integrados de la línea por embarque a la línea por ítem."
+    }
+  },
+  "promises": {
+    "eyebrow": "Promesas de marca",
+    "title": "Lo que el cliente",
+    "titleAccent": "puede exigirnos",
+    "items": [
+      {
+        "value": "95",
+        "unit": "%",
+        "label": "Cumplimiento de KPIs",
+        "text": "De los KPIs operativos acordados con cada cliente."
+      },
+      {
+        "value": "<72",
+        "unit": "h",
+        "label": "Mejora continua ágil",
+        "text": "Las mejoras aprobadas quedan documentadas y replicables."
+      },
+      {
+        "value": "48",
+        "unit": "h",
+        "label": "Visibilidad continua",
+        "text": "Aviso proactivo ante cualquier desviación de SLA."
+      }
+    ]
+  },
+  "culture": {
+    "eyebrow": "Nuestra gente",
+    "title": "La estrella",
+    "titleAccent": "del show",
+    "lede": "Cuatro valores accionables marcan cómo trabajamos. Le llamamos Success Team a nuestro equipo, y su motto es Better Now!",
+    "values": [
+      {
+        "letter": "S",
+        "title": "Simplicity",
+        "text": "Procesos claros, replicables y fáciles de operar."
+      },
+      {
+        "letter": "H",
+        "title": "Hyper-productivity",
+        "text": "Trabajar más inteligente con tecnología, no más duro."
+      },
+      {
+        "letter": "O",
+        "title": "Ownership",
+        "text": "Responsables, confiables y comprometidos con el resultado."
+      },
+      {
+        "letter": "W",
+        "title": "Wowly-done",
+        "text": "Que el cliente sea fan de cómo trabajamos."
+      }
+    ],
     "action": {
-      "label": "Ver todos"
+      "label": "Conoce Intello"
     }
   }
 }

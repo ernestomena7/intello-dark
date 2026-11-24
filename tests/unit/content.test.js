@@ -75,7 +75,8 @@ test('rule 4: voice (no exclamation marks, no emoji, no shouting, verb-first but
       for (const [p, v] of leaves(doc(lang, f))) {
         if (typeof v !== 'string') continue;
         const where = `${lang}/${f}: ${p}`;
-        assert.ok(!/[!¡]/.test(v), `${where} has an exclamation mark`);
+        // The brand motto 'Better Now!' is the one allowed exclamation (client institutional document).
+        assert.ok(!/[!¡]/.test(v.replace(/Better Now!/g, '')), `${where} has an exclamation mark`);
         assert.ok(!/\p{Extended_Pictographic}/u.test(v.replace(/[©®™]/g, '')), `${where} has an emoji`);
         assert.ok(!/\b[A-ZÁÉÍÓÚÑ]{5,}\b/.test(v), `${where} has an all-caps word`);
         if (BUTTON_PATH.test(p)) {
