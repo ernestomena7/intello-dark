@@ -1,86 +1,415 @@
 {
   "meta": {
-    "title": "Intello | Cargo monitoring and business intelligence",
-    "description": "Cargo monitoring and AI business intelligence for logistics companies. Visibility of every shipment and data to decide better."
+    "title": "Intello | Process management for logistics companies",
+    "description": "We run operational and back-office processes for logistics companies: Control Tower, billing, BI and ETL, with a documented method and figures in view."
   },
   "hero": {
-    "eyebrow": "Cargo monitoring and business intelligence",
-    "title": "Visibility of your cargo",
-    "titleAccent": "and data to decide",
-    "lede": "We monitor every shipment and turn your operation's data into indicators and forecasts with AI. Built for logistics companies.",
+    "eyebrow": "Logistics process outsourcing · Latin America nearshore",
+    "title": "Managed logistics processes.",
+    "titleAccent": "More capacity, clear control.",
+    "lede": "We are the operational extension of logistics companies: we run their operational and back-office processes with a documented method, defined owners and visibility of every result.",
     "cta": {
-      "label": "Request a demo"
+      "label": "Book a review"
     },
-    "features": [
+    "secondary": {
+      "label": "See processes"
+    },
+    "badge": "Illustrative simulation · no client data"
+  },
+  "map": {
+    "title": "Highest-volume routes in 2025, from Asia, North America, South America and Europe into Central America and the Caribbean",
+    "caption": "Illustration based on 2025 operating data. Thicker routes carry more shipments.",
+    "legend": {
+      "o": "Origin",
+      "d": "Destination",
+      "b": "Origin and destination"
+    },
+    "cards": [
       {
-        "title": "Protected data",
-        "text": "We use your data only to deliver the service."
+        "hub": "guatemala",
+        "place": "nw",
+        "icon": "radar",
+        "title": "ITL-48213",
+        "port": "Puerto Quetzal",
+        "status": "Geofence: 20 km alert",
+        "rows": [
+          {
+            "label": "Stage",
+            "value": "04 · Transit"
+          },
+          {
+            "label": "ETA",
+            "value": "Today · 16:30"
+          }
+        ],
+        "progress": 82
       },
       {
-        "title": "Real-time monitoring",
-        "text": "The status of every shipment, always in view."
+        "hub": "jamaica",
+        "place": "sw",
+        "icon": "file-text",
+        "title": "ITL-48219",
+        "port": "Kingston",
+        "status": "Documents validated",
+        "rows": [
+          {
+            "label": "Stage",
+            "value": "03 · Documents"
+          },
+          {
+            "label": "Check",
+            "value": "BL and invoice vs. PO"
+          }
+        ],
+        "progress": 46
       },
       {
-        "title": "Indicators and forecasts",
-        "text": "KPI dashboards and AI demand forecasts."
+        "hub": "costarica",
+        "place": "sw",
+        "icon": "ship",
+        "title": "ITL-48226",
+        "port": "Puerto Limón",
+        "status": "Pre-alert sent",
+        "rows": [
+          {
+            "label": "Stage",
+            "value": "05 · Release"
+          },
+          {
+            "label": "Trigger",
+            "value": "5 days before ETA"
+          }
+        ],
+        "progress": 90
       },
       {
-        "title": "Works with your systems",
-        "text": "We connect through APIs to what you already use."
+        "hub": "trinidad",
+        "place": "nw",
+        "icon": "clipboard-check",
+        "title": "ITL-48231",
+        "port": "Port of Spain",
+        "status": "Delivered · POD logged",
+        "rows": [
+          {
+            "label": "Stage",
+            "value": "06 · Closing"
+          },
+          {
+            "label": "Next",
+            "value": "Billing"
+          }
+        ],
+        "progress": 100
       }
-    ]
-  },
-  "tracking": {
-    "heading": "Shipment · illustrative example",
-    "id": "ITL-48213",
-    "statusLabel": "In transit",
-    "from": "San Salvador",
-    "fromMeta": "Origin · 08:40",
-    "to": "Guatemala City",
-    "toMeta": "ETA · 16:30",
-    "progress": 62,
-    "steps": [
-      {
-        "text": "Picked up at warehouse",
-        "time": "08:40",
-        "state": "done"
-      },
-      {
-        "text": "Customs clearance",
-        "time": "11:15",
-        "state": "done"
-      },
-      {
-        "text": "On the road",
-        "time": "Now",
-        "state": "current"
-      },
-      {
-        "text": "Delivery",
-        "time": "16:30",
-        "state": "pending"
-      }
-    ]
-  },
-  "stat": {
-    "value": "24/7",
-    "label": "shipment monitoring with AI alerts"
-  },
-  "about": {
-    "eyebrow": "About us",
-    "title": "Technology and data",
-    "titleAccent": "for logistics companies",
-    "body": "We are a technology provider: we monitor the cargo your company moves and turn its data into information to decide better. We do not move your cargo; we give you the visibility and the data to move it better.",
-    "note": "Our clients are couriers, 3PL operators and freight companies",
-    "cta": {
-      "label": "Learn about us"
+    ],
+    "labels": {
+      "china": "China · 36.3%"
     }
   },
-  "services": {
-    "eyebrow": "Services",
-    "title": "Solutions for logistics companies",
+  "processes": {
+    "eyebrow": "What we manage",
+    "title": "Processes we already design",
+    "titleAccent": "and run",
+    "items": [
+      {
+        "id": "torre-de-control",
+        "title": "End-to-end Control Tower",
+        "text": "We coordinate, track and control air, ocean and ground shipments, from production at origin to order closing.",
+        "tags": [
+          "Pre-shipment",
+          "Booking",
+          "Documents",
+          "Transit",
+          "Customs",
+          "Closing"
+        ],
+        "figure": {
+          "value": "14,000",
+          "unit": "+",
+          "label": "shipments managed since 2024"
+        }
+      },
+      {
+        "id": "back-office",
+        "title": "Logistics back office",
+        "text": "Outsourced billing with charges validated against the agreed cost structure, and wall-to-wall inventory audits with their reconciliation.",
+        "tags": [
+          "Billing",
+          "Charge validation",
+          "Inventory audits"
+        ],
+        "figure": {
+          "value": "2",
+          "unit": " countries",
+          "label": "wall-to-wall audits, US and Panama warehouses"
+        }
+      },
+      {
+        "id": "datos",
+        "title": "Data and reporting",
+        "text": "We extract, clean, validate and integrate reports from clients, suppliers and tracking platforms into granular business intelligence suites.",
+        "tags": [
+          "Automated ETL",
+          "Business intelligence",
+          "Reporting by country"
+        ],
+        "figure": {
+          "value": "+17",
+          "unit": "M",
+          "label": "data cells processed every month"
+        }
+      }
+    ]
+  },
+  "tower": {
+    "eyebrow": "Control Tower",
+    "title": "Seven phases,",
+    "titleAccent": "one standard",
+    "lede": "We anticipate risks before they become costs. Every phase has owners, checkpoints and something the client can see.",
+    "phases": [
+      {
+        "code": "00",
+        "title": "Pre-shipment",
+        "points": [
+          "Open orders and production at origin",
+          "Cargo ready date against need-by date"
+        ]
+      },
+      {
+        "code": "01",
+        "title": "Activation",
+        "points": [
+          "Purchase order logged and confirmed",
+          "Ready Date escalated if it slips"
+        ]
+      },
+      {
+        "code": "02",
+        "title": "Origin and booking",
+        "points": [
+          "Booking followed until space is confirmed",
+          "ETD and ETA from day one"
+        ]
+      },
+      {
+        "code": "03",
+        "title": "Documents",
+        "points": [
+          "Invoice, packing list and BL against the PO",
+          "The client approves; we ensure consistency"
+        ]
+      },
+      {
+        "code": "04",
+        "title": "Transit",
+        "points": [
+          "Scheduled status sweeps",
+          "Alert 20 km from the destination port"
+        ]
+      },
+      {
+        "code": "05",
+        "title": "Release",
+        "points": [
+          "Pre-alert five days before ETA",
+          "Duties and release in view"
+        ]
+      },
+      {
+        "code": "06",
+        "title": "Delivery and closing",
+        "points": [
+          "Preventive demurrage control",
+          "POD, equipment return and billing"
+        ]
+      }
+    ],
+    "method": [
+      {
+        "title": "SOP per account",
+        "text": "Scope, roles, flow and checklists, documented and versioned."
+      },
+      {
+        "title": "RACI matrix",
+        "text": "Who runs, approves, is consulted and informed on each activity."
+      },
+      {
+        "title": "Proactive triggers",
+        "text": "Scheduled sweeps and alerts before anyone has to ask."
+      }
+    ]
+  },
+  "reach": {
+    "eyebrow": "Reach",
+    "title": "35 countries connected",
+    "titleAccent": "by our Control Tower",
+    "lede": "We control traffic from Asia, North America, South America and Europe into Central America, the Caribbean and the Andean region.",
+    "stats": [
+      {
+        "value": "21",
+        "label": "origin countries"
+      },
+      {
+        "value": "19",
+        "label": "destinations"
+      },
+      {
+        "value": "196",
+        "label": "country routes in 2025"
+      },
+      {
+        "value": "14,000",
+        "unit": "+",
+        "label": "shipments since 2024"
+      }
+    ],
+    "originsTitle": "Top origins",
+    "origins": [
+      {
+        "label": "China",
+        "value": 36.3
+      },
+      {
+        "label": "Mexico",
+        "value": 19.7
+      },
+      {
+        "label": "United States",
+        "value": 17.4
+      },
+      {
+        "label": "Brazil",
+        "value": 7.2
+      },
+      {
+        "label": "Panama",
+        "value": 5.7
+      },
+      {
+        "label": "Colombia",
+        "value": 4.4
+      },
+      {
+        "label": "Thailand",
+        "value": 2.6
+      },
+      {
+        "label": "Vietnam",
+        "value": 2.1
+      }
+    ],
+    "destinationsTitle": "Destinations",
+    "destinations": [
+      "Costa Rica",
+      "Jamaica",
+      "Guatemala",
+      "El Salvador",
+      "Trinidad and Tobago",
+      "Honduras",
+      "Nicaragua",
+      "Guyana",
+      "Belize",
+      "Saint Lucia",
+      "Barbados",
+      "Grenada",
+      "Curaçao",
+      "Aruba",
+      "Ecuador",
+      "St. Vincent and the Grenadines",
+      "Antigua and Barbuda",
+      "Dominica",
+      "St. Kitts and Nevis"
+    ],
+    "note": "Based on 2025 completed shipments for the regional operation and Expediting billing from January 2024 to April 2026."
+  },
+  "intelligence": {
+    "eyebrow": "Process intelligence",
+    "title": "Every process we run",
+    "titleAccent": "leaves data to decide with",
+    "lede": "Running documented processes leaves a trail of structured data. We turn it into indicators that improve performance.",
+    "steps": [
+      {
+        "title": "Documented process",
+        "body": "SOP, RACI and checkpoints defined for each operation."
+      },
+      {
+        "title": "Traced execution",
+        "body": "Every action is logged with its shipment, date and owner."
+      },
+      {
+        "title": "Automated ETL",
+        "body": "Extraction, cleansing and validation against master records."
+      },
+      {
+        "title": "Indicators",
+        "body": "Granular metrics by country, account, shipment and item."
+      },
+      {
+        "title": "Continuous improvement",
+        "body": "Decisions and adjustments that feed back into the process."
+      }
+    ],
+    "figure": {
+      "value": "+17",
+      "unit": "M",
+      "label": "data cells processed every month",
+      "text": "Reports from clients, suppliers and tracking platforms, integrated from one line per shipment to one line per item."
+    }
+  },
+  "promises": {
+    "eyebrow": "Brand promises",
+    "title": "What clients",
+    "titleAccent": "can hold us to",
+    "items": [
+      {
+        "value": "95",
+        "unit": "%",
+        "label": "KPI compliance",
+        "text": "On the operational KPIs agreed with each client."
+      },
+      {
+        "value": "<72",
+        "unit": "h",
+        "label": "Agile improvement",
+        "text": "Approved improvements are documented and repeatable."
+      },
+      {
+        "value": "48",
+        "unit": "h",
+        "label": "Ongoing visibility",
+        "text": "Proactive notice of any SLA deviation."
+      }
+    ]
+  },
+  "culture": {
+    "eyebrow": "Our people",
+    "title": "The stars",
+    "titleAccent": "of the show",
+    "lede": "Four actionable values set how we work. We call our team the Success Team, and its motto is Better Now!",
+    "values": [
+      {
+        "letter": "S",
+        "title": "Simplicity",
+        "text": "Clear, repeatable processes that are easy to run."
+      },
+      {
+        "letter": "H",
+        "title": "Hyper-productivity",
+        "text": "Work smarter with technology, not harder."
+      },
+      {
+        "letter": "O",
+        "title": "Ownership",
+        "text": "Responsible, reliable and committed to the result."
+      },
+      {
+        "letter": "W",
+        "title": "Wowly-done",
+        "text": "Clients become fans of how we work."
+      }
+    ],
     "action": {
-      "label": "View all"
+      "label": "Learn about us"
     }
   }
 }
