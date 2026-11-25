@@ -1,82 +1,104 @@
 {
   "meta": {
-    "title": "Monitoreo de carga e inteligencia de negocio | Intello",
-    "description": "Monitoreo de carga, inteligencia de negocio con IA, servicios tecnológicos y back office. Qué hacemos y qué recibes con cada servicio."
+    "title": "Servicios: Torre de Control, back office y datos | Intello",
+    "description": "Procesos que diseñamos y operamos para empresas de logística: Torre de Control end-to-end, facturación y auditorías, ETL y business intelligence."
   },
   "header": {
     "eyebrow": "Servicios",
-    "title": "Monitoreo y datos",
-    "titleAccent": "para tu operación",
-    "lede": "Cuatro servicios que se complementan. Contrata uno o combínalos."
+    "title": "Procesos que diseñamos y operamos",
+    "titleAccent": "para empresas de logística",
+    "lede": "Tomamos procesos operativos y de back office completos, con SOP documentado, responsables definidos y reportería. Empieza por uno y crece cuando los números lo demuestren.",
+    "cta": { "label": "Agendar una revisión" },
+    "secondary": { "label": "Ver cómo trabajamos" }
+  },
+  "index": {
+    "eyebrow": "Tres familias de procesos",
+    "title": "Elige el proceso",
+    "titleAccent": "que más pesa hoy"
   },
   "items": [
     {
       "id": "tracking",
-      "title": "Monitoreo de carga",
-      "bullets": [
-        "Visibilidad en tiempo real",
-        "Alertas al cliente final"
+      "kicker": "01 · Torre de Control",
+      "title": "Torre de Control end-to-end",
+      "titleAccent": "de origen a cierre",
+      "summary": "Coordinamos, seguimos y controlamos embarques aéreos, marítimos y terrestres, desde la producción en origen hasta el cierre de la orden. Anticipamos riesgos antes de que se vuelvan costos.",
+      "figure": { "value": "14,000", "unit": "+", "label": "embarques gestionados desde 2024" },
+      "indexText": "Seguimiento de órdenes y embarques, documentos, aduana y cierre.",
+      "seeLabel": "El cliente ve:",
+      "phases": [
+        { "code": "00", "title": "Pre-tráfico: antes del zarpe", "points": ["Gestionamos las órdenes abiertas y monitoreamos la producción en origen.", "Seguimos la fecha de carga lista contra la fecha requerida en destino.", "Generamos un forecast integrado de ETA desde la colocación del pedido."], "see": "alertas tempranas ante desviaciones que pongan en riesgo la temporada." },
+        { "code": "01", "title": "Activación y carga inicial", "points": ["Recibimos la orden de compra y acusamos recibo con el proveedor.", "Confirmamos la Ready Date y escalamos si hay demoras.", "Registramos la PO en la plataforma de seguimiento: valor, incoterm, proveedor."], "see": "cada PO visible desde el primer día." },
+        { "code": "02", "title": "Coordinación en origen", "points": ["Damos seguimiento al booking con el proveedor o el forwarder hasta tener espacio confirmado.", "Validamos que el itinerario cumpla la necesidad del cliente."], "see": "ETD y ETA estimadas desde el primer momento." },
+        { "code": "03", "title": "Gestión documental", "points": ["Revisamos borradores de factura comercial, packing list y BL/AWB contra la PO.", "Verificamos consignatario, pesos y bultos antes de la emisión final."], "see": "el cliente aprueba; nosotros garantizamos la consistencia." },
+        { "code": "04", "title": "Tránsito y monitoreo", "points": ["Barridos de estatus programados: lunes, miércoles y viernes, o cada 2 a 3 días en marítimo.", "Verificación cruzada de ETA en las plataformas de navieras y carriers.", "Vigilancia de transbordos y geofence: alerta cuando el buque entra a 20 km del puerto de destino."], "see": "retrasos y cambios de itinerario notificados de inmediato." },
+        { "code": "05", "title": "Liberación y nacionalización", "points": ["Auditoría documental preliminar de facturas y documentos de transporte.", "Paquete de pre-alerta que habilita el pre-despacho, cinco días antes del ETA."], "see": "impuestos y liberación con visibilidad continua." },
+        { "code": "06", "title": "Entrega, logística inversa y cierre", "points": ["Monitoreo de citas y ventanas de entrega en bodega o planta.", "Liberación de BL y control preventivo de demurrage y detention.", "Gestión de incidencias, POD y devolución de equipos."], "see": "cierre de la orden y soporte al ciclo de facturación." }
       ],
-      "summary": "Monitoreamos el estado de cada envío de tu operación y avisamos a tus clientes cuando algo cambia, para que tu equipo tenga visibilidad sin perseguir información.",
-      "deliverables": [
-        "Estado de cada envío en tiempo real",
-        "Alertas al cliente final",
-        "Reporte de incidencias"
-      ],
-      "cta": {
-        "label": "Solicitar información"
-      }
-    },
-    {
-      "id": "ai-analytics",
-      "title": "Inteligencia de negocio con IA",
-      "bullets": [
-        "Tableros de KPIs",
-        "Pronósticos de demanda"
-      ],
-      "summary": "Convertimos los datos de tu operación en indicadores y pronósticos que ayudan a tu empresa a decidir mejor.",
-      "deliverables": [
-        "Tableros de KPIs",
-        "Pronósticos de demanda",
-        "Alertas por IA sobre tu operación"
-      ],
-      "cta": {
-        "label": "Solicitar información"
-      }
-    },
-    {
-      "id": "technology",
-      "title": "Servicios tecnológicos",
-      "bullets": [
-        "Integraciones y APIs",
-        "Desarrollo a la medida"
-      ],
-      "summary": "Conectamos tus sistemas y desarrollamos las herramientas que tu empresa necesita para aprovechar sus datos.",
-      "deliverables": [
-        "Integraciones y APIs con tus sistemas",
-        "Desarrollo a la medida",
-        "Soporte técnico de lo que construimos"
-      ],
-      "cta": {
-        "label": "Solicitar información"
-      }
+      "cta": { "label": "Agendar una revisión" }
     },
     {
       "id": "back-office",
-      "title": "Back office para logística",
-      "bullets": [
-        "Facturación y documentos",
-        "Conciliación de guías"
+      "kicker": "02 · Back office",
+      "title": "Back office logístico",
+      "titleAccent": "con el mismo método",
+      "summary": "Cada operación corre con su propio SOP, documentado y versionado. Con ese método tomamos los procesos administrativos que sostienen la operación logística.",
+      "figure": { "value": "2", "unit": " países", "label": "bodegas auditadas wall to wall en EE.UU. y Panamá" },
+      "indexText": "Facturación tercerizada y auditorías de inventario con su conciliación.",
+      "services": [
+        { "kicker": "Facturación", "title": "Facturación tercerizada", "text": "Operamos procesos de facturación de punta a punta.", "bullets": ["Validación de cargos contra la estructura de costos acordada", "Expedientes de cierre por operación", "Carga de estatus en los portales del cliente", "Cierre del ciclo con cada operación"] },
+        { "kicker": "Inventario", "title": "Auditorías de inventario wall to wall", "text": "Diseñamos optimizaciones para auditorías completas de inventario.", "bullets": ["Protocolos de conteo por bodega", "Conciliación contra el inventario registrado", "Reporte de diferencias", "Bodegas en Estados Unidos, incluida Miami, y Panamá"] }
       ],
-      "summary": "Apoyamos a tu equipo administrativo con la documentación y la conciliación, para que se concentre en su propia operación.",
-      "deliverables": [
-        "Facturación y documentos de envío",
-        "Conciliación de guías",
-        "Seguimiento de incidencias administrativas"
+      "cta": { "label": "Agendar una revisión" }
+    },
+    {
+      "id": "ai-analytics",
+      "kicker": "03 · Datos",
+      "title": "Datos y reportería",
+      "titleAccent": "listos para decidir",
+      "summary": "Cada proceso ejecutado deja un rastro de datos estructurados. Lo extraemos, limpiamos e integramos en suites de business intelligence con métricas granulares.",
+      "figure": { "value": "+17", "unit": "M", "label": "celdas de datos procesadas cada mes" },
+      "indexText": "ETL automatizado, business intelligence y reportería por país.",
+      "etlTitle": "Lo que hace nuestro ETL",
+      "etl": [
+        { "lead": "Extrae", "text": "a diario y por semana los reportes de clientes, proveedores y plataformas de tracking." },
+        { "lead": "Limpia y valida", "text": "contra registros maestros: proveedores, divisiones, países y puertos." },
+        { "lead": "Integra", "text": "fuentes distintas en una base granular, de la línea por embarque a la línea por ítem." },
+        { "lead": "Procesa", "text": "cada semana datos del cliente: órdenes abiertas, cuentas por cobrar, inventario y tarifas de flete." },
+        { "lead": "Actualiza", "text": "automáticamente a partir de los eventos de tracking." },
+        { "lead": "Respalda", "text": "la información de la operación con rutinas programadas." }
       ],
-      "cta": {
-        "label": "Solicitar información"
-      }
+      "capabilities": [
+        { "kicker": "Visibilidad", "title": "Una sola verdad regional", "text": "Visibilidad consolidada por país, con históricos listos para auditorías y análisis." },
+        { "kicker": "Integración", "title": "Data Intelligence Hub", "text": "Modelos que integran fuentes del cliente, como inventario de centros de distribución o proyección de impuestos." },
+        { "kicker": "Consumo", "title": "La información llega sola", "text": "Correo operativo, reportes automáticos por país y portales de consulta." },
+        { "kicker": "Próximamente", "title": "Logística conversacional", "badge": "En desarrollo", "text": "Un asistente para consultar la operación conversando con los propios datos." }
+      ],
+      "cta": { "label": "Agendar una revisión" }
     }
-  ]
+  ],
+  "method": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "Un mismo modelo estándar",
+    "titleAccent": "para cada operación",
+    "items": [
+      { "kicker": "Método", "title": "SOP por cuenta", "text": "Mapeamos cada proceso, lo documentamos y lo versionamos: alcance, roles, flujo, checklists y plantillas." },
+      { "kicker": "Orden", "title": "Canales por etapa", "text": "Cadenas de comunicación separadas para origen, tránsito, aduana y cierre, con cada embarque trazado." },
+      { "kicker": "Gobierno", "title": "Matriz RACI", "text": "Cada actividad tiene responsable, aprobador, consultado e informado entre cliente, proveedor, agente e Intello." },
+      { "kicker": "Anticipación", "title": "Triggers proactivos", "text": "Barridos de estatus programados y alertas automáticas, como la pre-alerta cinco días antes del ETA." },
+      { "kicker": "Control", "title": "Gestión de riesgos", "text": "Matriz de probabilidad e impacto para cambios de itinerario, retrasos documentales, incoterms y días libres." },
+      { "kicker": "Visibilidad", "title": "Reportería y portales", "text": "Tableros por cliente, reportes recurrentes y carga de estatus en los portales de cada cliente." }
+    ]
+  },
+  "start": {
+    "eyebrow": "Cómo empezamos",
+    "title": "Un proceso,",
+    "titleAccent": "sin saltos al vacío",
+    "steps": [
+      { "title": "Mapear", "body": "Una conversación de 30 minutos para entender un proceso: volumen, sistemas y puntos de dolor." },
+      { "title": "Diseñar", "body": "Te devolvemos un mapa del proceso con borrador de SOP, RACI y métricas de éxito." },
+      { "title": "Pilotear", "body": "Operamos ese proceso, medido contra las métricas acordadas." },
+      { "title": "Escalar", "body": "Si los números se sostienen, tomamos el siguiente proceso." }
+    ]
+  }
 }

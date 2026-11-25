@@ -1,16 +1,31 @@
-// Technology: plain-language capabilities of the AI and data analysis (no mascots, no decoration).
+// Technology (BPO redesign): how Intello uses technology to run processes better, the process-intelligence loop,
+// and how client data is handled. Sources: Intello, "Cultura y capacidades" (Nov 2026), pages 04 to 06, 09 and 10,
+// and the client's draft site (trust section). SOC 2 Type II is shown as a goal, never as held.
 import { html, React } from '../render/html.js';
 import { DarkBand, Frame } from '../render/frame.js';
-import { imageProps } from '../render/image.js';
 
 export const key = 'technology';
 
 export function render(ctx) {
-  const { ds, lang, common, structure } = ctx;
+  const { ds, common } = ctx;
   const c = ctx.content('technology');
-  const slot = (name) => structure.imageSlots[name];
+  const topic = ctx.url('contact', '?topic=technology');
 
-  const capabilities = c.capabilities.map((cap, i) => ({ ...cap, icon: structure.technologyIcons[i] }));
+  const usage = html`<${ds.Section} tone="card" className="itl-tech-block">
+    <${ds.SectionHeader} eyebrow=${c.usage.eyebrow} title=${c.usage.title} accent=${c.usage.titleAccent} lede=${c.usage.lede} />
+    <${ds.InfoGrid} variant="rule" columns=${3} items=${c.usage.items} />
+  <//>`;
+
+  const pipeline = html`<${ds.Section} tone="card" className="itl-tech-block">
+    <${ds.SectionHeader} eyebrow=${c.pipeline.eyebrow} title=${c.pipeline.title} accent=${c.pipeline.titleAccent} />
+    <div className="itl-tech-pipeline"><${ds.Steps} items=${c.pipeline.steps} /></div>
+  <//>`;
+
+  const security = html`<${ds.Section} tone="navy" id="seguridad" className="itl-tech-block">
+    <${ds.SectionHeader} eyebrow=${c.security.eyebrow} title=${c.security.title} accent=${c.security.titleAccent} lede=${c.security.lede} />
+    <${ds.InfoGrid} variant="rule" columns=${3}
+      items=${c.security.items.map((it, i) => (i === c.security.items.length - 1 ? { ...it, badge: c.security.badge } : it))} />
+  <//>`;
 
   const body = html`<${React.Fragment}>
     ${DarkBand(html`<${ds.PageHero}
@@ -18,28 +33,15 @@ export function render(ctx) {
       title=${c.header.title}
       titleAccent=${c.header.titleAccent}
       lede=${c.header.lede}
-      media=${imageProps(lang, slot('technology.1'), { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'radar' })} />`)}
-    <${ds.Section} tone="card">
-      <div className="itl-stack">
-        <${ds.SectionHeader} title=${c.capabilitiesTitle} />
-        <${ds.Steps} items=${capabilities} />
-      </div>
-    <//>
-    <${ds.Section} tone="card">
-      <div className="itl-duo">
-        <div className="itl-stack">
-          <${ds.SectionHeader} title=${c.how.title} />
-          <${ds.Steps} items=${c.how.steps} />
-        </div>
-        <${ds.ImageTile} ...${imageProps(lang, slot('technology.2'), { sizes: '(min-width: 900px) 40vw, 100vw', ratio: '4 / 3', icon: 'database' })} />
-      </div>
-    <//>
+      cta=${{ label: c.header.cta.label, href: topic }}
+      secondary=${{ label: c.header.secondary.label, href: '#seguridad' }} />`)}
+    ${usage}${pipeline}${security}
     <${ds.CtaBand}
       eyebrow=${common.ctaBand.eyebrow}
       title=${common.ctaBand.title}
       titleAccent=${common.ctaBand.titleAccent}
       body=${common.ctaBand.body}
-      cta=${{ label: common.ctaBand.cta.label, href: ctx.url('contact', '?topic=ai-analytics') }} />
+      cta=${{ label: common.ctaBand.cta.label, href: topic }} />
   <//>`;
   return { meta: c.meta, body: Frame(ctx, body) };
 }

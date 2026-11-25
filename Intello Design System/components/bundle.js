@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"Intello","components":[{"name":"Button"},{"name":"IconButton"},{"name":"TextLink"},{"name":"VideoLink"},{"name":"Icon"},{"name":"Logo"},{"name":"Eyebrow"},{"name":"Headline"},{"name":"NavBar"},{"name":"LanguageToggle"},{"name":"Hero"},{"name":"FeatureItem"},{"name":"StatChip"},{"name":"Section"},{"name":"SectionHeader"},{"name":"ImageTile"},{"name":"ServiceCard"},{"name":"StatusBadge"},{"name":"TrackingCard"},{"name":"AboutBlock"},{"name":"StatGrid"},{"name":"TagList"},{"name":"BarList"},{"name":"ProcessList"},{"name":"PhaseTrack"},{"name":"LetterGrid"},{"name":"RouteMap"},{"name":"MapHero"}]} */
+/* @ds-bundle: {"format":4,"namespace":"Intello","components":[{"name":"Button"},{"name":"IconButton"},{"name":"TextLink"},{"name":"VideoLink"},{"name":"Icon"},{"name":"Logo"},{"name":"Eyebrow"},{"name":"Headline"},{"name":"NavBar"},{"name":"LanguageToggle"},{"name":"Hero"},{"name":"FeatureItem"},{"name":"StatChip"},{"name":"Section"},{"name":"SectionHeader"},{"name":"ImageTile"},{"name":"ServiceCard"},{"name":"StatusBadge"},{"name":"TrackingCard"},{"name":"AboutBlock"},{"name":"StatGrid"},{"name":"TagList"},{"name":"BarList"},{"name":"ProcessList"},{"name":"PhaseTrack"},{"name":"LetterGrid"},{"name":"RouteMap"},{"name":"MapHero"},{"name":"InfoGrid"},{"name":"FactList"},{"name":"Statement"}]} */
 (function () {
   var React = window.React, h = React.createElement, F = React.Fragment;
   var ICONS = {"shield-check": "<path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\" /><path d=\"m9 12 2 2 4-4\" />", "package": "<path d=\"M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z\" /><path d=\"M12 22V12\" /><path d=\"m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7\" /><path d=\"m7.5 4.27 9 5.15\" />", "file-text": "<path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\" /><path d=\"M14 2v4a2 2 0 0 0 2 2h4\" /><path d=\"M10 9H8\" /><path d=\"M16 13H8\" /><path d=\"M16 17H8\" />", "headset": "<path d=\"M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z\" /><path d=\"M21 16v2a4 4 0 0 1-4 4h-5\" />", "arrow-right": "<path d=\"M5 12h14\" /><path d=\"m12 5 7 7-7 7\" />", "arrow-up-right": "<path d=\"M7 7h10v10\" /><path d=\"M7 17 17 7\" />", "play": "<polygon points=\"6 3 20 12 6 21 6 3\" />", "phone": "<path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\" />", "globe": "<circle cx=\"12\" cy=\"12\" r=\"10\" /><path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20\" /><path d=\"M2 12h20\" />", "truck": "<path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\" /><path d=\"M15 18H9\" /><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\" /><circle cx=\"17\" cy=\"18\" r=\"2\" /><circle cx=\"7\" cy=\"18\" r=\"2\" />", "ship": "<path d=\"M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\" /><path d=\"M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76\" /><path d=\"M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6\" /><path d=\"M12 10v4\" /><path d=\"M12 2v3\" />", "plane": "<path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z\" />", "clipboard-check": "<rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\" /><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\" /><path d=\"m9 14 2 2 4-4\" />", "map-pin": "<path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\" /><circle cx=\"12\" cy=\"10\" r=\"3\" />", "chart-line": "<path d=\"M3 3v16a2 2 0 0 0 2 2h16\" /><path d=\"m19 9-5 5-4-4-3 3\" />", "bot": "<path d=\"M12 8V4H8\" /><rect width=\"16\" height=\"12\" x=\"4\" y=\"8\" rx=\"2\" /><path d=\"M2 14h2\" /><path d=\"M20 14h2\" /><path d=\"M15 13v2\" /><path d=\"M9 13v2\" />", "database": "<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\" /><path d=\"M3 5V19A9 3 0 0 0 21 19V5\" /><path d=\"M3 12A9 3 0 0 0 21 12\" />", "layers": "<path d=\"m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z\" /><path d=\"m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65\" /><path d=\"m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65\" />", "radar": "<path d=\"M19.07 4.93A10 10 0 0 0 6.99 3.34\" /><path d=\"M4 6h.01\" /><path d=\"M2.29 9.62A10 10 0 1 0 21.31 8.35\" /><path d=\"M16.24 7.76A6 6 0 1 0 8.23 16.67\" /><path d=\"M12 18h.01\" /><path d=\"M17.99 11.66A6 6 0 0 1 15.77 16.67\" /><circle cx=\"12\" cy=\"12\" r=\"2\" /><path d=\"m13.41 10.59 5.66-5.66\" />", "route": "<circle cx=\"6\" cy=\"19\" r=\"3\" /><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\" /><circle cx=\"18\" cy=\"5\" r=\"3\" />", "package-search": "<path d=\"M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14\" /><path d=\"m7.5 4.27 9 5.15\" /><polyline points=\"3.29 7 12 12 20.71 7\" /><line x1=\"12\" x2=\"12\" y1=\"22\" y2=\"12\" /><circle cx=\"18.5\" cy=\"15.5\" r=\"2.5\" /><path d=\"M20.27 17.27 22 19\" />", "check": "<path d=\"M20 6 9 17l-5-5\" />", "clock": "<circle cx=\"12\" cy=\"12\" r=\"10\" /><polyline points=\"12 6 12 12 16 14\" />", "building-2": "<path d=\"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z\" /><path d=\"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2\" /><path d=\"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2\" /><path d=\"M10 6h4\" /><path d=\"M10 10h4\" /><path d=\"M10 14h4\" /><path d=\"M10 18h4\" />", "users": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\" /><circle cx=\"9\" cy=\"7\" r=\"4\" /><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\" /><path d=\"M16 3.13a4 4 0 0 1 0 7.75\" />", "brain-circuit": "<path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\" /><path d=\"M9 13a4.5 4.5 0 0 0 3-4\" /><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\" /><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\" /><path d=\"M6 18a4 4 0 0 1-1.967-.516\" /><path d=\"M12 13h4\" /><path d=\"M12 18h6a2 2 0 0 1 2 2v1\" /><path d=\"M12 8h8\" /><path d=\"M16 8V5a2 2 0 0 1 2-2\" /><circle cx=\"16\" cy=\"13\" r=\".5\" /><circle cx=\"18\" cy=\"3\" r=\".5\" /><circle cx=\"20\" cy=\"21\" r=\".5\" /><circle cx=\"20\" cy=\"8\" r=\".5\" />", "warehouse": "<path d=\"M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z\" /><path d=\"M6 18h12\" /><path d=\"M6 14h12\" /><rect width=\"12\" height=\"12\" x=\"6\" y=\"10\" />", "triangle-alert": "<path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\" /><path d=\"M12 9v4\" /><path d=\"M12 17h.01\" />", "chevron-down": "<path d=\"m6 9 6 6 6-6\" />", "mail": "<path d=\"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7\" /><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\" />"};
@@ -420,7 +420,7 @@
     return h('dl', { className: cx('itl-stats', 'itl-stats-' + (p.variant || 'rule'), p.className), style: { '--itl-cols': p.columns || items.length } },
       items.map(function (s, i) {
         return h('div', { key: i, className: 'itl-stat' },
-          s.title ? h('dt', { className: 'itl-stat-title' }, s.title) : h('dt', { className: 'itl-stat-label' }, s.label),
+          s.title ? h('dt', { className: 'itl-stat-title' }, s.href ? h('a', { href: s.href }, s.title) : s.title) : h('dt', { className: 'itl-stat-label' }, s.label),
           h('dd', { className: 'itl-stat-value' }, s.value, s.unit ? h('span', { className: 'itl-stat-unit' }, s.unit) : null),
           s.title && s.label ? h('dd', { className: 'itl-stat-label' }, s.label) : null,
           s.text ? h('dd', { className: 'itl-stat-text' }, s.text) : null);
@@ -461,11 +461,12 @@
 
   /* PhaseTrack: an ordered sequence of phases on a rail. item: { code, title, points[] }. */
   function PhaseTrack(p) {
-    return h('ol', { className: cx('itl-phases', p.className), role: 'list' }, (p.items || []).map(function (it, i) {
+    return h('ol', { className: cx('itl-phases', p.variant && 'itl-phases-' + p.variant, p.className), role: 'list' }, (p.items || []).map(function (it, i) {
       return h('li', { key: i, className: 'itl-phase' },
         h('span', { className: 'itl-phase-code', 'aria-hidden': 'true' }, it.code),
         h('h3', { className: 'itl-phase-title' }, it.title),
-        it.points ? h('ul', { className: 'itl-phase-points', role: 'list' }, it.points.map(function (pt, j) { return h('li', { key: j }, pt); })) : null);
+        it.points ? h('ul', { className: 'itl-phase-points', role: 'list' }, it.points.map(function (pt, j) { return h('li', { key: j }, pt); })) : null,
+        it.see ? h('p', { className: 'itl-phase-see' }, p.seeLabel ? h('strong', null, p.seeLabel + ' ') : null, it.see) : null);
     }));
   }
 
@@ -475,7 +476,8 @@
       return h('li', { key: i, className: 'itl-letter-item' },
         h('span', { className: 'itl-letter', 'aria-hidden': 'true' }, it.letter),
         h('h3', { className: 'itl-letter-title' }, it.title),
-        h('p', { className: 'itl-body' }, it.text));
+        h('p', { className: 'itl-body' }, it.text),
+        it.how ? h('p', { className: 'itl-letter-how' }, p.howLabel ? h('strong', null, p.howLabel + ' ') : null, it.how) : null);
     }));
   }
 
@@ -551,6 +553,34 @@
     }));
   }
 
+  /* InfoGrid: short titled notes in columns. item: { kicker?, title, text?, bullets?, badge? }. variant: 'rule' | 'card'. */
+  function InfoGrid(p) {
+    var items = p.items || [];
+    return h('ul', { className: cx('itl-info', 'itl-info-' + (p.variant || 'rule'), p.className), role: 'list', style: { '--itl-cols': p.columns || Math.min(items.length, 3) } },
+      items.map(function (it, i) {
+        return h('li', { key: i, className: cx('itl-info-item', it.tone && 'itl-info-' + it.tone) },
+          it.kicker ? h('p', { className: 'itl-info-kicker' }, it.kicker) : null,
+          h('h3', { className: 'itl-info-title' }, it.title, it.badge ? h('span', { className: 'itl-info-badge' }, it.badge) : null),
+          it.text ? h('p', { className: 'itl-body' }, it.text) : null,
+          it.bullets ? h('ul', { className: 'itl-info-bullets', role: 'list' }, it.bullets.map(function (b, j) { return h('li', { key: j }, b); })) : null);
+      }));
+  }
+
+  /* Statement: a purpose, motto or principle set large. tone: 'blue' | 'yellow' | 'outline'. */
+  function Statement(p) {
+    return h('figure', { className: cx('itl-statement', 'itl-statement-' + (p.tone || 'blue'), p.className) },
+      p.kicker ? h('p', { className: 'itl-statement-kicker' }, p.kicker) : null,
+      h('blockquote', { className: 'itl-statement-quote', lang: p.quoteLang }, p.quote),
+      p.text ? h('figcaption', { className: 'itl-statement-text' }, p.text) : null);
+  }
+
+  /* FactList: what something does, each line led by a bold verb. item: { lead, text }. */
+  function FactList(p) {
+    return h('ul', { className: cx('itl-facts', p.className), role: 'list' }, (p.items || []).map(function (it, i) {
+      return h('li', { key: i }, h('strong', null, it.lead), ' ', it.text);
+    }));
+  }
+
   /* MapHero: numbers-first home hero on navy. Copy and headline figures on top, the route map as the illustration. */
   function MapHero(p) {
     var band = p.stats || p.legend || p.note;
@@ -575,7 +605,7 @@
 
   window.Intello = Object.assign(window.Intello || {}, {
     StatGrid: StatGrid, TagList: TagList, BarList: BarList, ProcessList: ProcessList, PhaseTrack: PhaseTrack, LetterGrid: LetterGrid,
-    RouteMap: RouteMap, MapHero: MapHero,
+    RouteMap: RouteMap, MapHero: MapHero, InfoGrid: InfoGrid, FactList: FactList, Statement: Statement,
     Button: Button, IconButton: IconButton, TextLink: TextLink, VideoLink: VideoLink, Icon: Icon, Logo: Logo,
     Eyebrow: Eyebrow, Headline: Headline, NavBar: NavBar, LanguageToggle: LanguageToggle, Hero: Hero, FeatureItem: FeatureItem, StatChip: StatChip,
     Section: Section, SectionHeader: SectionHeader, ImageTile: ImageTile, ServiceCard: ServiceCard,

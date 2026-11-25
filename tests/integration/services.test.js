@@ -18,36 +18,49 @@ const count = (html, re) => (html.match(re) || []).length;
 const CONTACT = { es: '/es/contacto', en: '/en/contact' };
 
 for (const [lang, url] of [['es', '/es/servicios'], ['en', '/en/services']]) {
-  test(`${lang}: the Services page has four sections with deliverables, an image and a call to action with the topic`, async () => {
+  test(`${lang}: the Services page shows the three process families with their figures, detail and a call to action with the topic`, async () => {
     const res = await srv.get(url);
     assert.equal(res.status, 200);
     const html = await res.text();
-    assert.equal(count(html, /class="itl-root itl-svcsec/g), 4);
+    const c = read(lang, 'services');
     assert.equal(count(html, /<h1[\s>]/g), 1);
-    const items = read(lang, 'services').items;
+    assert.equal(structure.services.length, 3);
     for (const s of structure.services) {
-      assert.ok(html.includes(`id="${s.anchor}"`), `section id ${s.anchor} (the anchor the home cards link to)`);
-      const text = items.find((x) => x.id === s.id);
-      assert.ok(html.includes(text.title.replace(/&/g, '&amp;')));
-      for (const d of text.deliverables) assert.ok(html.includes(d), `deliverable "${d}"`);
+      const t = c.items.find((x) => x.id === s.id);
+      assert.ok(html.includes(`id="${s.anchor}"`), `section #${s.anchor}`);
+      assert.ok(html.includes(`href="#${s.anchor}"`), `index links to #${s.anchor}`);
+      assert.ok(html.includes(esc(t.title)), t.title);
+      assert.ok(html.includes(esc(t.figure.label)), t.figure.label);
       assert.ok(html.includes(`href="${CONTACT[lang]}?topic=${s.id}"`), `CTA with topic ${s.id}`);
     }
-    assert.ok(count(html, /itl-tile-empty|<img/g) >= 4, 'an image or slot per section');
+    // Control Tower: the seven phases, each with what the client sees
+    assert.equal(count(html, /class="itl-phase"/g), 7);
+    assert.equal(count(html, /class="itl-phase-see"/g), 7);
+    // Back office services, the ETL list, the method and how an engagement starts
+    for (const b of c.items.find((x) => x.id === 'back-office').services) assert.ok(html.includes(esc(b.title)), b.title);
+    assert.equal(count(html, /<ul class="itl-facts"/g), 1);
+    assert.ok(html.includes('id="metodo"'));
+    assert.match(html, /class="itl-steps"/);
+    // the feature still in development is labelled as such
+    assert.ok(html.includes(c.items.find((x) => x.id === 'ai-analytics').capabilities.find((x) => x.badge).badge));
     assert.doesNotMatch(html, /<script/i);
   });
 }
 
 for (const [lang, url] of [['es', '/es/tecnologia'], ['en', '/en/technology']]) {
-  test(`${lang}: the Technology page names concrete capabilities in plain language`, async () => {
+  test(`${lang}: the Technology page says how technology is used and how client data is handled, in plain language`, async () => {
     const html = await (await srv.get(url)).text();
     const c = read(lang, 'technology');
-    assert.equal(c.capabilities.length, 4);
-    for (const cap of c.capabilities) {
-      assert.ok(html.includes(esc(cap.title)), cap.title);
-      assert.ok(html.includes(esc(cap.body)), cap.body);
+    for (const it of [...c.usage.items, ...c.security.items]) {
+      assert.ok(html.includes(esc(it.title)), it.title);
+      assert.ok(html.includes(esc(it.text)), it.text);
     }
-    assert.match(html, /class="itl-steps"/, 'how-it-works steps');
-    assert.ok(html.includes(`href="${CONTACT[lang]}?topic=ai-analytics"`), 'CTA to contact with the AI topic');
+    assert.match(html, /class="itl-steps"/, 'process-intelligence steps');
+    assert.ok(html.includes('id="seguridad"'), 'data security section');
+    // the certification is a goal, never shown as held
+    assert.ok(html.includes(`<span class="itl-info-badge">${esc(c.security.badge)}</span>`));
+    assert.ok(html.includes(`href="${CONTACT[lang]}?topic=technology"`), 'CTA to contact with the technology topic');
+    assert.doesNotMatch(html, /<img/i, 'no photographs');
     // AI is never a mascot or decoration (design system content rules).
     assert.doesNotMatch(html, /sparkle|✨|🤖|robot/i);
     assert.equal(count(html, /<h1[\s>]/g), 1);

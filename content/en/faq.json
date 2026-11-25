@@ -1,63 +1,124 @@
 {
   "meta": {
     "title": "Frequently asked questions | Intello",
-    "description": "Answers about Intello's services, who we work with, how to get started and how we look after your data."
+    "description": "What Intello manages, how you keep control of the process, how we start, what drives the cost and how we look after your data."
   },
   "header": {
     "eyebrow": "FAQ",
-    "title": "Frequently",
-    "titleAccent": "asked questions",
-    "lede": "What people usually ask before getting started. If you do not see your answer, write to us."
+    "title": "What clients ask us",
+    "titleAccent": "before we start",
+    "lede": "Answers for leadership, operations, finance and technology. If yours is not here, write to us."
   },
+  "groups": [
+    { "id": "intello", "title": "About Intello" },
+    { "id": "operacion", "title": "Operations and control" },
+    { "id": "empezar", "title": "Getting started and cost" },
+    { "id": "datos", "title": "Data and technology" }
+  ],
   "items": [
     {
       "id": "servicios",
-      "question": "What does Intello offer?",
+      "group": "intello",
+      "question": "What does Intello do?",
       "answer": [
-        "Cargo monitoring, AI business intelligence, technology services and back office for logistics companies. You can choose one or combine them."
+        "We manage operational and back-office processes for logistics companies: shipment Control Tower, outsourced billing, inventory audits, and data and reporting.",
+        "Every process runs on a documented SOP, with defined owners and reporting."
       ]
     },
     {
       "id": "logistica",
+      "group": "intello",
       "question": "Is Intello a logistics company?",
       "answer": [
-        "No. We do not transport or store cargo. We are a technology and data provider for logistics companies."
+        "No. We do not move or store cargo. We are the operational extension of logistics companies: we run their processes so they can focus on growing."
       ]
     },
     {
       "id": "clientes",
+      "group": "intello",
       "question": "Which companies do you work with?",
       "answer": [
-        "Couriers, 3PL operators and freight and transport companies."
+        "Freight forwarders, 3PL operators, couriers and freight companies with tracking, document, billing or data processes that can run remotely."
+      ]
+    },
+    {
+      "id": "personal",
+      "group": "intello",
+      "question": "Is this the same as hiring staff?",
+      "answer": [
+        "No. We do not sell headcount: you hire a service with method, quality and visibility.",
+        "We define the scope, SOP, RACI matrix and metrics with you, and we keep your way of serving your clients."
+      ]
+    },
+    {
+      "id": "control",
+      "group": "operacion",
+      "question": "Who does the work and how do I keep control?",
+      "answer": [
+        "Every activity has an owner, approver, consulted and informed party in a RACI matrix across your team, your suppliers, your agents and Intello.",
+        "You follow progress on dashboards, recurring reports and the status we upload to your portals. You approve the key documents."
+      ]
+    },
+    {
+      "id": "desviaciones",
+      "group": "operacion",
+      "question": "What happens when something deviates?",
+      "answer": [
+        "Scheduled status sweeps and automatic triggers catch the deviation; we tell you at once and escalate it through the RACI.",
+        "Structural change requests go through an analysis phase before implementation is committed."
+      ]
+    },
+    {
+      "id": "sistemas",
+      "group": "operacion",
+      "question": "Do you work in my systems?",
+      "answer": [
+        "Yes. We work in your tools and portals, and we bring together reports from your systems, suppliers and tracking platforms with ETL. We define the detail when we map the process."
+      ]
+    },
+    {
+      "id": "alcance",
+      "group": "operacion",
+      "question": "Where do you operate and which routes do you cover?",
+      "answer": [
+        "We are a remote team in Latin America, on a nearshore model.",
+        "Our Control Tower connects 35 countries: origins in Asia, North America, South America and Europe into Central America, the Caribbean and the Andean region."
       ]
     },
     {
       "id": "empezar",
-      "question": "How do we get started?",
+      "group": "empezar",
+      "question": "How do we start?",
       "answer": [
-        "Request a demo from the contact page.",
-        "We get in touch to understand your operation and suggest the services that fit."
+        "Book a 30-minute review of one specific process: volume, systems and pain points.",
+        "We return a process map with a draft SOP, RACI and success metrics. If it makes sense, we run that process as a pilot and take on the next one when the numbers prove it."
       ]
     },
     {
-      "id": "integraciones",
-      "question": "Do you connect to my systems?",
+      "id": "costo",
+      "group": "empezar",
+      "question": "How much does it cost?",
       "answer": [
-        "Yes. We build integrations through APIs and agree the details with you at the start."
-      ]
-    },
-    {
-      "id": "ia",
-      "question": "What exactly does the AI do?",
-      "answer": [
-        "It sends end-customer alerts, forecasts demand and feeds KPI dashboards. It works alongside your team and saves it repetitive tasks."
+        "It depends on scope, volume and service level. We design tiers that range from operational control to co-governance with you.",
+        "We share the proposal privately, after we evaluate your process."
       ]
     },
     {
       "id": "datos",
-      "question": "How do you protect my data?",
+      "group": "datos",
+      "question": "How do you look after my data?",
       "answer": [
-        "We use data only to deliver the service. On this site we only collect what you send in the contact form and we use no third-party analytics."
+        "With centralized role-based access, scheduled backups, a record of every action and separation between operations and technology. We work under your data processing agreements.",
+        "SOC 2 Type II certification is a goal on our roadmap, not a current certification. On this site we only collect what you send through the contact form."
+      ]
+    },
+    {
+      "id": "ia",
+      "group": "datos",
+      "question": "Do you use artificial intelligence?",
+      "answer": [
+        "We use technology to run things better: automated ETL, alerts, dashboards and automated reports.",
+        "We are building conversational logistics so you can query your operation by talking to your own data; it is not available yet."
       ]
     }
   ]

@@ -1,48 +1,55 @@
 {
   "meta": {
-    "title": "Tecnología y análisis de datos con IA | Intello",
-    "description": "Alertas al cliente final, pronósticos de demanda, tableros de KPIs e integraciones. Qué hace la IA por tu empresa de logística."
+    "title": "Tecnología y seguridad de datos | Intello",
+    "description": "Cómo usamos la tecnología para ejecutar mejor tus procesos logísticos y cómo cuidamos tus datos: accesos, respaldos, trazabilidad y segregación de funciones."
   },
   "header": {
     "eyebrow": "Tecnología",
-    "title": "IA que trabaja",
-    "titleAccent": "con tus datos",
-    "lede": "La IA no es un adorno: son alertas, pronósticos y tableros que ayudan a decidir mejor y a avisar a tiempo."
+    "title": "Tecnología al servicio del proceso",
+    "titleAccent": "y tus datos bajo control",
+    "lede": "No vendemos software ni plazas: usamos la tecnología para ejecutar tus procesos con menos errores y más visibilidad. Y tratamos tus datos como una operación más.",
+    "cta": { "label": "Agendar una revisión" },
+    "secondary": { "label": "Ver la seguridad" }
   },
-  "capabilitiesTitle": "Lo que la IA hace por ti",
-  "capabilities": [
-    {
-      "title": "Alertas al cliente final",
-      "body": "Detecta cambios en un envío y avisa a tu cliente antes de que pregunte."
-    },
-    {
-      "title": "Pronósticos de demanda",
-      "body": "Anticipa los picos de volumen para planear rutas, personal y capacidad."
-    },
-    {
-      "title": "Tableros de KPIs",
-      "body": "Reúne los indicadores de tu operación en un solo lugar, siempre al día."
-    },
-    {
-      "title": "Integraciones",
-      "body": "Se conecta con tus sistemas y fuentes de datos mediante APIs."
-    }
-  ],
-  "how": {
-    "title": "Cómo lo hacemos",
+  "usage": {
+    "eyebrow": "Cómo la usamos",
+    "title": "Automatizamos lo repetitivo",
+    "titleAccent": "para ejecutar mejor",
+    "lede": "Trabajar más inteligente con tecnología, no más duro. Así se vive la hiper-productividad en cada cuenta.",
+    "items": [
+      { "kicker": "Seguimiento", "title": "Plataformas de tracking", "text": "Verificación cruzada de ETA en las plataformas de navieras y carriers, y tracking satelital con geofence a 20 km del puerto de destino." },
+      { "kicker": "Anticipación", "title": "Alertas automáticas", "text": "Barridos de estatus programados y triggers como la pre-alerta cinco días antes del ETA." },
+      { "kicker": "Datos", "title": "ETL automatizado", "text": "Extracción diaria y semanal, limpieza y validación contra registros maestros, y actualización a partir de los eventos de tracking." },
+      { "kicker": "Visibilidad", "title": "Tableros y reportes", "text": "Suites de business intelligence con métricas por país, cuenta, embarque e ítem, y reportes automáticos por país." },
+      { "kicker": "Integración", "title": "Tus portales y sistemas", "text": "Trabajamos en tus herramientas y cargamos el estatus en tus propios portales, sin cambiar cómo atiendes a tus clientes." },
+      { "kicker": "Mejora", "title": "Technovation", "text": "Las ideas de mejora del equipo pasan por Technovation, que confirma si se pueden aplicar y automatizar." }
+    ]
+  },
+  "pipeline": {
+    "eyebrow": "Inteligencia de procesos",
+    "title": "Cada proceso ejecutado",
+    "titleAccent": "deja datos que vuelven al proceso",
     "steps": [
-      {
-        "title": "Conectamos tus datos",
-        "body": "Integramos los sistemas que ya usas."
-      },
-      {
-        "title": "Analizamos",
-        "body": "Aplicamos análisis de datos con IA a tu operación."
-      },
-      {
-        "title": "Te avisamos",
-        "body": "Entregamos alertas, pronósticos y tableros."
-      }
+      { "title": "Proceso documentado", "body": "SOP, RACI y checkpoints definidos para cada operación." },
+      { "title": "Ejecución trazada", "body": "Cada acción queda registrada con su embarque, su fecha y su responsable." },
+      { "title": "ETL automatizado", "body": "Extracción, limpieza y validación contra registros maestros." },
+      { "title": "Indicadores", "body": "Métricas granulares de desempeño, alertas y tendencias." },
+      { "title": "Mejora continua", "body": "Decisiones y ajustes que vuelven al proceso." }
+    ]
+  },
+  "security": {
+    "eyebrow": "Seguridad de datos",
+    "title": "Tus datos, tratados",
+    "titleAccent": "como una operación",
+    "lede": "Lo que hacemos hoy, dicho con claridad, y lo que todavía está en nuestra hoja de ruta.",
+    "badge": "Objetivo",
+    "items": [
+      { "kicker": "Accesos", "title": "Gestión de accesos", "text": "Control centralizado de identidad y accesos, con permisos por espacio de trabajo y rol." },
+      { "kicker": "Respaldos", "title": "Respaldos programados", "text": "La información operativa y del cliente se respalda con rutinas definidas." },
+      { "kicker": "Acuerdos", "title": "Tus acuerdos, cumplidos", "text": "Trabajamos bajo tus acuerdos de tratamiento de datos y tus códigos de conducta para proveedores." },
+      { "kicker": "Trazabilidad", "title": "Trazabilidad por diseño", "text": "Cada acción deja registro: qué embarque, cuándo y quién." },
+      { "kicker": "Gobierno", "title": "Segregación de funciones", "text": "Operaciones y tecnología funcionan como equipos independientes." },
+      { "kicker": "Certificación", "title": "SOC 2 Tipo II", "text": "Seguridad, disponibilidad e integridad de procesamiento. Lo publicaremos aquí cuando esté certificado, no antes." }
     ]
   }
 }

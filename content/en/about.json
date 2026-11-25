@@ -1,48 +1,147 @@
 {
   "meta": {
-    "title": "About us | Intello",
-    "description": "Who we are, what we do and which logistics companies we work with."
+    "title": "About us: purpose, values and culture | Intello",
+    "description": "Who we are: the operational extension of logistics companies. Our purpose, the S.H.O.W. values and the culture of the Success Team."
   },
   "header": {
     "eyebrow": "About us",
-    "title": "Technology and data",
-    "titleAccent": "for logistics companies",
-    "lede": "We are not a logistics company: we are the technology partner that gives yours visibility and data."
+    "title": "Built around ownership.",
+    "titleAccent": "Driven by better.",
+    "lede": "We are not a logistics company: we are the operational extension of logistics companies. We run their processes with method, quality and visibility, so they can focus on growing."
   },
-  "story": {
-    "title": "What we do",
-    "body": [
-      "Intello offers cargo monitoring and business intelligence to logistics companies, together with technology and back office services.",
-      "We do not transport or store cargo: we monitor the cargo your company moves and turn its data into information to decide better."
+  "essence": {
+    "eyebrow": "Essence",
+    "title": "No old-school mission and vision.",
+    "titleAccent": "We have a purpose.",
+    "lede": "Everything at Intello is built around success. Not only the company's, and not only in money: the success of everything we touch.",
+    "purpose": {
+      "kicker": "Our purpose",
+      "quote": "Boost success, one process at a time.",
+      "text": "We drive success one process at a time. It is why we exist, and it holds our team culture together."
+    },
+    "motto": {
+      "kicker": "Our motto",
+      "quote": "Better Now!",
+      "text": "The drive behind everything we do. Wherever Intello gets involved, things must end up better."
+    },
+    "successTitle": "The success we pursue includes",
+    "success": [
+      "Our team",
+      "Our clients",
+      "Our suppliers"
     ]
   },
-  "approach": {
-    "title": "How we work with you",
-    "steps": [
+  "values": {
+    "eyebrow": "Values",
+    "title": "Our people",
+    "titleAccent": "are the stars of the show",
+    "lede": "Performance has two meanings here: shining on stage and delivering results. Four actionable values set how we work.",
+    "howLabel": "How we live it:",
+    "items": [
       {
-        "title": "We talk",
-        "body": "We learn your operation and your data."
+        "letter": "S",
+        "title": "Simplicity",
+        "text": "The fastest, most mindful and efficient way to the best possible result. Once there, start again.",
+        "how": "clear, repeatable processes that are easy to run."
       },
       {
-        "title": "We connect",
-        "body": "We integrate your systems and data sources."
+        "letter": "H",
+        "title": "Hyper-productivity",
+        "text": "Do more, do it techy. Work smarter with technology, not harder.",
+        "how": "we automate the repetitive so each person delivers more."
       },
       {
-        "title": "We monitor",
-        "body": "We follow your shipments and collect their data."
+        "letter": "O",
+        "title": "Ownership",
+        "text": "Be responsible, reliable, proactive and passionate. Make it yours.",
+        "how": "full commitment to the result."
       },
       {
-        "title": "We improve",
-        "body": "We measure and adjust with your indicators."
+        "letter": "W",
+        "title": "Wowly-done",
+        "text": "Go beyond, be creative and live for the wow.",
+        "how": "clients become fans of how we work, not just satisfied."
       }
     ]
   },
-  "clients": {
-    "title": "Who we work with",
+  "culture": {
+    "eyebrow": "Living culture",
+    "title": "A culture we practice,",
+    "titleAccent": "measure and celebrate",
+    "lede": "We call our team the Success Team. These are the practices we use to help it grow, and the reason the person who learns your process is still there.",
     "items": [
-      "Couriers",
+      {
+        "kicker": "Program",
+        "title": "RISE",
+        "text": "Reach your goals. Inspire others. Strive every day. Excel in life. Recognition and development with a quarterly fund shared by the active team.",
+        "tone": "navy"
+      },
+      {
+        "kicker": "Better Now Rally",
+        "title": "Idea rallies with a prize",
+        "text": "The best improvement idea wins the Better Now, with a bonus. Proposals go through team leads and Technovation, who confirm they can be applied.",
+        "tone": "yellow"
+      },
+      {
+        "kicker": "Learning",
+        "title": "Monthly Learning Sessions",
+        "text": "Every month the team meets to learn and to reflect as a remote team."
+      },
+      {
+        "kicker": "Training",
+        "title": "Courses Intello pays for",
+        "text": "Training beyond the monthly sessions, with courses paid directly by the company."
+      },
+      {
+        "kicker": "Growth",
+        "title": "Success Architect",
+        "text": "A person dedicated to coaching those who will grow. Roles that open up are filled from within."
+      },
+      {
+        "kicker": "Platform",
+        "title": "Bizneo",
+        "text": "Evaluations, training and tracking of each person's growth."
+      }
+    ],
+    "community": {
+      "kicker": "Community",
+      "title": "Viva Engage",
+      "text": "Our internal community: where we live our values and see each other as people, with our wins and our lives, not just roles."
+    }
+  },
+  "clients": {
+    "eyebrow": "Who we work with",
+    "title": "Logistics companies",
+    "titleAccent": "with processes that can run remotely",
+    "items": [
+      "Freight forwarders",
       "3PL operators",
-      "Freight and transport companies"
+      "Couriers",
+      "Freight companies"
+    ]
+  },
+  "direction": {
+    "eyebrow": "Direction",
+    "title": "Where we",
+    "titleAccent": "are growing",
+    "lede": "We are building our strategy with the Scaling Up method. These are the capabilities we are investing in over the coming years.",
+    "badge": "Goal",
+    "items": [
+      {
+        "kicker": "Clients",
+        "title": "First-class onboarding",
+        "text": "Process mapping and a standardized onboarding for new clients."
+      },
+      {
+        "kicker": "Quality",
+        "title": "Technology and QA at scale",
+        "text": "More automation and a dedicated compliance and quality team."
+      },
+      {
+        "kicker": "Security",
+        "title": "SOC 2 Type II certification",
+        "text": "Certified security, availability and processing integrity. We will publish it here once it is certified."
+      }
     ]
   }
 }

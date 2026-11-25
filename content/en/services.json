@@ -1,82 +1,104 @@
 {
   "meta": {
-    "title": "Cargo monitoring and business intelligence | Intello",
-    "description": "Cargo monitoring, AI business intelligence, technology services and back office. What we do and what you get with each service."
+    "title": "Services: Control Tower, back office and data | Intello",
+    "description": "Processes we design and run for logistics companies: end-to-end Control Tower, billing and audits, ETL and business intelligence."
   },
   "header": {
     "eyebrow": "Services",
-    "title": "Monitoring and data",
-    "titleAccent": "for your operation",
-    "lede": "Four services that fit together. Choose one or combine them."
+    "title": "Processes we design and run",
+    "titleAccent": "for logistics companies",
+    "lede": "We take on complete operational and back-office processes, with a documented SOP, defined owners and reporting. Start with one and grow when the numbers prove it.",
+    "cta": { "label": "Book a review" },
+    "secondary": { "label": "See our method" }
+  },
+  "index": {
+    "eyebrow": "Three process families",
+    "title": "Pick the process",
+    "titleAccent": "that weighs most today"
   },
   "items": [
     {
       "id": "tracking",
-      "title": "Cargo monitoring",
-      "bullets": [
-        "Real-time visibility",
-        "End-customer alerts"
+      "kicker": "01 · Control Tower",
+      "title": "End-to-end Control Tower",
+      "titleAccent": "from origin to closing",
+      "summary": "We coordinate, track and control air, ocean and ground shipments, from production at origin to order closing. We anticipate risks before they become costs.",
+      "figure": { "value": "14,000", "unit": "+", "label": "shipments managed since 2024" },
+      "indexText": "Order and shipment follow-up, documents, customs and closing.",
+      "seeLabel": "Client sees:",
+      "phases": [
+        { "code": "00", "title": "Pre-shipment: before departure", "points": ["We manage open orders and monitor production at origin.", "We track cargo ready date against the need-by date at destination.", "We build an integrated ETA forecast from order placement."], "see": "early alerts on deviations that put the season at risk." },
+        { "code": "01", "title": "Activation and setup", "points": ["We receive the purchase order and acknowledge it with the supplier.", "We confirm the Ready Date and escalate any delay.", "We log the PO in the tracking platform: value, incoterm, supplier."], "see": "every PO visible from day one." },
+        { "code": "02", "title": "Origin coordination", "points": ["We follow the booking with the supplier or forwarder until space is confirmed.", "We check the itinerary meets the client's need."], "see": "estimated ETD and ETA from the start." },
+        { "code": "03", "title": "Document management", "points": ["We review commercial invoice, packing list and BL/AWB drafts against the PO.", "We verify consignee, weights and packages before final issue."], "see": "the client approves; we ensure consistency." },
+        { "code": "04", "title": "Transit and monitoring", "points": ["Scheduled status sweeps: Monday, Wednesday and Friday, or every 2 to 3 days for ocean.", "ETA cross-checked on shipping line and carrier platforms.", "Transshipment watch and geofence: alert when the vessel is 20 km from the destination port."], "see": "delays and itinerary changes reported at once." },
+        { "code": "05", "title": "Release and clearance", "points": ["Preliminary audit of invoices and transport documents.", "Pre-alert package that enables pre-clearance, five days before ETA."], "see": "duties and release with continuous visibility." },
+        { "code": "06", "title": "Delivery, returns and closing", "points": ["Monitoring of delivery appointments and windows at warehouse or plant.", "BL release and preventive demurrage and detention control.", "Incident management, POD and equipment return."], "see": "order closing and billing cycle support." }
       ],
-      "summary": "We monitor the status of every shipment in your operation and alert your customers when something changes, so your team has visibility without chasing information.",
-      "deliverables": [
-        "Real-time status of every shipment",
-        "End-customer alerts",
-        "Incident reporting"
-      ],
-      "cta": {
-        "label": "Request information"
-      }
-    },
-    {
-      "id": "ai-analytics",
-      "title": "AI business intelligence",
-      "bullets": [
-        "KPI dashboards",
-        "Demand forecasting"
-      ],
-      "summary": "We turn your operation's data into indicators and forecasts that help your company decide better.",
-      "deliverables": [
-        "KPI dashboards",
-        "Demand forecasts",
-        "AI alerts about your operation"
-      ],
-      "cta": {
-        "label": "Request information"
-      }
-    },
-    {
-      "id": "technology",
-      "title": "Technology services",
-      "bullets": [
-        "Integrations and APIs",
-        "Custom development"
-      ],
-      "summary": "We connect your systems and build the tools your company needs to make use of its data.",
-      "deliverables": [
-        "Integrations and APIs with your systems",
-        "Custom development",
-        "Technical support for what we build"
-      ],
-      "cta": {
-        "label": "Request information"
-      }
+      "cta": { "label": "Book a review" }
     },
     {
       "id": "back-office",
-      "title": "Back office for logistics",
-      "bullets": [
-        "Invoicing and documents",
-        "Waybill reconciliation"
+      "kicker": "02 · Back office",
+      "title": "Logistics back office",
+      "titleAccent": "with the same method",
+      "summary": "Every operation runs on its own documented, versioned SOP. With that method we take on the administrative processes behind the logistics operation.",
+      "figure": { "value": "2", "unit": " countries", "label": "wall-to-wall audits, US and Panama warehouses" },
+      "indexText": "Outsourced billing and inventory audits with reconciliation.",
+      "services": [
+        { "kicker": "Billing", "title": "Outsourced billing", "text": "We run billing processes end to end.", "bullets": ["Charges validated against the agreed cost structure", "Closing files for each operation", "Status uploads to the client's portals", "Billing cycle closed with each operation"] },
+        { "kicker": "Inventory", "title": "Wall-to-wall inventory audits", "text": "We design optimizations for full inventory audits.", "bullets": ["Count protocols for each warehouse", "Reconciliation against recorded inventory", "Variance reporting", "Warehouses in the United States, including Miami, and Panama"] }
       ],
-      "summary": "We support your administrative team with documentation and reconciliation, so it can focus on its own operation.",
-      "deliverables": [
-        "Invoicing and shipping documents",
-        "Waybill reconciliation",
-        "Follow-up of administrative incidents"
+      "cta": { "label": "Book a review" }
+    },
+    {
+      "id": "ai-analytics",
+      "kicker": "03 · Data",
+      "title": "Data and reporting",
+      "titleAccent": "ready to decide",
+      "summary": "Every process we run leaves a trail of structured data. We extract, clean and integrate it into business intelligence suites with granular metrics.",
+      "figure": { "value": "+17", "unit": "M", "label": "data cells processed every month" },
+      "indexText": "Automated ETL, business intelligence and reporting by country.",
+      "etlTitle": "What our ETL does",
+      "etl": [
+        { "lead": "Extracts", "text": "daily and weekly reports from clients, suppliers and tracking platforms." },
+        { "lead": "Cleans and validates", "text": "against master records: suppliers, divisions, countries and ports." },
+        { "lead": "Integrates", "text": "different sources into one granular base, from one line per shipment to one line per item." },
+        { "lead": "Processes", "text": "client data every week: open orders, receivables, inventory and freight rates." },
+        { "lead": "Updates", "text": "automatically from tracking events." },
+        { "lead": "Backs up", "text": "operational data with scheduled routines." }
       ],
-      "cta": {
-        "label": "Request information"
-      }
+      "capabilities": [
+        { "kicker": "Visibility", "title": "One regional truth", "text": "Consolidated visibility by country, with history ready for audits and analysis." },
+        { "kicker": "Integration", "title": "Data Intelligence Hub", "text": "Models that bring in client sources, such as distribution center inventory or duty projections." },
+        { "kicker": "Delivery", "title": "Information arrives", "text": "Operational email, automated reports by country and query portals." },
+        { "kicker": "Coming", "title": "Conversational logistics", "badge": "In development", "text": "An assistant to query the operation by talking to its own data." }
+      ],
+      "cta": { "label": "Book a review" }
     }
-  ]
+  ],
+  "method": {
+    "eyebrow": "How we work",
+    "title": "One standard model",
+    "titleAccent": "for every operation",
+    "items": [
+      { "kicker": "Method", "title": "SOP per account", "text": "We map, document and version every process: scope, roles, flow, checklists and templates." },
+      { "kicker": "Order", "title": "Channels by stage", "text": "Separate communication threads for origin, transit, customs and closing, with every shipment traced." },
+      { "kicker": "Governance", "title": "RACI matrix", "text": "Every activity has an owner, approver, consulted and informed party across client, supplier, agent and Intello." },
+      { "kicker": "Foresight", "title": "Proactive triggers", "text": "Scheduled status sweeps and automatic alerts, such as the pre-alert five days before ETA." },
+      { "kicker": "Control", "title": "Risk management", "text": "Probability and impact matrix for itinerary changes, document delays, incoterms and free days." },
+      { "kicker": "Visibility", "title": "Reports and portals", "text": "Client dashboards, recurring reports and status uploads to each client's portals." }
+    ]
+  },
+  "start": {
+    "eyebrow": "How we start",
+    "title": "One process,",
+    "titleAccent": "no leap of faith",
+    "steps": [
+      { "title": "Map", "body": "A 30-minute conversation to understand one process: volume, systems and pain points." },
+      { "title": "Design", "body": "We return a process map with a draft SOP, RACI and success metrics." },
+      { "title": "Pilot", "body": "We run that process, measured against the agreed metrics." },
+      { "title": "Scale", "body": "If the numbers hold, we take on the next process." }
+    ]
+  }
 }

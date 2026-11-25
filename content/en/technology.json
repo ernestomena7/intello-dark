@@ -1,48 +1,55 @@
 {
   "meta": {
-    "title": "Technology and AI data analytics | Intello",
-    "description": "End-customer alerts, demand forecasts, KPI dashboards and integrations. What AI does for your logistics company."
+    "title": "Technology and data security | Intello",
+    "description": "How we use technology to run your logistics processes better and how we look after your data: access, backups, traceability and separation of duties."
   },
   "header": {
     "eyebrow": "Technology",
-    "title": "AI that works",
-    "titleAccent": "with your data",
-    "lede": "AI is not decoration: it is alerts, forecasts and dashboards that help you decide better and warn in time."
+    "title": "Technology in service of the process",
+    "titleAccent": "and your data under control",
+    "lede": "We do not sell software or headcount: we use technology to run your processes with fewer errors and more visibility. And we handle your data like an operation.",
+    "cta": { "label": "Book a review" },
+    "secondary": { "label": "See security" }
   },
-  "capabilitiesTitle": "What AI does for you",
-  "capabilities": [
-    {
-      "title": "End-customer alerts",
-      "body": "Detects changes in a shipment and tells your customer before they ask."
-    },
-    {
-      "title": "Demand forecasts",
-      "body": "Anticipates volume peaks so you can plan routes, staff and capacity."
-    },
-    {
-      "title": "KPI dashboards",
-      "body": "Brings your operation's indicators together in one place, always up to date."
-    },
-    {
-      "title": "Integrations",
-      "body": "Connects to your systems and data sources through APIs."
-    }
-  ],
-  "how": {
-    "title": "How we do it",
+  "usage": {
+    "eyebrow": "How we use it",
+    "title": "We automate the repetitive",
+    "titleAccent": "to run things better",
+    "lede": "Work smarter with technology, not harder. That is how hyper-productivity shows up in every account.",
+    "items": [
+      { "kicker": "Tracking", "title": "Tracking platforms", "text": "ETA cross-checked on shipping line and carrier platforms, and satellite tracking with a geofence 20 km from the destination port." },
+      { "kicker": "Foresight", "title": "Automatic alerts", "text": "Scheduled status sweeps and triggers such as the pre-alert five days before ETA." },
+      { "kicker": "Data", "title": "Automated ETL", "text": "Daily and weekly extraction, cleansing and validation against master records, and updates from tracking events." },
+      { "kicker": "Visibility", "title": "Dashboards and reports", "text": "Business intelligence suites with metrics by country, account, shipment and item, and automated reports by country." },
+      { "kicker": "Integration", "title": "Your portals and systems", "text": "We work in your tools and upload status to your own portals, without changing how you serve your clients." },
+      { "kicker": "Improvement", "title": "Technovation", "text": "The team's improvement ideas go through Technovation, which confirms they can be applied and automated." }
+    ]
+  },
+  "pipeline": {
+    "eyebrow": "Process intelligence",
+    "title": "Every process we run",
+    "titleAccent": "leaves data that feeds it back",
     "steps": [
-      {
-        "title": "We connect your data",
-        "body": "We integrate the systems you already use."
-      },
-      {
-        "title": "We analyze",
-        "body": "We apply AI data analysis to your operation."
-      },
-      {
-        "title": "We alert you",
-        "body": "We deliver alerts, forecasts and dashboards."
-      }
+      { "title": "Documented process", "body": "SOP, RACI and checkpoints defined for each operation." },
+      { "title": "Traced execution", "body": "Every action is logged with its shipment, date and owner." },
+      { "title": "Automated ETL", "body": "Extraction, cleansing and validation against master records." },
+      { "title": "Indicators", "body": "Granular performance metrics, alerts and trends." },
+      { "title": "Continuous improvement", "body": "Decisions and adjustments that feed back into the process." }
+    ]
+  },
+  "security": {
+    "eyebrow": "Data security",
+    "title": "Your data, handled",
+    "titleAccent": "like an operation",
+    "lede": "What we do today, stated plainly, and what is still on our roadmap.",
+    "badge": "Goal",
+    "items": [
+      { "kicker": "Access", "title": "Access management", "text": "Centralized identity and access control, with permissions by workspace and role." },
+      { "kicker": "Backups", "title": "Scheduled backups", "text": "Operational and client information is backed up on defined routines." },
+      { "kicker": "Agreements", "title": "Your agreements, kept", "text": "We work under your data processing agreements and your supplier codes of conduct." },
+      { "kicker": "Traceability", "title": "Traceable by design", "text": "Every action leaves a record: which shipment, when and who." },
+      { "kicker": "Governance", "title": "Separation of duties", "text": "Operations and technology run as independent teams." },
+      { "kicker": "Certification", "title": "SOC 2 Type II", "text": "Security, availability and processing integrity. We will publish it here once it is certified, not before." }
     ]
   }
 }

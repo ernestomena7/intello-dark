@@ -140,7 +140,7 @@ test('rule 5: no leftovers', () => {
 test('rule 6: every referenced image is registered with alt text, a brief, and its files when approved', () => {
   const images = readJson(path.join(CONTENT_DIR, 'images.json'));
   const structure = readJson(path.join(CONTENT_DIR, 'structure.json'));
-  const ids = new Set([...Object.values(structure.imageSlots), ...structure.services.flatMap((s) => [s.cardImage, s.sectionImage])]);
+  const ids = new Set([...Object.values(structure.imageSlots), ...structure.services.flatMap((s) => [s.cardImage, s.sectionImage]).filter(Boolean)]);
   for (const id of ids) assert.ok(images[id], `image "${id}" is not in images.json`);
   for (const [id, img] of Object.entries(images)) {
     assert.ok(img.alt?.es?.trim() && img.alt?.en?.trim(), `${id}: alt text is required in both languages`);

@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Contacto y solicitud de demo | Intello",
-    "description": "Cuéntanos qué necesita tu empresa de logística y te respondemos por correo. Solicita una demo de Intello."
+    "title": "Contacto: agenda una revisión de proceso | Intello",
+    "description": "Cuéntanos qué proceso quieres revisar. Agendamos una conversación de 30 minutos y te devolvemos un mapa del proceso."
   },
   "header": {
     "eyebrow": "Contacto",
-    "title": "Hablemos de tu",
-    "titleAccent": "operación",
-    "lede": "Cuéntanos qué necesitas. Te respondemos por correo y, si quieres, agendamos una demo."
+    "title": "Empieza con",
+    "titleAccent": "un proceso",
+    "lede": "Cuéntanos qué proceso quieres revisar. Te respondemos por correo para agendar una conversación de 30 minutos."
   },
   "details": {
     "phoneLabel": "Teléfono",
@@ -18,20 +18,20 @@
     "labels": {
       "name": "Nombre",
       "company": "Empresa",
-      "email": "Correo electrónico",
+      "email": "Correo de trabajo",
       "phone": "Teléfono",
-      "topic": "Tema",
+      "topic": "Proceso a revisar",
       "message": "Mensaje"
     },
     "hints": {
       "phone": "Opcional. Solo números, espacios y + - ( ).",
-      "message": "Entre 10 y 4000 caracteres."
+      "message": "Qué proceso es, su volumen aproximado y qué te gustaría mejorar. Entre 10 y 4000 caracteres."
     },
     "topics": {
-      "tracking": "Monitoreo de carga",
-      "ai-analytics": "Inteligencia de negocio con IA",
-      "technology": "Servicios tecnológicos",
-      "back-office": "Back office para logística",
+      "tracking": "Torre de Control",
+      "ai-analytics": "Datos y reportería",
+      "technology": "Tecnología y seguridad",
+      "back-office": "Back office logístico",
       "other": "Otro"
     },
     "privacy": {
@@ -96,5 +96,23 @@
   "rateLimited": {
     "title": "Demasiados intentos",
     "body": "Espera unos minutos antes de volver a enviar el formulario, o llámanos al"
+  },
+  "next": {
+    "title": "Qué pasa después",
+    "steps": [
+      {
+        "title": "Te respondemos",
+        "body": "Te escribimos por correo para agendar una conversación de 30 minutos."
+      },
+      {
+        "title": "Revisamos un proceso",
+        "body": "Entendemos su volumen, tus sistemas y los puntos de dolor."
+      },
+      {
+        "title": "Te devolvemos un mapa",
+        "body": "Un mapa del proceso con borrador de SOP, RACI y métricas, y una propuesta privada."
+      }
+    ],
+    "contactTitle": "¿Prefieres llamar?"
   }
 }
