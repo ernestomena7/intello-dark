@@ -2,7 +2,6 @@
 // ctx.form (set by the POST route) carries { values, errors, notice } for re-rendering after a failure.
 import { html, React } from '../render/html.js';
 import { DarkBand, Frame, telHref } from '../render/frame.js';
-import { imageProps } from '../render/image.js';
 import { TOPICS } from '../contact/validate.js';
 
 export const key = 'contact';
@@ -21,9 +20,17 @@ export function render(ctx) {
   const errorList = Object.entries(errors).map(([field, rule]) => ({ id: field, message: c.form.errors[field][rule] }));
   const err = (field) => (errors[field] ? c.form.errors[field][errors[field]] : undefined);
 
-  const details = html`<p className="itl-body">
-    ${c.details.phoneLabel}: <a href=${telHref(phone)}>${phone}</a>${' · '}${c.details.hoursLabel}: ${site.hours[lang]}
-  </p>`;
+  // Side panel: what happens after the form is sent, and the phone for those who prefer to call.
+  const aside = html`<aside className="itl-contact-aside">
+    <h2 className="itl-subhead">${c.next.title}</h2>
+    <ol className="itl-contact-next" role="list">
+      ${c.next.steps.map((st, i) => html`<li key=${i}><span className="itl-contact-num" aria-hidden="true">${i + 1}</span><div><h3>${st.title}</h3><p className="itl-body">${st.body}</p></div></li>`)}
+    </ol>
+    <div className="itl-contact-call">
+      <p className="itl-contact-call-title">${c.next.contactTitle}</p>
+      <p className="itl-body">${c.details.phoneLabel}: <a href=${telHref(phone)}>${phone}</a><br />${c.details.hoursLabel}: ${site.hours[lang]}</p>
+    </div>
+  </aside>`;
 
   const noticeBlock = (() => {
     switch (notice) {
@@ -88,10 +95,9 @@ export function render(ctx) {
       eyebrow=${c.header.eyebrow}
       title=${c.header.title}
       titleAccent=${c.header.titleAccent}
-      lede=${c.header.lede}
-      media=${imageProps(lang, structure.imageSlots['contact.hero'], { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'headset' })} />`)}
+      lede=${c.header.lede} />`)}
     <${ds.Section} tone="card">
-      <div className="itl-stack">${details}${panel}</div>
+      <div className="itl-contact"><div className="itl-contact-form">${panel}</div>${aside}</div>
     <//>
   <//>`;
   return { meta: c.meta, body: Frame(ctx, body) };

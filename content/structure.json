@@ -11,31 +11,18 @@
   "services": [
     {
       "id": "tracking",
-      "icon": "route",
-      "anchor": "tracking",
-      "cardImage": "service-tracking-card",
-      "sectionImage": "service-tracking"
-    },
-    {
-      "id": "ai-analytics",
-      "icon": "chart-line",
-      "anchor": "ai-analytics",
-      "cardImage": "service-ai-analytics-card",
-      "sectionImage": "service-ai-analytics"
-    },
-    {
-      "id": "technology",
-      "icon": "layers",
-      "anchor": "technology-services",
-      "cardImage": "service-technology-card",
-      "sectionImage": "service-technology"
+      "icon": "radar",
+      "anchor": "torre-de-control"
     },
     {
       "id": "back-office",
       "icon": "clipboard-check",
-      "anchor": "back-office",
-      "cardImage": "service-back-office-card",
-      "sectionImage": "service-back-office"
+      "anchor": "back-office"
+    },
+    {
+      "id": "ai-analytics",
+      "icon": "database",
+      "anchor": "datos"
     }
   ],
   "topics": [

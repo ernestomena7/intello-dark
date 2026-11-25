@@ -1,48 +1,147 @@
 {
   "meta": {
-    "title": "Nosotros | Intello",
-    "description": "Quiénes somos, qué hacemos y con qué empresas de logística trabajamos."
+    "title": "Nosotros: propósito, valores y cultura | Intello",
+    "description": "Quiénes somos: la extensión operativa de empresas de logística. Nuestro propósito, los valores S.H.O.W. y la cultura del Success Team."
   },
   "header": {
     "eyebrow": "Nosotros",
-    "title": "Tecnología y datos",
-    "titleAccent": "para empresas de logística",
-    "lede": "No somos una empresa de logística: somos el socio de tecnología que le da visibilidad y datos a la tuya."
+    "title": "Construidos alrededor del ownership.",
+    "titleAccent": "Impulsados por mejorar.",
+    "lede": "No somos una empresa de logística: somos la extensión operativa de empresas de logística. Ejecutamos sus procesos con método, calidad y visibilidad, para que ellas se dediquen a crecer."
   },
-  "story": {
-    "title": "Qué hacemos",
-    "body": [
-      "Intello ofrece monitoreo de carga e inteligencia de negocio a empresas de logística, junto con servicios tecnológicos y de back office.",
-      "No transportamos ni almacenamos carga: monitoreamos la que mueve tu empresa y convertimos sus datos en información para decidir mejor."
+  "essence": {
+    "eyebrow": "Esencia",
+    "title": "No tenemos misión y visión a la vieja usanza.",
+    "titleAccent": "Tenemos un propósito.",
+    "lede": "Todo en Intello se construye alrededor del éxito. No solo el de la empresa ni solo en dinero: el de todo lo que tocamos.",
+    "purpose": {
+      "kicker": "Nuestro propósito",
+      "quote": "Boost success, one process at a time.",
+      "text": "Impulsamos el éxito un proceso a la vez. Es nuestra razón de ser y sostiene la cultura del equipo."
+    },
+    "motto": {
+      "kicker": "Nuestro motto",
+      "quote": "Better Now!",
+      "text": "La motivación de todo lo que hacemos. Donde Intello se involucra, las cosas tienen que quedar mejor después."
+    },
+    "successTitle": "El éxito que buscamos incluye a",
+    "success": [
+      "Nuestro equipo",
+      "Nuestros clientes",
+      "Nuestros proveedores"
     ]
   },
-  "approach": {
-    "title": "Cómo trabajamos contigo",
-    "steps": [
+  "values": {
+    "eyebrow": "Valores",
+    "title": "Nuestra gente",
+    "titleAccent": "es la estrella del show",
+    "lede": "Aquí se hace performance en los dos sentidos: brillar en escena y rendir en el desempeño. Cuatro valores accionables marcan cómo trabajamos.",
+    "howLabel": "Cómo se vive:",
+    "items": [
       {
-        "title": "Conversamos",
-        "body": "Entendemos tu operación y tus datos."
+        "letter": "S",
+        "title": "Simplicity",
+        "text": "La forma más rápida, consciente y eficiente de lograr el mejor resultado posible. Una vez logrado, empezar de nuevo.",
+        "how": "procesos claros, replicables y fáciles de operar."
       },
       {
-        "title": "Conectamos",
-        "body": "Integramos tus sistemas y fuentes de datos."
+        "letter": "H",
+        "title": "Hyper-productivity",
+        "text": "Hacer más, hacerlo techy. Trabajar más inteligente con tecnología, no más duro.",
+        "how": "automatizamos lo repetitivo para que cada persona rinda más."
       },
       {
-        "title": "Monitoreamos",
-        "body": "Seguimos tus envíos y recogemos sus datos."
+        "letter": "O",
+        "title": "Ownership",
+        "text": "Ser responsable, confiable, proactivo y apasionado. Hacerlo tuyo.",
+        "how": "ponerse la camiseta, con compromiso total con el resultado."
       },
       {
-        "title": "Mejoramos",
-        "body": "Medimos y ajustamos con tus indicadores."
+        "letter": "W",
+        "title": "Wowly-done",
+        "text": "Ir más allá, ser creativo y vivir para el wow.",
+        "how": "que el cliente sea fan de cómo trabajamos, no solo que esté satisfecho."
       }
     ]
   },
-  "clients": {
-    "title": "Con quién trabajamos",
+  "culture": {
+    "eyebrow": "Cultura viva",
+    "title": "Una cultura que se practica,",
+    "titleAccent": "se mide y se celebra",
+    "lede": "Le llamamos Success Team a nuestro equipo. Estas son las prácticas con las que lo hacemos crecer, y la razón por la que quien aprende tu proceso sigue ahí.",
     "items": [
-      "Couriers",
+      {
+        "kicker": "Programa",
+        "title": "RISE",
+        "text": "Reach your goals. Inspire others. Strive every day. Excel in life. Reconocimiento y desarrollo con un fondo trimestral que se reparte entre el equipo activo.",
+        "tone": "navy"
+      },
+      {
+        "kicker": "Better Now Rally",
+        "title": "Rallies de ideas con premio",
+        "text": "La mejor idea de mejora gana el Better Now, con bono. Las propuestas pasan por sus líderes y por Technovation, que confirma si se pueden aplicar.",
+        "tone": "yellow"
+      },
+      {
+        "kicker": "Aprendizaje",
+        "title": "Monthly Learning Sessions",
+        "text": "Cada mes el equipo se reúne a aprender y a mirarse como equipo remoto."
+      },
+      {
+        "kicker": "Formación",
+        "title": "Cursos que Intello paga",
+        "text": "Capacitación más allá de las sesiones mensuales, con cursos pagados directamente por la empresa."
+      },
+      {
+        "kicker": "Desarrollo",
+        "title": "Success Architect",
+        "text": "Una persona dedicada al coaching de quienes van a crecer. Las plazas que suben se cubren con gente de casa."
+      },
+      {
+        "kicker": "Plataforma",
+        "title": "Bizneo",
+        "text": "Evaluaciones, formación y seguimiento del crecimiento de cada persona."
+      }
+    ],
+    "community": {
+      "kicker": "Comunidad",
+      "title": "Viva Engage",
+      "text": "Nuestra comunidad interna: ahí vivimos los valores y nos vemos como personas, con sus logros y su vida, no solo como roles."
+    }
+  },
+  "clients": {
+    "eyebrow": "Con quién trabajamos",
+    "title": "Empresas de logística",
+    "titleAccent": "con procesos que pueden operarse en remoto",
+    "items": [
+      "Freight forwarders",
       "Operadores 3PL",
-      "Empresas de carga y transporte"
+      "Couriers",
+      "Empresas de carga"
+    ]
+  },
+  "direction": {
+    "eyebrow": "Rumbo",
+    "title": "Hacia dónde",
+    "titleAccent": "crecemos",
+    "lede": "Estamos construyendo la estrategia con la metodología Scaling Up. Estas son las capacidades en las que invertimos en los próximos años.",
+    "badge": "Objetivo",
+    "items": [
+      {
+        "kicker": "Clientes",
+        "title": "Onboarding de primera clase",
+        "text": "Process mapping y una integración de nuevos clientes estandarizada."
+      },
+      {
+        "kicker": "Calidad",
+        "title": "Tecnología y QA a escala",
+        "text": "Más automatización y un equipo dedicado de compliance y calidad."
+      },
+      {
+        "kicker": "Seguridad",
+        "title": "Certificación SOC 2 Tipo II",
+        "text": "Seguridad, disponibilidad e integridad de procesamiento certificadas. La publicaremos aquí cuando esté certificada."
+      }
     ]
   }
 }

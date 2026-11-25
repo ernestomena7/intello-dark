@@ -1,41 +1,50 @@
-// About: only facts the client has confirmed (what Intello does, how an engagement works, who it serves).
+// About (BPO redesign): who Intello is, its purpose and motto, the S.H.O.W. values, the Success Team culture,
+// who it works with and where it is growing. Source: Intello, "Cultura y capacidades" (Nov 2026), pages 02 to 05 and 11.
+// No team photos, sizes or offices are shown (strategy guide, section 6.6).
 import { html, React } from '../render/html.js';
 import { DarkBand, Frame } from '../render/frame.js';
-import { imageProps } from '../render/image.js';
 
 export const key = 'about';
 
 export function render(ctx) {
-  const { ds, lang, common, structure } = ctx;
+  const { ds, common } = ctx;
   const c = ctx.content('about');
-  const slot = (name) => structure.imageSlots[name];
+
+  const essence = html`<${ds.Section} tone="card" className="itl-about-block">
+    <${ds.SectionHeader} eyebrow=${c.essence.eyebrow} title=${c.essence.title} accent=${c.essence.titleAccent} lede=${c.essence.lede} />
+    <div className="itl-essence">
+      <${ds.Statement} tone="blue" quoteLang="en" kicker=${c.essence.purpose.kicker} quote=${c.essence.purpose.quote} text=${c.essence.purpose.text} />
+      <${ds.Statement} tone="yellow" quoteLang="en" kicker=${c.essence.motto.kicker} quote=${c.essence.motto.quote} text=${c.essence.motto.text} />
+    </div>
+    <div className="itl-essence-success">
+      <h3 className="itl-subhead">${c.essence.successTitle}</h3>
+      <${ds.TagList} items=${c.essence.success} />
+    </div>
+  <//>`;
+
+  const values = html`<${ds.Section} tone="navy" className="itl-about-block">
+    <${ds.SectionHeader} eyebrow=${c.values.eyebrow} title=${c.values.title} accent=${c.values.titleAccent} lede=${c.values.lede} />
+    <${ds.LetterGrid} howLabel=${c.values.howLabel} items=${c.values.items} />
+  <//>`;
+
+  const culture = html`<${ds.Section} tone="card" className="itl-about-block">
+    <${ds.SectionHeader} eyebrow=${c.culture.eyebrow} title=${c.culture.title} accent=${c.culture.titleAccent} lede=${c.culture.lede} />
+    <${ds.InfoGrid} variant="card" columns=${3} items=${c.culture.items} />
+    <${ds.InfoGrid} variant="card" columns=${1} className="itl-about-community" items=${[c.culture.community]} />
+  <//>`;
+
+  const direction = html`<${ds.Section} tone="card" className="itl-about-block">
+    <${ds.SectionHeader} eyebrow=${c.clients.eyebrow} title=${c.clients.title} accent=${c.clients.titleAccent} />
+    <${ds.TagList} tone="accent" className="itl-about-clients" items=${c.clients.items} />
+    <hr className="itl-section-divider" />
+    <${ds.SectionHeader} eyebrow=${c.direction.eyebrow} title=${c.direction.title} accent=${c.direction.titleAccent} lede=${c.direction.lede} />
+    <${ds.InfoGrid} variant="rule" columns=${3}
+      items=${c.direction.items.map((it, i) => (i === c.direction.items.length - 1 ? { ...it, badge: c.direction.badge } : it))} />
+  <//>`;
 
   const body = html`<${React.Fragment}>
-    ${DarkBand(html`<${ds.PageHero}
-      eyebrow=${c.header.eyebrow}
-      title=${c.header.title}
-      titleAccent=${c.header.titleAccent}
-      lede=${c.header.lede}
-      media=${imageProps(lang, slot('about.1'), { sizes: '(min-width: 900px) 50vw, 100vw', icon: 'warehouse' })} />`)}
-    <${ds.Section} tone="card">
-      <div className="itl-duo">
-        <div className="itl-stack">
-          <${ds.SectionHeader} title=${c.story.title} />
-          ${c.story.body.map((p, i) => html`<p key=${i} className="itl-body">${p}</p>`)}
-          <h3 className="itl-service-title">${c.clients.title}</h3>
-          <ul className="itl-checklist">
-            ${c.clients.items.map((item, i) => html`<li key=${i}><${ds.Icon} name="check" size=${18} strokeWidth=${2} /><span>${item}</span></li>`)}
-          </ul>
-        </div>
-        <${ds.ImageTile} ...${imageProps(lang, slot('about.2'), { sizes: '(min-width: 900px) 40vw, 100vw', ratio: '4 / 3', icon: 'plane' })} />
-      </div>
-    <//>
-    <${ds.Section} tone="card">
-      <div className="itl-stack">
-        <${ds.SectionHeader} title=${c.approach.title} />
-        <${ds.Steps} items=${c.approach.steps} />
-      </div>
-    <//>
+    ${DarkBand(html`<${ds.PageHero} eyebrow=${c.header.eyebrow} title=${c.header.title} titleAccent=${c.header.titleAccent} lede=${c.header.lede} />`)}
+    ${essence}${values}${culture}${direction}
     <${ds.CtaBand}
       eyebrow=${common.ctaBand.eyebrow}
       title=${common.ctaBand.title}

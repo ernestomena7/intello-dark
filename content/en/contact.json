@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Contact and demo request | Intello",
-    "description": "Tell us what your logistics company needs and we will reply by email. Request an Intello demo."
+    "title": "Contact: book a process review | Intello",
+    "description": "Tell us which process you want to review. We set up a 30-minute conversation and send you back a process map."
   },
   "header": {
     "eyebrow": "Contact",
-    "title": "Let's talk about your",
-    "titleAccent": "operation",
-    "lede": "Tell us what you need. We reply by email and, if you like, we schedule a demo."
+    "title": "Start with",
+    "titleAccent": "one process",
+    "lede": "Tell us which process you want to review. We reply by email to set up a 30-minute conversation."
   },
   "details": {
     "phoneLabel": "Phone",
@@ -18,20 +18,20 @@
     "labels": {
       "name": "Name",
       "company": "Company",
-      "email": "Email",
+      "email": "Work email",
       "phone": "Phone",
-      "topic": "Topic",
+      "topic": "Process",
       "message": "Message"
     },
     "hints": {
       "phone": "Optional. Numbers, spaces and + - ( ) only.",
-      "message": "Between 10 and 4000 characters."
+      "message": "Which process it is, its rough volume and what you want to improve. Between 10 and 4000 characters."
     },
     "topics": {
-      "tracking": "Cargo monitoring",
-      "ai-analytics": "AI business intelligence",
-      "technology": "Technology services",
-      "back-office": "Back office for logistics",
+      "tracking": "Control Tower",
+      "ai-analytics": "Data and reporting",
+      "technology": "Technology and security",
+      "back-office": "Logistics back office",
       "other": "Other"
     },
     "privacy": {
@@ -96,5 +96,23 @@
   "rateLimited": {
     "title": "Too many attempts",
     "body": "Wait a few minutes before sending the form again, or call us on"
+  },
+  "next": {
+    "title": "What happens next",
+    "steps": [
+      {
+        "title": "We reply",
+        "body": "We email you to set up a 30-minute conversation."
+      },
+      {
+        "title": "We review one process",
+        "body": "We look at its volume, your systems and the pain points."
+      },
+      {
+        "title": "You get a map",
+        "body": "A process map with a draft SOP, RACI and metrics, and a private proposal."
+      }
+    ],
+    "contactTitle": "Prefer to call?"
   }
 }

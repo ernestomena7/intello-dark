@@ -18,10 +18,10 @@
     "en": "Inglés (en)"
   },
   "topics": {
-    "tracking": "Monitoreo de carga",
-    "ai-analytics": "Inteligencia de negocio con IA",
-    "technology": "Servicios tecnológicos",
-    "back-office": "Back office para logística",
+    "tracking": "Torre de Control",
+    "ai-analytics": "Datos y reportería",
+    "technology": "Tecnología y seguridad",
+    "back-office": "Back office logístico",
     "other": "Otro"
   }
 }

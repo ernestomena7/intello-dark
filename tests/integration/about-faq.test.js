@@ -33,22 +33,32 @@ for (const [lang, url] of [['es', '/es/preguntas'], ['en', '/en/faq']]) {
 }
 
 for (const [lang, url] of [['es', '/es/nosotros'], ['en', '/en/about']]) {
-  test(`${lang}: the About page states the operation, the engagement steps and the kinds of clients, with a call to action`, async () => {
+  test(`${lang}: the About page states the purpose, the values, the culture, the clients and the direction, with a call to action`, async () => {
     const html = await (await srv.get(url)).text();
     const c = read(lang, 'about');
-    for (const p of c.story.body) assert.ok(html.includes(p));
-    for (const s of c.approach.steps) assert.ok(html.includes(s.title));
-    for (const item of c.clients.items) assert.ok(html.includes(item));
+    assert.ok(html.includes(esc(c.header.lede)), 'positioning in the lede');
+    assert.ok(html.includes(esc(c.essence.purpose.quote)) && html.includes(esc(c.essence.motto.quote)), 'purpose and motto');
+    assert.equal(count(html, /class="itl-letter-item"/g), 4, 'the four S.H.O.W. values');
+    for (const v of c.values.items) assert.ok(html.includes(esc(v.how)), `how ${v.title} is lived`);
+    for (const p of [...c.culture.items, c.culture.community]) assert.ok(html.includes(esc(p.title)), p.title);
+    for (const item of c.clients.items) assert.ok(html.includes(esc(item)), item);
+    for (const d of c.direction.items) assert.ok(html.includes(esc(d.title)), d.title);
+    // the certification is a goal, never shown as held
+    assert.ok(html.includes(`<span class="itl-info-badge">${esc(c.direction.badge)}</span>`));
+    assert.doesNotMatch(html, /<img/i, 'no team photos');
     assert.ok(html.includes(`href="${CONTACT[lang]}"`));
     assert.equal(count(html, /<h1[\s>]/g), 1);
   });
 }
 
-test('About and FAQ content has no unsourced figures (the site-wide check lives in content.test.js)', () => {
+test('About and FAQ content has no unsourced figures (only those in tests/allowed-figures.json)', () => {
   const figure = /\b\d[\d.,]*\s?(\+|%|x\b)|\b\d{3,}\b/i;
+  const allowed = JSON.parse(fs.readFileSync(new URL('../allowed-figures.json', import.meta.url), 'utf8')).allowed;
   for (const lang of ['es', 'en']) {
     for (const f of ['about', 'faq']) {
-      assert.ok(!figure.test(JSON.stringify(read(lang, f))), `${lang}/${f} has a figure`);
+      let text = JSON.stringify(read(lang, f));
+      for (const a of allowed) text = text.split(a).join('');
+      assert.ok(!figure.test(text), `${lang}/${f} has a figure`);
     }
   }
 });

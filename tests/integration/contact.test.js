@@ -49,7 +49,7 @@ test('a valid enquiry is emailed to every recipient with the visitor as Reply-To
   assert.deepEqual(m.to, ['ventas@intello.test', 'ops@intello.test']);
   assert.equal(m.from, 'web@intello.test');
   assert.deepEqual(m.replyTo, { name: 'Ana Pérez', address: 'ana@acme.com' });
-  assert.match(m.subject, /^\[Intello web\] Monitoreo de carga — Ana Pérez$/);
+  assert.match(m.subject, /^\[Intello web\] Torre de Control — Ana Pérez$/);
   assert.match(m.text, /Idioma del visitante: Español \(es\)/);
   assert.match(m.text, /Quiero conocer el servicio de rastreo\./);
   for (const field of ['Nombre', 'Empresa', 'Correo', 'Teléfono', 'Tema', 'Recibido', 'ID de solicitud']) assert.match(m.text, new RegExp(field));
