@@ -14,22 +14,6 @@
     "secondary": {
       "label": "Ver los procesos"
     },
-    "stats": [
-      {
-        "value": "+17",
-        "unit": "M",
-        "label": "celdas de datos procesadas cada mes"
-      },
-      {
-        "value": "14,000",
-        "unit": "+",
-        "label": "embarques gestionados desde 2024"
-      },
-      {
-        "value": "35",
-        "label": "países conectados, de origen a destino"
-      }
-    ],
     "badge": "Simulación ilustrativa · sin datos de clientes"
   },
   "map": {
@@ -126,7 +110,6 @@
     "eyebrow": "Qué gestionamos",
     "title": "Procesos que ya diseñamos",
     "titleAccent": "y operamos",
-    "lede": "Cada operación corre con su propio SOP, documentado y versionado. Empieza por el proceso que más pesa hoy.",
     "items": [
       {
         "id": "torre-de-control",
@@ -141,7 +124,8 @@
           "Cierre"
         ],
         "figure": {
-          "value": "14,000+",
+          "value": "14,000",
+          "unit": "+",
           "label": "embarques gestionados desde 2024"
         }
       },
@@ -155,8 +139,9 @@
           "Auditorías de inventario"
         ],
         "figure": {
-          "value": "EE.UU. · Panamá",
-          "label": "bodegas con auditorías wall to wall"
+          "value": "2",
+          "unit": " países",
+          "label": "bodegas auditadas wall to wall en EE.UU. y Panamá"
         }
       },
       {
@@ -169,7 +154,8 @@
           "Reportería por país"
         ],
         "figure": {
-          "value": "+17M",
+          "value": "+17",
+          "unit": "M",
           "label": "celdas de datos procesadas cada mes"
         }
       }

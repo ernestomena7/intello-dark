@@ -563,18 +563,18 @@ a.itl-lang-opt { display: inline-flex; align-items: center; justify-content: cen
 .itl-prow-value { font-size: 36px; line-height: 40px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); }
 .itl-prow-flabel { font-size: 14px; line-height: 20px; color: var(--ink-muted); }
 
-/* PhaseTrack (on navy) */
+/* PhaseTrack (on white) */
 .itl-phases { position: relative; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: var(--space-4); margin: var(--space-7) 0 0; padding: 0; list-style: none; }
-.itl-phases::before { content: ""; position: absolute; top: 19px; left: 20px; right: 20px; height: 2px; background: color-mix(in srgb, var(--on-navy) 22%, transparent); }
+.itl-phases::before { content: ""; position: absolute; top: 19px; left: 20px; right: calc((100% - 6 * var(--space-4)) / 7 - 20px); height: 2px; background: var(--line); }
 .itl-phase { position: relative; }
-.itl-phase-code { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--blue); color: var(--on-blue); font-size: 13px; line-height: 16px; font-weight: 700; box-shadow: 0 0 0 6px var(--navy); }
+.itl-phase-code { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--blue); color: var(--on-blue); font-size: 13px; line-height: 16px; font-weight: 700; box-shadow: 0 0 0 6px var(--surface-card); }
 .itl-phase:first-child .itl-phase-code { background: var(--yellow); color: var(--on-yellow); }
-.itl-phase-title { margin: var(--space-4) 0 var(--space-3); font-size: 17px; line-height: 22px; font-weight: 700; color: var(--on-navy); }
+.itl-phase-title { margin: var(--space-4) 0 var(--space-3); font-size: 17px; line-height: 22px; font-weight: 700; color: var(--ink); }
 .itl-phase-points { display: grid; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
-.itl-phase-points li { position: relative; padding-left: 14px; font-size: 14px; line-height: 20px; color: #c9c9d6; }
-.itl-phase-points li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; background: var(--yellow); transform: rotate(45deg); }
-.itl-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); margin: var(--space-7) 0 0; padding: var(--space-6) 0 0; list-style: none; border-top: 1px solid color-mix(in srgb, var(--on-navy) 22%, transparent); }
-.itl-method-title { margin: 0 0 var(--space-2); font-size: 18px; line-height: 24px; font-weight: 700; color: var(--on-navy); }
+.itl-phase-points li { position: relative; padding-left: 14px; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.itl-phase-points li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; background: var(--blue); transform: rotate(45deg); }
+.itl-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); margin: var(--space-7) 0 0; padding: var(--space-6) 0 0; list-style: none; border-top: 1px solid var(--line); }
+.itl-method-title { margin: 0 0 var(--space-2); font-size: 18px; line-height: 24px; font-weight: 700; color: var(--ink); }
 
 /* LetterGrid (on navy) */
 .itl-letters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-5); margin: var(--space-7) 0 0; padding: 0; list-style: none; }
@@ -766,3 +766,21 @@ a.itl-lang-opt { display: inline-flex; align-items: center; justify-content: cen
 /* Copy on top of the map: a soft navy glow behind the text keeps it legible without hiding the map. */
 .itl-maphero-copy { position: relative; }
 .itl-maphero-copy::before { content: ""; position: absolute; inset: -56px -40px; z-index: -1; background: radial-gradient(closest-side, color-mix(in srgb, var(--navy) 80%, transparent), transparent); pointer-events: none; }
+/* Pulsing shipment dots */
+.itl-map-ship-core { fill: var(--yellow); }
+.itl-map-ship-halo { fill: none; stroke: var(--yellow); stroke-width: 1.5; }
+@media (prefers-reduced-motion: reduce) { .itl-map-ships { display: none; } }
+/* Hero band = "What we manage": one column per process, with its figure. */
+.itl-maphero-band { scroll-margin-top: var(--nav-height); }
+.itl-maphero-band-title { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-4); margin: 0 0 var(--space-2); font-size: 20px; line-height: 26px; font-weight: 700; letter-spacing: -0.01em; color: var(--on-navy); }
+.itl-maphero-band-title .itl-eyebrow { color: var(--on-navy); }
+.itl-maphero-band-inner { align-items: start; }
+.itl-maphero-stats.itl-stats-rule .itl-stat { padding-top: var(--space-2); }
+.itl-stat-title { order: -2; margin: 0 0 var(--space-3); font-size: 14px; line-height: 20px; font-weight: 700; color: var(--ink); }
+.itl-maphero-stats .itl-stat-text { margin-top: var(--space-3); font-size: 13px; line-height: 20px; }
+.itl-maphero-band-inner { row-gap: var(--space-4); }
+.itl-maphero-stats .itl-stat-value { font-size: clamp(32px, 2.8vw, 44px); line-height: 1.1; white-space: normal; text-wrap: balance; }
+@media (max-width: 1180px) { .itl-phase:last-child::after { content: ""; position: absolute; left: 17px; top: 40px; bottom: -4px; width: 6px; background: var(--surface-card); } }
+/* The space above the figures band always clears the lowest port card (Puerto Limón sits at 28.7% of the map width
+   below the map top; its card hangs about 200px under the port). The hero grows only as much as the map needs. */
+@media (min-width: 1181px) { .itl-maphero-inner { min-height: calc(var(--nav-height) + var(--space-6) + 0.287 * min(76vw, 1400px) + 240px); } }

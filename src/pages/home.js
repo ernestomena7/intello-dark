@@ -36,18 +36,16 @@ export function render(ctx) {
     lede=${c.hero.lede}
     cta=${{ label: c.hero.cta.label, href: ctx.url('contact') }}
     secondary=${{ label: c.hero.secondary.label, href: '#procesos' }}
-    stats=${c.hero.stats}
+    stats=${c.processes.items.map((it, i) => ({ title: `${String(i + 1).padStart(2, '0')} · ${it.title}`, value: it.figure.value, unit: it.figure.unit, label: it.figure.label, text: it.tags.join(' · ') }))}
+    bandId="procesos"
+    bandEyebrow=${c.processes.eyebrow}
+    bandTitle=${`${c.processes.title} ${c.processes.titleAccent}`}
     legend=${['o', 'd', 'b'].map((kind) => ({ kind, label: c.map.legend[kind] }))}
     note=${c.map.caption}
     badge=${c.hero.badge}
     map=${map} />`;
 
-  const processes = html`<${ds.Section} tone="card" id="procesos" className="itl-home-block">
-    <${ds.SectionHeader} eyebrow=${c.processes.eyebrow} title=${c.processes.title} accent=${c.processes.titleAccent} lede=${c.processes.lede} />
-    <${ds.ProcessList} items=${c.processes.items} />
-  <//>`;
-
-  const tower = html`<${ds.Section} tone="navy" id="torre-de-control" className="itl-home-block itl-home-tower">
+  const tower = html`<${ds.Section} tone="card" id="torre-de-control" className="itl-home-block itl-home-tower">
     <${ds.SectionHeader} eyebrow=${c.tower.eyebrow} title=${c.tower.title} accent=${c.tower.titleAccent} lede=${c.tower.lede} />
     <${ds.PhaseTrack} items=${c.tower.phases} />
     <ul className="itl-method" role="list">
@@ -99,6 +97,6 @@ export function render(ctx) {
 
   return {
     meta: c.meta,
-    body: Frame(ctx, html`<${React.Fragment}>${hero}${processes}${tower}${reach}${intelligence}${promises}${culture}${band}<//>`, { overlayNav: true }),
+    body: Frame(ctx, html`<${React.Fragment}>${hero}${tower}${reach}${intelligence}${promises}${culture}${band}<//>`, { overlayNav: true }),
   };
 }

@@ -14,22 +14,6 @@
     "secondary": {
       "label": "See processes"
     },
-    "stats": [
-      {
-        "value": "+17",
-        "unit": "M",
-        "label": "data cells processed every month"
-      },
-      {
-        "value": "14,000",
-        "unit": "+",
-        "label": "shipments managed since 2024"
-      },
-      {
-        "value": "35",
-        "label": "countries connected end to end"
-      }
-    ],
     "badge": "Illustrative simulation · no client data"
   },
   "map": {
@@ -126,7 +110,6 @@
     "eyebrow": "What we manage",
     "title": "Processes we already design",
     "titleAccent": "and run",
-    "lede": "Every operation runs on its own documented, versioned SOP. Start with the process that weighs most today.",
     "items": [
       {
         "id": "torre-de-control",
@@ -141,7 +124,8 @@
           "Closing"
         ],
         "figure": {
-          "value": "14,000+",
+          "value": "14,000",
+          "unit": "+",
           "label": "shipments managed since 2024"
         }
       },
@@ -155,8 +139,9 @@
           "Inventory audits"
         ],
         "figure": {
-          "value": "US · Panama",
-          "label": "warehouses with wall-to-wall audits"
+          "value": "2",
+          "unit": " countries",
+          "label": "wall-to-wall audits, US and Panama warehouses"
         }
       },
       {
@@ -169,7 +154,8 @@
           "Reporting by country"
         ],
         "figure": {
-          "value": "+17M",
+          "value": "+17",
+          "unit": "M",
           "label": "data cells processed every month"
         }
       }

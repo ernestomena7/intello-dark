@@ -420,8 +420,9 @@
     return h('dl', { className: cx('itl-stats', 'itl-stats-' + (p.variant || 'rule'), p.className), style: { '--itl-cols': p.columns || items.length } },
       items.map(function (s, i) {
         return h('div', { key: i, className: 'itl-stat' },
-          h('dt', { className: 'itl-stat-label' }, s.label),
+          s.title ? h('dt', { className: 'itl-stat-title' }, s.title) : h('dt', { className: 'itl-stat-label' }, s.label),
           h('dd', { className: 'itl-stat-value' }, s.value, s.unit ? h('span', { className: 'itl-stat-unit' }, s.unit) : null),
+          s.title && s.label ? h('dd', { className: 'itl-stat-label' }, s.label) : null,
           s.text ? h('dd', { className: 'itl-stat-text' }, s.text) : null);
       }));
   }
@@ -498,9 +499,17 @@
           h('g', { className: 'itl-map-arcs' }, routes.map(function (r, i) {
             return h('path', { key: i, d: r.d, className: 'itl-map-arc', strokeWidth: (r.weight * 0.55).toFixed(2) });
           })),
-          /* Light trails: a short dash travelling along each busy route (CSS animation, hidden for reduced motion). */
-          h('g', { className: 'itl-map-trails', 'aria-hidden': 'true', filter: 'url(#' + id + '-glow)' }, routes.filter(function (r) { return r.moving; }).map(function (r, i) {
-            return h('path', { key: i, d: r.d, pathLength: 100, className: 'itl-map-trail', style: { animationDuration: r.duration + 's', animationDelay: (-r.delay) + 's' } });
+          /* Shipments: a pulsing dot travels along each busy route (SVG animation; the group is hidden for reduced motion).
+             The dot fades in at origin and out at destination; a halo ring expands and fades around it like a radar ping. */
+          h('g', { className: 'itl-map-ships', 'aria-hidden': 'true' }, routes.filter(function (r) { return r.moving; }).map(function (r, i) {
+            var dur = r.duration + 's', begin = (-r.delay) + 's';
+            return h('g', { key: i, opacity: 0 },
+              h('animateMotion', { dur: dur, begin: begin, repeatCount: 'indefinite', path: r.d }),
+              h('animate', { attributeName: 'opacity', values: '0;1;1;0', keyTimes: '0;0.08;0.9;1', dur: dur, begin: begin, repeatCount: 'indefinite' }),
+              h('circle', { r: 4, className: 'itl-map-ship-halo' },
+                h('animate', { attributeName: 'r', values: '4;13', dur: '1.4s', begin: (-i * 0.35) + 's', repeatCount: 'indefinite' }),
+                h('animate', { attributeName: 'opacity', values: '0.8;0', dur: '1.4s', begin: (-i * 0.35) + 's', repeatCount: 'indefinite' })),
+              h('circle', { r: 3.6, className: 'itl-map-ship-core', filter: 'url(#' + id + '-glow)' }));
           })),
           h('g', { className: 'itl-map-pulses', 'aria-hidden': 'true' }, (p.pulse || []).filter(function (k) { return byId[k]; }).map(function (k, i) {
             var hb = byId[k], begin = (i * 0.8) + 's';
@@ -556,7 +565,8 @@
             p.secondary ? h(Button, { variant: 'outline', size: 'lg', href: p.secondary.href || '#' }, p.secondary.label) : null))),
       p.map ? h('div', { className: 'itl-maphero-map' }, p.map) : null,
       p.badge ? h('p', { className: 'itl-maphero-badge' }, h('span', { className: 'itl-hud-dot', 'aria-hidden': 'true' }), p.badge) : null,
-      band ? h('div', { className: 'itl-maphero-band' }, h('div', { className: 'itl-maphero-band-inner' },
+      band ? h('div', { className: 'itl-maphero-band', id: p.bandId }, h('div', { className: 'itl-maphero-band-inner' },
+        p.bandTitle ? h('h2', { className: 'itl-maphero-band-title' }, p.bandEyebrow ? h('span', { className: 'itl-eyebrow itl-eyebrow-dot' }, p.bandEyebrow) : null, p.bandTitle) : null,
         p.stats ? h(StatGrid, { items: p.stats, variant: 'rule', className: 'itl-maphero-stats' }) : null,
         (p.legend || p.note) ? h('div', { className: 'itl-maphero-key' },
           p.legend ? h(MapLegend, { items: p.legend }) : null,

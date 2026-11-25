@@ -38,13 +38,15 @@ for (const lang of ['es', 'en']) {
     assert.equal(count(html, /class="itl-stat"/g) >= 3, true, 'headline figures');
     assert.ok(html.includes('+17'), 'monthly data cells figure');
     assert.match(html, /src="\/img\/route-map\.svg\?v=[0-9a-f]{10}"/, 'illustrated route map with a versioned URL');
-    const trails = count(html, /class="itl-map-trail"/g);
-    assert.ok(trails > 0 && trails <= 10, 'a few light trails on the busiest routes');
+    const ships = count(html, /class="itl-map-ship-core"/g);
+    assert.ok(ships > 0 && ships <= 10, 'a few pulsing shipment dots on the busiest routes');
     assert.equal(count(html, /class="itl-hud /g), home.map.cards.length, 'one HUD card per port');
     assert.ok(html.includes(esc(home.hero.badge)), 'the simulation is labelled as illustrative');
     // sections: processes, control tower, reach, intelligence, promises, culture
     for (const id of ['procesos', 'torre-de-control', 'alcance', 'inteligencia', 'promesas', 'cultura']) assert.ok(html.includes(`id="${id}"`), `section #${id}`);
-    assert.equal(count(html, /class="itl-prow"/g), home.processes.items.length);
+    // the hero band is the processes section: one figure column per process
+    assert.ok(html.includes('id="procesos"'));
+    assert.equal(count(html, /class="itl-stat-title"/g), home.processes.items.length);
     assert.equal(count(html, /class="itl-phase"/g), 7, 'seven Control Tower phases');
     assert.equal(count(html, /class="itl-bar"/g), home.reach.origins.length);
     assert.ok(html.includes(`href="/${lang}/${lang === 'es' ? 'nosotros' : 'about'}"`), 'about link');
